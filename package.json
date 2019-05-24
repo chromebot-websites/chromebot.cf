@@ -1,0 +1,24 @@
+{
+  "name": "ChromeBot Website",
+  "version": "0.1.0",
+  "description": "",
+  "private": true,
+  "scripts": {},
+  "author": "Minion3665",
+  "dependencies": {
+    "react-router-dom": ">=5.0.0",
+    "react": ">=16.8.6",
+    "react-dom": ">=16.8.6",
+    "react-scripts": ">=3.0.1"
+  },
+  "devDependencies": {
+    "progress-bar-webpack-plugin": ">=1.12.1",
+    "babel-core": ">=7.0.0-beta.3",
+    "babel-loader": ">=8.0.6",
+    "babel-preset-es2015": ">=7.0.0-beta.3",
+    "babel-preset-react": ">=7.0.0-beta.3",
+    "dotenv": ">=8.0.0",
+    "webpack": ">=5.0.0-alpha.12",
+    "webpack-cli": ">=3.3.2"
+  }
+}
