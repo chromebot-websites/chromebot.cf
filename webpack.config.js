@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
 var ProgressBarPlugin = require('progress-bar-webpack-plugin');
-var BUILD_DIR = path.resolve(__dirname, 'public');
+var BUILD_DIR = path.resolve(__dirname);
 var APP_DIR = path.resolve(__dirname, 'client');
 
 var config = {
