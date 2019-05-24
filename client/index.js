@@ -57,7 +57,7 @@ class Home extends Component {
 		return (
 			<React.Fragment>
 				<img src="images/favicon512.png" className="logo" />
-				<Button important onClick={(button) => window.location.href = "/game"}>Play</Button>
+				<Button important onClick={(button) => window.location.href = "/join"}>Join</Button>
 				<Button disabled>Help and information</Button>
 			</React.Fragment>
 		);
