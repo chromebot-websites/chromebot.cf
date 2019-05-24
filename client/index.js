@@ -14,7 +14,13 @@ class App extends Component {
 				<Router>
 					<Switch>
 						<Route exact path="/" component={StartScreen} />
-						<Route path="/game" component={StartScreen} />
+						<Route path="/join" render={() => {
+							window.location.href = "https://discordapp.com/invite/8wMCjjT";
+							return (
+								<div className="textblock">We're redirecting you now...</div>
+								<Button important onClick={(button) => window.location.href = "https://discordapp.com/invite/8wMCjjT"}>Not Being Redirected?</Button>
+							);
+						}} />
 						<Route component={Error404} />
 					</Switch>
 				</Router>
