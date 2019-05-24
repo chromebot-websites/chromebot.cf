@@ -13,7 +13,7 @@ class App extends Component {
 			<ErrorBoundary>
 				<Router>
 					<Switch>
-						<Route exact path="/" component={StartScreen} />
+						<Route exact path="/" component={Home} />
 						<Route path="/join" render={() => {
 							window.location.href = "https://discordapp.com/invite/8wMCjjT";
 							return (
@@ -52,7 +52,7 @@ class ErrorBoundary extends Component {
 	}
 }
 
-class StartScreen extends Component {
+class Home extends Component {
 	render() {
 		return (
 			<React.Fragment>
@@ -72,12 +72,6 @@ class Error404 extends Component {
 				<Button important onClick={(button) => window.location.href = "/"}>Back To Home</Button>
 			</React.Fragment>
 		);
-	}
-}
-
-class NotificationZone extends Component {
-	render() {
-		return null;
 	}
 }
 
