@@ -17,8 +17,10 @@ class App extends Component {
 						<Route path="/join" render={() => {
 							window.location.href = "https://discordapp.com/invite/8wMCjjT";
 							return (
-								<div className="textblock">We're redirecting you now...</div>
-								<Button important onClick={(button) => window.location.href = "https://discordapp.com/invite/8wMCjjT"}>Not Being Redirected?</Button>
+								<React.Fragment>
+									<div className="textblock">We're redirecting you now...</div>
+									<Button important onClick={(button) => window.location.href = "https://discordapp.com/invite/8wMCjjT"}>Not Being Redirected?</Button>
+								</React.Fragment>
 							);
 						}} />
 						<Route component={Error404} />
