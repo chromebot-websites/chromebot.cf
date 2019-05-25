@@ -12,5 +12,5 @@ compiler.run((err, stats) => {
 		throw "Compilation failed";
 	} else {
 		console.log("Build finished, ready to deploy...");
-  }
+	}
 });
