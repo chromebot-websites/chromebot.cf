@@ -65,12 +65,24 @@ div#root {
 	background-size: 100% 100%;
 }
 
+/*What about the titles*/
+.title3 {
+	display: inline-block;
+	margin: auto;
+	margin-top: 4vh;
+}
+
+/*And the text for the titles*/
+
+
 /*Let's have some widget action*/
 .discordWidget {
-    height: 90vh;
-    margin-top: 4vh;
-    margin-left: 1vw;
-    width: 40vw;
+	display: inline-block;
+	height: 90vh;
+	margin-top: 4vh;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	width: 40vw;
 }
 
 /* Barter rules*/
