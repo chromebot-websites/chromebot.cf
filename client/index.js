@@ -78,6 +78,9 @@ class Home extends Component {
 						<li>Server Media Team - Closed</li>
 					</ul>
 				</div>
+				<div class="page3">
+					<iframe src="https://discordapp.com/widget?id=582222119383990274&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+				</div>
 			</React.Fragment>
 		);
 	}
