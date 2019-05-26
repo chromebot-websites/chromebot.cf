@@ -79,7 +79,7 @@ class Home extends Component {
 					</ul>
 				</div>
 				<div className="page3">
-					<iframe className="discordWidget" src="https://discordapp.com/widget?id=480959345601937410&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+					<iframe className="discordWidget" src="https://discordapp.com/widget?id=480959345601937410&theme=dark" allowtransparency="true" frameborder="0"></iframe>
 				</div>
 			</React.Fragment>
 		);
