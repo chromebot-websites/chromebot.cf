@@ -63,6 +63,8 @@ class Home extends Component {
 					<Button important onClick={(button) => window.location.href = "/join"}>Join</Button>
 					<Button disabled>Help and information</Button>
 				</div>
+				<div class="page2">
+				</div>
 			</React.Fragment>
 		);
 	}
