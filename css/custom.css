@@ -32,9 +32,24 @@ div#root {
 	width: 100%;
 	height: 100%;
 	background-color: #ffaaaa;
-	background-image: linear-gradient(to bottom, #ffaaaa 0%, #ffaaaa 90%, #aaffaa 100%);
+	background-image: linear-gradient(to bottom, #ffaaaa 0%, #ffaaaa 90%, #aaaaff 100%);
 	background-size: 100% 100%;
 }
+.page2:not(.variant2) {
+	width: 100%;
+	height: 100%;
+	background-color: #ffaaaa;
+	background-image: linear-gradient(to bottom, #affaa 0%, #affaa 90%, #aaaaff 100%);
+	background-size: 100% 100%;
+}
+.page2.variant2 {
+	width: 100%;
+	height: 100%;
+	background-color: #ffaaaa;
+	background-image: linear-gradient(to bottom, #aaaaff 0%, #aaaaff 90%, #aaaaff 100%);
+	background-size: 100% 100%;
+}
+
 
 .logo {
 	margin: 1vw;
