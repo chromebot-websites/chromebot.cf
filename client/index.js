@@ -64,6 +64,19 @@ class Home extends Component {
 					<Button disabled>Help and information</Button>
 				</div>
 				<div class="page2">
+					<h1>Staff</h1>
+					Here in the chromebook777 productions server we have a fantastic and dedicated team of staff
+					<h2>The Team</h2>
+					<h2>Promotions</h2>
+						Trial Moderator -> Junior Moderator<br/>
+						Junior Moderator -> Moderator<br/>
+						Moderator -> Senior Moderator<br/>
+						Senior Moderator -> Admin<br/>
+					<h2>Applications</h2>
+					<ul>
+						<li>Staff Applications - Closed</li>
+						<li>Server Media Team - Closed</li>
+					</ul>
 				</div>
 			</React.Fragment>
 		);
