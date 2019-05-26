@@ -6,10 +6,13 @@
 	margin: 0;
 }
 
-div#root {
+/*resize the body to be statically taking up the entire screen*/
+.body div#root {
 	width: 100%;
 	height: 100%;
 }
+
+/*Define pages*/
 .page1:not(.variant2) {
 	width: 100%;
 	height: 100%;
