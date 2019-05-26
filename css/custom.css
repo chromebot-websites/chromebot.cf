@@ -65,6 +65,15 @@ div#root {
 	background-size: 100% 100%;
 }
 
+/*Let's have some widget action*/
+.discordWidget {
+    height: 90vh;
+    margin-top: 4vh;
+    margin-left: 1vw;
+    width: 40vw;
+}
+
+/* Barter rules*/
 .logo {
 	margin: 1vw;
 	margin-left: 0;
