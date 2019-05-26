@@ -6,6 +6,17 @@
 	margin: 0;
 }
 
+.page1:not(.variant2) {
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, #ffaaaa 0%, #ffaaaa 90%, #aaffaa 100%);
+}
+.page1.variant2 {
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, #ffaaaa 0%, #ffaaaa 90%, #aaffaa 100%);
+}
+
 body {
 	background: linear-gradient(270deg, #ffe083, #ff9f00);
 	background-size: 400% 400%;
