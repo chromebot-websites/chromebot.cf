@@ -70,9 +70,10 @@ div#root {
 	display: inline-block;
 	margin: auto;
 	margin-top: 4vh;
+	vertical-align-top;
 }
 
-/*And the text for the titles*/
+/*And the text*/
 
 
 /*Let's have some widget action*/
