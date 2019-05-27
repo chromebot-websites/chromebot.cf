@@ -64,6 +64,18 @@ div#root {
 
 /*And the text*/
 
+/*We need something to contain all that*/
+.container {
+	vertical-align: top;
+	display: inline-block;
+	width: 40vw;
+	margin: auto;
+}
+.container.three {
+	width: 30vw;
+	font-size: 5vw;
+	color: #555;
+}
 
 /*Let's have some widget action*/
 .discordWidget {
