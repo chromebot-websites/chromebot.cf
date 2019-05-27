@@ -24,45 +24,31 @@ div#root {
 }
 
 /*Define pages*/
-.page1:not(.variant2) {
+.page {
 	width: 100%;
 	height: auto;
   min-height: 100% !important;
+	background-size: 100% 100%;
+}
+.page.one:not(.variant2) {
 	background-color: #ffaaaa;
 	background-image: linear-gradient(to bottom, #ffaaaa 0%, #ffaaaa 90%, #aaffaa 100%);
-	background-size: 100% 100%;
 }
-.page1.variant2 {
-	width: 100%;
-	height: auto;
-  min-height: 100% !important;
+.page.one.variant2 {
 	background-color: #ffaaaa;
 	background-image: linear-gradient(to bottom, #ffaaaa 0%, #ffaaaa 90%, #aaaaff 100%);
-	background-size: 100% 100%;
 }
-.page2:not(.variant2) {
-	width: 100%;
-	height: auto;
-  min-height: 100% !important;
+.page.two:not(.variant2) {
 	background-color: #aaffaa;
 	background-image: linear-gradient(to bottom, #aaffaa 0%, #aaffaa 90%, #aaaaff 100%);
-	background-size: 100% 100%;
 }
-.page2.variant2 {
-	width: 100%;
-	height: auto;
-  min-height: 100% !important;
+.page.two.variant2 {
 	background-color: #aaaaff;
 	background-image: linear-gradient(to bottom, #aaaaff 0%, #aaaaff 90%, #aaaaff 100%);
-	background-size: 100% 100%;
 }
-.page3 {
-	width: 100%;
-	height: auto;
-  min-height: 100% !important;
+.page.three {
 	background-color: #aaaaff;
 	background-image: linear-gradient(to bottom, #aaaaff 0%, #aaaaff 90%, #aaaaff 100%);
-	background-size: 100% 100%;
 }
 
 /*What about the titles*/
