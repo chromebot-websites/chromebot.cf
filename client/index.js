@@ -80,7 +80,7 @@ class Home extends Component {
 				</div>
 				<div className="page3">
 					<iframe className="discordWidget" src="https://discordapp.com/widget?id=480959345601937410&theme=dark" allowtransparency="true" frameborder="0"></iframe>
-					<span className="title3">Online</span>
+					<span className="title three">Online</span>
 					<span className="text3">Our members come from around the world, so anytime you want to chat someone will be online</span>
 				</div>
 			</React.Fragment>
