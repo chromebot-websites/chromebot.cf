@@ -58,12 +58,12 @@ class Home extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				<div class="page1">
+				<div class="page one">
 					<img src="images/favicon512.png" className="logo" />
 					<Button important onClick={(button) => window.location.href = "/join"}>Join</Button>
 					<Button disabled>Help and information</Button>
 				</div>
-				<div class="page2">
+				<div class="page two">
 					<h1>Staff</h1>
 					Here in the chromebook777 productions server we have a fantastic and dedicated team of staff
 					<h2>The Team</h2>
@@ -78,10 +78,10 @@ class Home extends Component {
 						<li>Server Media Team - Closed</li>
 					</ul>
 				</div>
-				<div className="page3">
+				<div className="page three">
 					<iframe className="discordWidget" src="https://discordapp.com/widget?id=480959345601937410&theme=dark" allowtransparency="true" frameborder="0"></iframe>
 					<span className="title three">Online</span>
-					<span className="text3">Our members come from around the world, so anytime you want to chat someone will be online</span>
+					<span className="text three">Our members come from around the world, so anytime you want to chat someone will be online</span>
 				</div>
 			</React.Fragment>
 		);
