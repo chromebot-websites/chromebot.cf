@@ -29,7 +29,7 @@ div#root {
 }
 .page.one:not(.variant2) {
 	background-color: #ffaaaa;
-	background-image: linear-gradient(to bottom, #ffaaaa 0%, #ffaaaa 90%, #aaffaa 100%);
+	background-image: linear-gradient(to bottom, #ffaaaa 0%, #ffaaaa 90%, #A84300 100%);
 }
 .page.one.variant2 {
 	background-color: #ffaaaa;
@@ -37,7 +37,7 @@ div#root {
 }
 .page.two:not(.variant2) {
 	background-color: #aaffaa;
-	background-image: linear-gradient(to bottom, #aaffaa 0%, #aaffaa 90%, #5970C1 100%);
+	background-image: linear-gradient(to bottom, #A84300 0%, #A84300 90%, #5970C1 100%);
 }
 .page.two.variant2 {
 	background-color: #aaaaff;
