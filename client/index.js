@@ -64,7 +64,7 @@ class Home extends Component {
 					<Button disabled>Help and information</Button>
 				</div>
 				<div class="page two">
-					<h1>Staff</h1>
+					<span class="title two">Staff</span>
 					Here in the chromebook777 productions server we have a fantastic and dedicated team of staff
 					<h2>The Team</h2>
 					<h2>Promotions</h2>
