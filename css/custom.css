@@ -66,11 +66,14 @@ div#root {
 }
 
 /*What about the titles*/
-.title3 {
+.title {
 	display: inline-block;
 	margin: auto;
 	margin-top: 4vh;
-	vertical-align-top;
+	vertical-align: top;
+}
+.title.three {
+	font-size: 20vw;
 }
 
 /*And the text*/
