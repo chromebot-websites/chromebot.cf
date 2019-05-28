@@ -66,17 +66,23 @@ class Home extends Component {
 				<div class="page two">
 					<span class="title two">Staff</span>
 					Here in the chromebook777 productions server we have a fantastic and dedicated team of staff
-					<h2>The Team</h2>
-					<h2>Promotions</h2>
+					<div className="container two team">
+						<h2>The Team</h2>
+					</div>
+					<div className="container two promotions">
+						<h2>Promotions</h2>
 						Trial Moderator -> Junior Moderator<br/>
 						Junior Moderator -> Moderator<br/>
 						Moderator -> Senior Moderator<br/>
 						Senior Moderator -> Admin<br/>
-					<h2>Applications</h2>
-					<ul>
-						<li>Staff Applications - Closed</li>
-						<li>Server Media Team - Closed</li>
-					</ul>
+					</div>
+					<div className="container two applications">
+						<h2>Applications</h2>
+						<ul>
+							<li>Staff Applications - Closed</li>
+							<li>Server Media Team - Closed</li>
+						</ul>
+					</div>
 				</div>
 				<div className="page three">
 					<iframe className="discordWidget" src="https://discordapp.com/widget?id=480959345601937410&theme=dark" allowtransparency="true" frameborder="0"></iframe>
