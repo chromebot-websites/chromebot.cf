@@ -70,6 +70,11 @@ div#root {
 	vertical-align: top;
 	margin-top: 1vh;
 }
+.text.two {
+	font-size: 3vw;
+	color: #dedede;
+	margin-left: 5vw;
+}
 .text.three {
 	font-size: 3vw;
 	color: #dedede;
@@ -81,6 +86,15 @@ div#root {
 	vertical-align: top;
 	display: inline-block;
 	margin: auto;
+}
+.container.two:not(promotions,applications). {
+	width: 40vw;
+}
+.container.two:not(team,applications). {
+	width: 40vw;
+}
+.container.two:not(team,promotions). {
+	width: 40vw;
 }
 .container.three {
 	width: 35vw;
