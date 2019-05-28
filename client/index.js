@@ -58,15 +58,15 @@ class Home extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				<div class="page one">
+				<div className="page one">
 					<img src="images/favicon512.png" className="logo" />
 					<Button important onClick={(button) => window.location.href = "/join"}>Join</Button>
 					<Button disabled>Help and information</Button>
 				</div>
-				<div class="page two">
-					<span class="title two">Staff</span>
+				<div className="page two">
+					<span className="title two">Staff</span>
 					<div className="container two promotions">
-						Here in the chromebook777 productions server we have a fantastic and dedicated team of staff
+						<span className="text two">Here in the chromebook777 productions server we have a fantastic and dedicated team of staff</span>
 						<h2>Promotions</h2>
 						Trial Moderator -> Junior Moderator<br/>
 						Junior Moderator -> Moderator<br/>
