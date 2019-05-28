@@ -92,6 +92,7 @@ div#root {
 }
 .container.two.promotions {
 	width: 40vw;
+	float: right;
 }
 .container.two.applications {
 	width: 40vw;
