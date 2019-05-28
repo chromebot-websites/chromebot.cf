@@ -87,6 +87,10 @@ div#root {
 	display: inline-block;
 	margin: auto;
 }
+.container.two {
+	width: 90vw;
+	margin: auto;
+}
 .container.two.team {
 	width: 40vw;
 }
