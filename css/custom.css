@@ -87,13 +87,13 @@ div#root {
 	display: inline-block;
 	margin: auto;
 }
-.container.two:not(promotions,applications).team {
+.container.two.team {
 	width: 40vw;
 }
-.container.two:not(team,applications).promotions {
+.container.two.promotions {
 	width: 40vw;
 }
-.container.two:not(team,promotions).applications {
+.container.two.applications {
 	width: 40vw;
 }
 .container.three {
