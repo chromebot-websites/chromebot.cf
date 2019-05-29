@@ -89,7 +89,11 @@ div#root {
 }
 .container.two {
 	width: 30vw;
-	background-color: black;
+	background-color: grey;
+}
+.container.two.center {
+	width: auto;
+	background-color: pink;
 }
 .container.three {
 	width: 35vw;
