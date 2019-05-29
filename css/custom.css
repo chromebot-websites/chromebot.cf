@@ -88,21 +88,8 @@ div#root {
 	margin: auto;
 }
 .container.two {
-	width: 90vw;
-	margin: auto;
-}
-.container.two.title {
-	width: 100vw;
-}
-.container.two.team {
-	width: 33.33vw;
-}
-.container.two.promotions {
-	width: 33.33vw;
-	float: right;
-}
-.container.two.applications {
-	width: 33.33vw;
+	width: 30vw;
+	background-color: black;
 }
 .container.three {
 	width: 35vw;
