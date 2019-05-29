@@ -65,7 +65,7 @@ class Home extends Component {
 				</div>
 				<div className="page two">
 					<span className="title two">Staff</span>
-					<div className="container two">
+					<div className="container two containercontainer">
 						<div className="container two">
 							<h2>Promotions</h2>
 							Trial Moderator -> Junior Moderator<br/>
