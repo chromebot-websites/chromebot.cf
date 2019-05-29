@@ -1,3 +1,6 @@
+# WHAT IS THIS REPO?
+Chromebook777 Productions is a discord server with a dedicated team of staff and (somewhat) active members. We are making a discord bot so we decided we needed a website
+
 # WEBSITE BUILD STATUS:
 [![Build Status](https://travis-ci.com/chromebook777-productions/chromebot.cf.svg?branch=master)](https://travis-ci.com/chromebook777-productions/chromebot.cf)
 
