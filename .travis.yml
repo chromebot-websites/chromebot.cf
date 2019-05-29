@@ -12,5 +12,4 @@ deploy:
   - provider: pages
   - skip_cleanup: true
   - github_token: $GITHUB_TOKEN
-  on:
-    - branch: gh-pages
+  - branch: gh-pages
