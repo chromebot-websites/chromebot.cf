@@ -91,7 +91,7 @@ div#root {
 	width: 30vw;
 	background-color: grey;
 }
-.container.two.center {
+.container.two.containercontainer {
 	width: auto;
 	background-color: pink;
 }
