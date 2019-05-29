@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "build": "node index.js"
+  },
   "author": "Minion3665",
   "dependencies": {
     "react-router-dom": ">=5.0.0",
