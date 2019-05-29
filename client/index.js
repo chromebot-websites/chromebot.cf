@@ -65,22 +65,24 @@ class Home extends Component {
 				</div>
 				<div className="page two">
 					<span className="title two">Staff</span>
-					<div className="container two promotions">
-						<h2>Promotions</h2>
-						Trial Moderator -> Junior Moderator<br/>
-						Junior Moderator -> Moderator<br/>
-						Moderator -> Senior Moderator<br/>
-						Senior Moderator -> Admin<br/>
-					</div>
-					<div className="container two team">
-						<h2>The Team</h2>
-					</div>
-					<div className="container two applications">
-						<h2>Applications</h2>
-						<ul>
-							<li>Staff Applications - Closed</li>
-							<li>Server Media Team - Closed</li>
-						</ul>
+					<div className="container two">
+						<div className="container two">
+							<h2>Promotions</h2>
+							Trial Moderator -> Junior Moderator<br/>
+							Junior Moderator -> Moderator<br/>
+							Moderator -> Senior Moderator<br/>
+							Senior Moderator -> Admin<br/>
+						</div>
+						<div className="container two">
+							<h2>The Team</h2>
+						</div>
+						<div className="container two">
+							<h2>Applications</h2>
+							<ul>
+								<li>Staff Applications - Closed</li>
+								<li>Server Media Team - Closed</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 				<div className="page three">
