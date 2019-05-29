@@ -58,6 +58,7 @@ div#root {
 }
 .title.two {
 	font-size: 25vw;
+	width: 100%;
 }
 .title.three {
 	font-size: 20vw;
