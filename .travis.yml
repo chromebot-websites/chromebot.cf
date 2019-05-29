@@ -9,7 +9,10 @@ script:
   - npm run build
 
 deploy:
-  - provider: pages
-  - skip_cleanup: true
-  - github_token: *GITHUB_TOKEN
-  - branch: gh-pages
+  provider: pages
+  skip_cleanup: true
+  keep-history: true
+  github_token: $GH_TOKEN
+  target_branch: gh_pages
+  on:
+    branch: master
