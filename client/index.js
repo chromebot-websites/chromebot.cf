@@ -67,13 +67,13 @@ class Home extends Component {
 					<div className="container two title">
 						<span className="title two">Staff</span>
 						<span className="text two">Here in the chromebook777 productions server we have a fantastic and dedicated team of staff</span>
-						<div className="container two promotions">
-							<h2>Promotions</h2>
-							Trial Moderator -> Junior Moderator<br/>
-							Junior Moderator -> Moderator<br/>
-							Moderator -> Senior Moderator<br/>
-							Senior Moderator -> Admin<br/>
-						</div>
+					</div>
+					<div className="container two promotions">
+						<h2>Promotions</h2>
+						Trial Moderator -> Junior Moderator<br/>
+						Junior Moderator -> Moderator<br/>
+						Moderator -> Senior Moderator<br/>
+						Senior Moderator -> Admin<br/>
 					</div>
 					<div className="container two team">
 						<h2>The Team</h2>
