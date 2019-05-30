@@ -89,13 +89,18 @@ div#root {
 	margin: auto;
 }
 .container.two {
-	width: 30vw;
-	background-color: grey;
+	width: 25vw;
+	background-color: #00000040;
+	margin: 0;
 }
 .container.two.containercontainer {
-	width: auto;
-	background-color: pink;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
 }
+
 .container.three {
 	width: 35vw;
 }
