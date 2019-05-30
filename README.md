@@ -8,4 +8,7 @@ If the build is passing that means that the latest and greatest is on https://ch
 
 # WHO MADE THIS
 ## The following awesome people helped make the https://chromebot.cf website a reality
-- @Minion3665
+- [@Minion3665](https://github.com/Minion3665)
+
+## And chromebook777 is awesome. Why? He's chromebook777 of course.
+- [@chromebook777](https://github.com/Chromebook777)
