@@ -86,7 +86,7 @@ class Home extends Component {
 					</div>
 				</div>
 				<div className="page three">
-					<iframe className="discordWidget" src="https://discordapp.com/widget?id=480959345601937410&theme=dark" allowtransparency="true" frameborder="0"></iframe>
+					<iframe className="discordWidget" src="https://discordapp.com/widget?id=480959345601937410&theme=dark" allowTransparency="true" frameBorder="0"></iframe>
 					<div className="container three">
 						<span className="title three">Online</span>
 						<span className="text three">Our members come from around the world, so anytime you want to chat someone will be online</span>
