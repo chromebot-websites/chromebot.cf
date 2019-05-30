@@ -191,15 +191,3 @@ div.quater {
 	display: inline-block;
 	vertical-align: top;
 }
-.notification {
-    background-color: white;
-    width: 20vw;
-    height: 10vw;
-    border: 1px solid black;
-    position: fixed;
-    bottom: 1vw;
-    right: 1vw;
-    border-radius: 1vw;
-    opacity: 0.5;
-    pointer-events: none;
-}
