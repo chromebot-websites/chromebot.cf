@@ -75,6 +75,7 @@ class Home extends Component {
 						</div>
 						<div className="container two">
 							<h2>The Team</h2>
+							<Tag type="owner"/> Chromebook777
 						</div>
 						<div className="container two">
 							<h2>Applications</h2>
@@ -107,7 +108,24 @@ class Error404 extends Component {
 		);
 	}
 }
-
+class Tag extends Component {
+	constructor(props) {
+		super(props);
+		let tagTypes = {"owner":{"title":"Owner", "color":"#070000"}}
+		if (props.color && props.title) {
+			this.state = {color: props.color, title: props.title};
+		} else if (props.type && props.type in tagTypes) {
+			this.state = {color: tagTypes[props.type].color, title: tagTypes[props.type].title};
+		} else {
+			this.state = {color: "#000000", title: "DEFAULT"};
+		}
+	}
+	render() {
+		return (
+			<span style={{color: this.state.color}}>[{this.state.title}]</span>
+		);
+	}
+}
 class Button extends Component {
 	constructor(props) {
 		super(props);
