@@ -93,7 +93,8 @@ div#root {
 	background-color: #00000045;
 	margin: 0;
 	border-radius: 5vw 0.5vw;
-	box-sizing: content-box;
+	padding: 2vw;
+	text-align: center;
 }
 .container.two.containercontainer {
 	width: 100%;
