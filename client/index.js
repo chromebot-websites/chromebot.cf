@@ -124,7 +124,7 @@ class Tag extends Component {
 	}
 	render() {
 		return (
-			<b style={{color: this.state.color, textShadow: "1px 1px 2px white"}}>[{this.state.title}]</b>
+			<b style={{color: this.state.color}}>[{this.state.title}]</b>
 		);
 	}
 }
