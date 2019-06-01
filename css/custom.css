@@ -93,6 +93,7 @@ div#root {
 	background-color: #00000045;
 	margin: 0;
 	border-radius: 5vw;
+	box-sizing: content-box;
 }
 .container.two.containercontainer {
 	width: 100%;
@@ -102,7 +103,6 @@ div#root {
 	align-items: stretch;
 	background-color: transparent;
 	border-radius: 0;
-	box-sizing: content-box;
 }
 .container.three {
 	width: 35vw;
