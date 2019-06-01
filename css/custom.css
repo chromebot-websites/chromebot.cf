@@ -102,6 +102,7 @@ div#root {
 	align-items: stretch;
 	background-color: transparent;
 	border-radius: 0;
+	box-sizing: content-box;
 }
 .container.three {
 	width: 35vw;
