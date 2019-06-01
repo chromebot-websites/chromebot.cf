@@ -89,7 +89,7 @@ div#root {
 	margin: auto;
 }
 .container.two {
-	width: 25vw;
+	min-width: 25vw;
 	background-color: #ffffff66;
 	margin: 0;
 	border-radius: 5vw 0.5vw;
