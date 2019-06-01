@@ -75,9 +75,9 @@ class Home extends Component {
 						</div>
 						<div className="container two">
 							<h2>The Team</h2>
-							<Tag type="owner"/> Chromebook777
-							<Tag type="mod"/> Minion3665
-							<Tag type="tmod"/> vincentdistoer (Broken Arm)
+							<Tag type="owner"/> Chromebook777<br/>
+							<Tag type="mod"/> Minion3665<br/>
+							<Tag type="tmod"/> vincentdistoer (Broken Arm)<br/>
 						</div>
 						<div className="container two">
 							<h2>Applications</h2>
