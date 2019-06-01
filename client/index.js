@@ -122,7 +122,7 @@ class Tag extends Component {
 	}
 	render() {
 		return (
-			<span style={color: this.state.color}>[{this.state.title}]</span>
+			<span style={{color: this.state.color}}>[{this.state.title}]</span>
 		);
 	}
 }
