@@ -29,11 +29,11 @@ div#root {
 }
 .page.one:not(.variant2) {
 	background-color: #ffaaaa;
-	background-image: linear-gradient(to bottom, #ffaaaa 0%, #ffaaaa 90%, #A84300 100%);
+	background-image: linear-gradient(to bottom, #0085FF 0%, #0085FF 90%, #A84300 100%);
 }
 .page.one.variant2 {
 	background-color: #ffaaaa;
-	background-image: linear-gradient(to bottom, #ffaaaa 0%, #ffaaaa 90%, #5970C1 100%);
+	background-image: linear-gradient(to bottom, #0085FF 0%, #0085FF 90%, #5970C1 100%);
 }
 .page.two:not(.variant2) {
 	background-color: #aaffaa;
