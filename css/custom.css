@@ -96,6 +96,7 @@ div#root {
 	padding: 2vw;
 	text-align: center;
 	overflow-x: auto;
+	color: white;
 }
 .container.two.containercontainer {
 	width: 100%;
