@@ -120,7 +120,7 @@ class Tag extends Component {
 			"owner":{"title":"Owner", "color":"#070000"},
 			"manager":{"title":"Staff Management", "color":"#992D22"},
 			"mod":{"title":"Moderator", "color":"#A84300"},
-			"jmod":{"title":"Junor-Moderator", "color":"#A84300"},
+			"jmod":{"title":"Junior-Moderator", "color":"#A84300"},
 			"tmod":{"title":"Trial-Moderator", "color":"#00EEFF"}
 		}
 		if (props.color && props.title) {
