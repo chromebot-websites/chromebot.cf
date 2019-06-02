@@ -90,8 +90,8 @@ class Home extends Component {
 									specials: [
 										"admin"
 									]
-								},
-							]}>
+								}
+							]}/>
 							<Tag type="owner"/> Lolinator02<br/>
 							<Tag type="manager"/> Cameron<br/>
 							<Tag type="manager"/> Thor<br/>
