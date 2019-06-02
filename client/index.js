@@ -76,8 +76,22 @@ class Home extends Component {
 						</div>
 						<div className="container two">
 							<h2>The Team</h2>
-							<Tag type="founder"/> Chromebook777<br/>
-							<Tag type="owner"/> DaSavMode1<br/>
+							<MemberList members={[
+								{
+									role: "founder",
+									name: "chromebook777",
+									specials: [
+										"admin"
+									]
+								},
+								{
+									role: "owner",
+									name: "DaSavMode1",
+									specials: [
+										"admin"
+									]
+								}
+							]}/>
 							<Tag type="owner"/> Lolinator02<br/>
 							<Tag type="manager"/> Cameron<br/>
 							<Tag type="manager"/> Thor<br/>
