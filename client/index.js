@@ -168,8 +168,7 @@ class MemberList extends Component {
 		super(props);
 	}
 	render() {
-		return (
-			{{this.props.members.sort((member1, member2) => {
+		return (this.props.members.sort((member1, member2) => {
 				let roles = ["tmod", "jmod", "mod", "headwebdev", "headbotdev", "headdev", "admin", "manager", "owner", "founder"];
 				return roles.indexOf(member1.role) - roles.indexOf(member2.role);
 			}).map((member) => {
@@ -201,7 +200,7 @@ class MemberList extends Component {
 						}
 					}}<br/>
 				);
-			})}}
+			});
 		);
 	}
 }
