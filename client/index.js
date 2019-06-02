@@ -23,6 +23,7 @@ class App extends Component {
 								</React.Fragment>
 							);
 						}} />
+						<Route path="/vince" component={OnlineOffline} />
 						<Route component={Error404} />
 					</Switch>
 				</Router>
@@ -111,6 +112,44 @@ class Error404 extends Component {
 				<Button important onClick={(button) => window.location.href = "/"}>Back To Home</Button>
 			</React.Fragment>
 		);
+	}
+}
+class OnlineOffline extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {vinceOn: "checking"};
+	}
+	componentDidMount() {
+		fetch('https://discordapp.com/api/guilds/480959345601937410/widget.json',
+    {
+        credentials: 'same-origin'
+    }
+		).then(res => res.json()
+		).then((result) => {
+    		 //Result is the result from the api
+    		let vinceOn = false;
+  		  result.members.forEach((member) => {
+   		     if (member.id == 333577541069832203) {
+ 		           vinceOn = true;
+		        }
+		    });
+				this.setState({vinceOn: vinceOn});
+		});
+	}
+	render() {
+		if (this.state.vinceOn === "checking") {
+			return (
+				<h1>Getting the latest data...</h1>
+			);
+		} else if (this.state.vinceOn) {
+			return (
+				<h1>Vince is ONLINE 🎉</h1>
+			);
+		} else {
+			return (
+				<h1>Vince is OFFLINE ❌</h1>
+			);
+		}
 	}
 }
 class Tag extends Component {
