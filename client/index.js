@@ -79,8 +79,8 @@ class Home extends Component {
 							<Tag type="owner"/> Chromebook777<br/>
 							<Tag type="manager"/> Cameron<br/>
 							<Tag type="manager"/> Thor<br/>
+							<Tag type="webdev"/> vincentdistoer (Broken Arm)<br/>
 							<Tag type="mod"/> Minion3665<br/>
-							<Tag type="jmod"/> vincentdistoer (Broken Arm)<br/>
 							<Tag type="tmod"/> Gamespere12<br/>
 						</div>
 						<div className="container two">
@@ -158,6 +158,7 @@ class Tag extends Component {
 		let tagTypes = {
 			"owner":{"title":"Owner", "color":"#070000"},
 			"manager":{"title":"Staff Management", "color":"#992D22"},
+			"webdev":{"title":"Head Of Web Development", "color":"#9B59B6"},
 			"mod":{"title":"Moderator", "color":"#A84300"},
 			"jmod":{"title":"Junior-Moderator", "color":"#A84300"},
 			"tmod":{"title":"Trial-Moderator", "color":"#00EEFF"}
