@@ -170,8 +170,8 @@ class MemberList extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				this.props.members.sort((member1, member2) => {
-					var roles = ["tmod", "jmod", "mod", "headwebdev", "headbotdev", "headdev", "admin", "manager", "owner", "founder"];
+				{this.props.members.sort((member1, member2) => {
+					let roles = ["tmod", "jmod", "mod", "headwebdev", "headbotdev", "headdev", "admin", "manager", "owner", "founder"];
 					return roles.indexOf(member1.role) - roles.indexOf(member2.role);
 				}).map((member) => {
 					return (
@@ -179,10 +179,10 @@ class MemberList extends Component {
 							<Tag type={member.role}/> {member.name} {(member) => {
 								if (member.specials) {
 									member.specials.sort((special1, special2) => {
-										var specials = ["support", "media", "admin"];
+										let specials = ["support", "media", "admin"];
 										return roles.indexOf(special1) - roles.indexOf(special2);
 									}).map((special) => {
-										var specials = {
+										let specials = {
 											support: {
 												description: "This user is on the chromebot support team",
 												emoji: "🤖"
@@ -204,7 +204,7 @@ class MemberList extends Component {
 							}}<br/>
 						</React.Fragment>
 					);
-				});
+				})}
 			</React.Fragment>
 		);
 	}
