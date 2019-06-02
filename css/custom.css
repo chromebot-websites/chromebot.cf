@@ -106,7 +106,7 @@ div#root {
 	align-items: stretch;
 	background-color: transparent;
 	border-radius: 0;
-	overflow-x: default;
+	overflow-x: initial;
 }
 .container.three {
 	width: 35vw;
