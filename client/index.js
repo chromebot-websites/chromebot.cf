@@ -163,6 +163,48 @@ class OnlineOffline extends Component {
 		}
 	}
 }
+class MemberList extends Component {
+	constructor(props) {
+		super(props);
+	}
+	render() {
+		return (
+			{this.props.members.sort((member1, member2) => {
+				let roles = ["tmod", "jmod", "mod", "headwebdev", "headbotdev", "headdev", "admin", "manager", "owner", "founder"];
+				return roles.indexOf(member1.role) - roles.indexOf(member2.role);
+			}).map((member) => {
+				return (
+					<Tag type={member.role}/> {member.name} {(member) => {
+						if (member.specials) {
+							member.specials.sort((special1, special2) => {
+								let specials = ["support", "media", "admin"];
+								return roles.indexOf(special1) - roles.indexOf(special2);
+							}).map((special) => {
+								let specials = {
+									support: {
+										description: "This user is on the chromebot support team",
+										emoji: "🤖"
+									},
+									media: {
+										description: "This user is on the server media team",
+										emoji: "🎥"
+									},
+									admin: {
+										description: "This user has full admin permissions",
+										emoji: "⚡"
+									}
+								};
+								return (
+									<span alt={specials[special].description}>{specials[special].emoji}</span>
+								);
+							});
+						}
+					}}<br/>
+				);
+			})}
+		);
+	}
+}
 class Tag extends Component {
 	constructor(props) {
 		super(props);
