@@ -76,12 +76,23 @@ class Home extends Component {
 						</div>
 						<div className="container two">
 							<h2>The Team</h2>
-							<Tag type="owner"/> Chromebook777<br/>
+							<Tag type="founder"/> Chromebook777<br/>
+							<Tag type="owner"/> DaSavMode1<br/>
+							<Tag type="owner"/> Lolinator02<br/>
 							<Tag type="manager"/> Cameron<br/>
 							<Tag type="manager"/> Thor<br/>
-							<Tag type="webdev"/> vincentdistoer (Broken Arm)<br/>
+							<Tag type="admin"/> DE fada<br/>
+							<Tag type="admin"/> Temporaily back (Echo_Stream)<br/>
+							<Tag type="headdev"/>  IronCladRelic <br/>
+							<Tag type="headbotdev"/> EEKIM10_YT <br/>
+							<Tag type="headwebdev"/> vincentdistoer (Broken Arm)<br/>
+							<Tag type="mod"/> Chandler_Leroy<br/>
+							<Tag type="mod"/> leothelion9<br/>
 							<Tag type="mod"/> Minion3665<br/>
+							<Tag type="mod"/> The Rising Sea<br/>
 							<Tag type="tmod"/> Gamespere12<br/>
+							<Tag type="tmod"/> Mexican country ball<br/>
+							<Tag type="tmod"/> Neptune05<br/>
 						</div>
 						<div className="container two">
 							<h2>Applications</h2>
@@ -156,9 +167,13 @@ class Tag extends Component {
 	constructor(props) {
 		super(props);
 		let tagTypes = {
-			"owner":{"title":"Owner", "color":"#070000"},
+			"founder":{"title":"Founder of Chromebook777 Productions", "color":"#070000"},
+			"owner":{"title":"Owner", "color":"#007C1D"},
 			"manager":{"title":"Staff Management", "color":"#992D22"},
-			"webdev":{"title":"Head Of Web Development", "color":"#9B59B6"},
+			"admin":{"title":"Admin", "color":"#187E04"},
+			"headdev":{"title":"Head of Development", "color":"#FF9600"},
+			"headbotdev":{"title":"Head of Bot Development", "color":"#FF0000"},
+			"headwebdev":{"title":"Head of Website Development", "color":"#9B59B6"},
 			"mod":{"title":"Moderator", "color":"#A84300"},
 			"jmod":{"title":"Junior-Moderator", "color":"#A84300"},
 			"tmod":{"title":"Trial-Moderator", "color":"#00EEFF"}
