@@ -185,6 +185,7 @@ class MemberList extends Component {
 		console.log("rendering specials for "+member.name)
 		console.log({specials: member.specials})
 		if (member.specials) {
+			console.log("rendering specials...")
 			member.specials.sort((special1, special2) => {
 				console.log(special1);
 				let specials = ["support", "media", "admin"];
@@ -204,6 +205,7 @@ class MemberList extends Component {
 						emoji: "⚡"
 					}
 				};
+				console.log("rendering special "+special+" ("+special.emoji+", "+special.description+")")
 				return (
 					<span alt={specials[special].description}>{specials[special].emoji}</span>
 				);
