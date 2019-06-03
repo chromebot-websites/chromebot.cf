@@ -83,14 +83,14 @@ class Home extends Component {
 									specials: [
 										"admin"
 									]
-								},
+								}/*,
 								{
 									role: "owner",
 									name: "DaSavMode1",
 									specials: [
 										"admin"
 									]
-								}
+								}*/
 							]}/>
 							<Tag type="owner"/> Lolinator02<br/>
 							<Tag type="manager"/> Cameron<br/>
