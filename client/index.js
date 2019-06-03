@@ -191,7 +191,7 @@ class MemberList extends Component {
 				}).map((member) => {
 					return (
 						<React.Fragment>
-							<Tag type={member.role}/> {member.name} {(member) => {
+							<Tag type={member.role}/> {member.name} {() => {
 								console.log("if")
 								if (member.specials) {
 									console.log("if passed")
