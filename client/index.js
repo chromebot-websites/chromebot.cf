@@ -182,7 +182,8 @@ class MemberList extends Component {
 		super(props);
 	}
 	renderSpecials(member) {
-		console.log("rendering specials for "+member)
+		console.log("rendering specials for "+member.name)
+		console.log({specials: member.specials})
 		if (member.specials) {
 			member.specials.sort((special1, special2) => {
 				console.log(special1);
