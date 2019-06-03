@@ -193,10 +193,10 @@ class MemberList extends Component {
 							<Tag type={member.role}/> {member.name} {(member) => {
 								if (member.specials) {
 									member.specials.sort((special1, special2) => {
+										console.log(special1);
 										let specials = ["support", "media", "admin"];
 										return roles.indexOf(special1) - roles.indexOf(special2);
 									}).map((special) => {
-										console.log(special);
 										let specials = {
 											support: {
 												description: "This user is on the chromebot support team",
