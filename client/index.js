@@ -191,10 +191,9 @@ class MemberList extends Component {
 				}).map((member) => {
 					return (
 						<React.Fragment>
-							<Tag type={member.role}/> {member.name} {console.log("executing")} {(member) => {
-								console.log("if")
+							{() => {console.log("Example")}}
+							<Tag type={member.role}/> {member.name} {() => {console.log("executing")}} {() => {
 								if (member.specials) {
-									console.log("if passed")
 									member.specials.sort((special1, special2) => {
 										console.log(special1);
 										let specials = ["support", "media", "admin"];
