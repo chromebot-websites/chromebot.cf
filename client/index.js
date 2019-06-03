@@ -191,10 +191,10 @@ class MemberList extends Component {
 				}).map((member) => {
 					return (
 						<React.Fragment>
-							<Tag type={member.role}/> {member.name} {console.log("executing")} {(member) => {
-								console.log("if")
+							<Tag type={member.role}/> {member.name} {console.log("executing")} {
+								console.log("if");
 								if (member.specials) {
-									console.log("if passed")
+									console.log("if passed");
 									member.specials.sort((special1, special2) => {
 										console.log(special1);
 										let specials = ["support", "media", "admin"];
@@ -219,7 +219,7 @@ class MemberList extends Component {
 										);
 									});
 								}
-							}}<br/>
+							}<br/>
 						</React.Fragment>
 					);
 				})}
