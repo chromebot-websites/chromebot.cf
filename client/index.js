@@ -186,7 +186,7 @@ class MemberList extends Component {
 		console.log({specials: member.specials})
 		if (member.specials) {
 			console.log("rendering specials...")
-			member.specials.sort((special1, special2) => {
+			return member.specials.sort((special1, special2) => {
 				console.log(special1);
 				let specials = ["support", "media", "admin"];
 				return roles.indexOf(special1) - roles.indexOf(special2);
@@ -205,7 +205,7 @@ class MemberList extends Component {
 						emoji: "⚡"
 					}
 				};
-				console.log("rendering special "+special+" ("+special[special].emoji+", "+special[special].description+")")
+				console.log("rendering special "+special+" ("+specials[special].emoji+", "+specials[special].description+")")
 				return (
 					<span alt={specials[special].description}>{specials[special].emoji}</span>
 				);
