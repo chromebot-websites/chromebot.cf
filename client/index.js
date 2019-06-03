@@ -192,7 +192,7 @@ class MemberList extends Component {
 					return (
 						<React.Fragment>
 							{() => {console.log("Example")}}
-							<Tag type={member.role}/> {member.name} {() => {console.log("executing")}} {() => {
+							<Tag type={member.role}/> {member.name} {() => {console.log("executing")}()} {() => {
 								if (member.specials) {
 									member.specials.sort((special1, special2) => {
 										console.log(special1);
@@ -218,7 +218,7 @@ class MemberList extends Component {
 										);
 									});
 								}
-							}}<br/>
+							}()}<br/>
 						</React.Fragment>
 					);
 				})}
