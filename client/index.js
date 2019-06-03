@@ -196,6 +196,7 @@ class MemberList extends Component {
 										let specials = ["support", "media", "admin"];
 										return roles.indexOf(special1) - roles.indexOf(special2);
 									}).map((special) => {
+										console.log(special);
 										let specials = {
 											support: {
 												description: "This user is on the chromebot support team",
