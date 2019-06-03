@@ -205,7 +205,7 @@ class MemberList extends Component {
 						emoji: "⚡"
 					}
 				};
-				console.log("rendering special "+special+" ("+special.emoji+", "+special.description+")")
+				console.log("rendering special "+special+" ("+special[special].emoji+", "+special[special].description+")")
 				return (
 					<span alt={specials[special].description}>{specials[special].emoji}</span>
 				);
