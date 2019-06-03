@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-let buildNumber = 0.2;
+let buildNumber = 0.21;
 
 console.log("Welcome to the chromebot website. This is client build B." + buildNumber + ".");
 
@@ -185,13 +185,16 @@ class MemberList extends Component {
 		return (
 			<React.Fragment>
 				{this.props.members.sort((member1, member2) => {
+				 console.log(member1.specials);
 					let roles = ["tmod", "jmod", "mod", "headwebdev", "headbotdev", "headdev", "admin", "manager", "owner", "founder"];
 					return roles.indexOf(member1.role) - roles.indexOf(member2.role);
 				}).map((member) => {
 					return (
 						<React.Fragment>
 							<Tag type={member.role}/> {member.name} {(member) => {
+								console.log("if")
 								if (member.specials) {
+									console.log("if passed")
 									member.specials.sort((special1, special2) => {
 										console.log(special1);
 										let specials = ["support", "media", "admin"];
