@@ -221,6 +221,8 @@ div#root {
 		transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
 	-webkit-transform: translate3d(0, 0, 0);
 	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 	pointer-events: none;
 }
@@ -270,5 +272,7 @@ div#root {
 .tooltip:focus:after {
 	-webkit-transform: translateX(-12px);
 	-moz-transform: translateX(-12px);
-	transform: translateX(-12px); 
+	-ms-transform: translateX(-12px);
+	-o-transform: translateX(-12px);
+	transform: translateX(-12px);
 }
