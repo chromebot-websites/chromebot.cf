@@ -299,7 +299,7 @@ class MemberList extends Component {
 				{this.props.members.sort((member1, member2) => {
 					let roles = ["tmod", "jmod", "mod", "headwebdev", "headbotdev", "headdev", "admin", "manager", "owner", "founder"];
 					 if (roles.indexOf(member1.role) - roles.indexOf(member2.role) === 0) {
-						if ([member1.name, member2.name].sort()[0] === member1.name) {
+						if ([member1.name.toLowerCase(), member2.name.toLowerCase()].sort()[0] === member1.name.toLowerCase()) {
 							return -1;
 						} else {
 							return 1
