@@ -196,13 +196,10 @@ div#root {
 	-moz-user-select: none;
 	-ms-user-select: none;
 }
-[data-tooltip],
 .tooltip {
 	position: relative;
 	cursor: pointer;
 }
-[data-tooltip]:before,
-[data-tooltip]:after,
 .tooltip:before,
 .tooltip:after {
 	position: absolute;
@@ -227,10 +224,6 @@ div#root {
 	transform: translate3d(0, 0, 0);
 	pointer-events: none;
 }
-[data-tooltip]:hover:before,
-[data-tooltip]:hover:after,
-[data-tooltip]:focus:before,
-[data-tooltip]:focus:after,
 .tooltip:hover:before,
 .tooltip:hover:after,
 .tooltip:focus:before,
@@ -240,15 +233,13 @@ div#root {
 	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 	opacity: 1;
 }
-.tooltip:before,
-[data-tooltip]:before {
+.tooltip:before {
 	z-index: 1001;
 	border: 6px solid transparent;
 	background: transparent;
 	content: "";
 }
-.tooltip:after,
-[data-tooltip]:after {
+.tooltip:after {
 	z-index: 1000;
 	padding: 8px;
 	width: 160px;
