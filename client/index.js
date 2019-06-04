@@ -288,7 +288,7 @@ class MemberList extends Component {
 					}
 				};
 				return (
-					<span className="disable-select tooltip" data-tooltip={specials[special].description}>{specials[special].emoji}</span>
+					<span className="disable-select tooltip" data-tooltip={specials[special].description} style={{fontSize: 80%}}>{specials[special].emoji}</span>
 				);
 			});
 		}
