@@ -232,7 +232,7 @@ class MemberList extends Component {
 					}
 				};
 				return (
-					<span style={{cursor: "help"}} title={specials[special].description}>{specials[special].emoji}</span>
+					<span className="disable-select" style={{cursor: "help"}} title={specials[special].description}>{specials[special].emoji}</span>
 				);
 			});
 		}
