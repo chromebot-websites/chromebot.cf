@@ -95,9 +95,12 @@ div#root {
 	margin-bottom: 2vw;
 	border-radius: 5vw 0.5vw;
 	padding: 2vw;
-	text-align: center;
+	text-align: left;
 	overflow-x: auto;
 	color: #333333;
+}
+.container.two .h2 {
+	text-align: center;
 }
 .container.two.containercontainer {
 	width: 100%;
