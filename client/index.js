@@ -181,6 +181,32 @@ class MemberList extends Component {
 	constructor(props) {
 		super(props);
 	}
+	renderSpecials(member) {
+		if (member.specials) {
+			return member.specials.sort((special1, special2) => {
+				let specials = ["support", "media", "admin"];
+				return -(roles.indexOf(special1) - roles.indexOf(special2));
+			}).map((special) => {
+				let specials = {
+					support: {
+						description: "This user is on the chromebot support team",
+						emoji: "🤖"
+					},
+					media: {
+						description: "This user is on the server media team",
+						emoji: "🎥"
+					},
+					admin: {
+						description: "This user has full admin permissions",
+						emoji: "⚡"
+					}
+				};
+				return (
+					<span style={{cursor: "pointer"}} title={specials[special].description}>{specials[special].emoji}</span>
+				);
+			});
+		}
+	}
 	render() {
 		return (
 			<React.Fragment>
@@ -191,32 +217,7 @@ class MemberList extends Component {
 				}).map((member) => {
 					return (
 						<React.Fragment>
-							<Tag type={member.role}/> {member.name} {() => {
-								if (member.specials) {
-									return member.specials.sort((special1, special2) => {
-										let specials = ["support", "media", "admin"];
-										return -(roles.indexOf(special1) - roles.indexOf(special2));
-									}).map((special) => {
-										let specials = {
-											support: {
-												description: "This user is on the chromebot support team",
-												emoji: "🤖"
-											},
-											media: {
-												description: "This user is on the server media team",
-												emoji: "🎥"
-											},
-											admin: {
-												description: "This user has full admin permissions",
-												emoji: "⚡"
-											}
-										};
-										return (
-											<span style={{cursor: "pointer"}} title={specials[special].description}>{specials[special].emoji}</span>
-										);
-									});
-								}
-							}}<br/>
+							<Tag type={member.role}/> {member.name} {this.renderSpecials(member)}<br/>
 						</React.Fragment>
 					);
 				})}
