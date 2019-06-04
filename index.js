@@ -11,6 +11,8 @@ compiler.run((err, stats) => {
 		console.log(stats.compilation.errors[0]);
 		process.exit(1);
 	} else {
+		console.log("Deleting node_modules")
+		fs.unlinkSync("./node_modules");
 		console.log("Build finished, ready to deploy...");
 	}
 });
