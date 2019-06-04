@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-let buildNumber = 0.22;
+let buildNumber = 0.23;
 
 console.log("Welcome to the chromebot website. This is client build B." + buildNumber + ".");
 
@@ -300,9 +300,9 @@ class MemberList extends Component {
 					let roles = ["tmod", "jmod", "mod", "headwebdev", "headbotdev", "headdev", "admin", "manager", "owner", "founder"];
 					 if (roles.indexOf(member1.role) - roles.indexOf(member2.role) === 0) {
 						if ([member1.name, member2.name].sort()[0] === member1.name) {
-							return 1;
+							return -1;
 						} else {
-							return -1
+							return 1
 						}
 					} else {
 						return -(roles.indexOf(member1.role) - roles.indexOf(member2.role));
