@@ -281,6 +281,10 @@ class MemberList extends Component {
 					admin: {
 						description: "This user has full admin permissions",
 						emoji: "⚡"
+					},
+					webowner: {
+						description: "This user owns this website",
+						emoji: "🌐"
 					}
 				};
 				return (
