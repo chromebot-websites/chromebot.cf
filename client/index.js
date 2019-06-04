@@ -15,11 +15,11 @@ class App extends Component {
 					<Switch>
 						<Route exact path="/" component={Home} />
 						<Route path="/join" render={() => {
-							window.location.href = "https://discordapp.com/invite/8wMCjjT";
+							window.location.href = "https://discordapp.com/invite/QZaHasb";
 							return (
 								<React.Fragment>
 									<div className="textblock">We're redirecting you now...</div>
-									<Button important onClick={(button) => window.location.href = "https://discordapp.com/invite/8wMCjjT"}>Not Being Redirected?</Button>
+									<Button important onClick={(button) => window.location.href = "https://discordapp.com/invite/QZaHasb"}>Not Being Redirected?</Button>
 								</React.Fragment>
 							);
 						}} />
@@ -232,7 +232,7 @@ class MemberList extends Component {
 					}
 				};
 				return (
-					<span className="disable-select tooltip" style={{cursor: "help"}}>{specials[special].emoji}<div class="tooltiptext">{specials[special].description}</div></span>
+					<span className="disable-select tooltip" data-tooltip={specials[special].description} style={{cursor: "help"}}>{specials[special].emoji}</span>
 				);
 			});
 		}
