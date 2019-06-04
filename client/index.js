@@ -267,7 +267,15 @@ class MemberList extends Component {
 		if (member.specials) {
 			return member.specials.sort((special1, special2) => {
 				let specials = ["support", "media", "admin"];
-				return -(specials.indexOf(special1) - specials.indexOf(special2));
+				if (specials.indexOf(special1) - specials.indexOf(special2) === 0) {
+					if ([special1, special2].sort() === special1) {
+						return 1;
+					} else {
+						return -1
+					}
+				} else {
+					return -(specials.indexOf(special1) - specials.indexOf(special2));
+				}
 			}).map((special) => {
 				let specials = {
 					support: {
