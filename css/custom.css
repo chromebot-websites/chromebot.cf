@@ -99,7 +99,7 @@ div#root {
 	overflow-x: auto;
 	color: #333333;
 }
-.container.two .h2 {
+.container.two h2 {
 	text-align: center;
 }
 .container.two.containercontainer {
