@@ -81,7 +81,8 @@ class Home extends Component {
 									role: "founder",
 									name: "chromebook777",
 									specials: [
-										"admin"
+										"admin",
+										"support"
 									]
 								},
 								{
@@ -106,17 +107,11 @@ class Home extends Component {
 									]
 								},
 								{
-									role: "manager",
-									name: "Thor",
-									specials: [
-										"admin"
-									]
-								},
-								{
 									role: "admin",
 									name: "DE fada",
 									specials: [
-										"admin"
+										"admin",
+										"support"
 									]
 								},
 								{
@@ -125,18 +120,75 @@ class Home extends Component {
 									specials: [
 										"admin"
 									]
+								},
+								{
+									role: "headdev",
+									name: "IronCladRelic",
+									specials: [
+										"admin",
+										"support"
+									]
+								},
+								{
+									role: "headbotdev",
+									name: "EEKIM10_YT",
+									specials: [
+										"admin"
+									]
+								},
+								{
+									role: "headwebdev",
+									name: "vincentdistoer (Broken Arm)",
+									specials: [
+										"admin",
+										"support",
+										"media"
+									]
+								},
+								{
+									role: "mod",
+									name: "Chandler_Leroy"
+								},
+								{
+									role: "mod",
+									name: "leothelion9"
+								},
+								{
+									role: "mod",
+									name: "Minion3665",
+									specials: [
+										"webowner"
+									]
+								},
+								{
+									role: "mod",
+									name: "The Rising Sea"
+								},
+								{
+									role: "tmod",
+									name: "Gamespere12"
+								},
+								{
+									role: "tmod",
+									name: "Mexican country ball"
+								},
+								{
+									role: "tmod",
+									name: "Neptune05"
+								},
+								{
+									role: "tmod",
+									name: "Daniel_D_Diamond"
+								},
+								{
+									role: "tmod",
+									name: "Lo-Mein™"
+								},
+								{
+									role: "mod",
+									name: "Mr_Cowboy"
 								}
 							]}/>
-							<Tag type="headdev"/>  IronCladRelic <br/>
-							<Tag type="headbotdev"/> EEKIM10_YT <br/>
-							<Tag type="headwebdev"/> vincentdistoer (Broken Arm)<br/>
-							<Tag type="mod"/> Chandler_Leroy<br/>
-							<Tag type="mod"/> leothelion9<br/>
-							<Tag type="mod"/> Minion3665<br/>
-							<Tag type="mod"/> The Rising Sea<br/>
-							<Tag type="tmod"/> Gamespere12<br/>
-							<Tag type="tmod"/> Mexican country ball<br/>
-							<Tag type="tmod"/> Neptune05<br/>
 						</div>
 						<div className="container two">
 							<h2>Applications</h2>
