@@ -267,7 +267,7 @@ class MemberList extends Component {
 		if (member.specials) {
 			return member.specials.sort((special1, special2) => {
 				let specials = ["support", "media", "admin"];
-				return -(roles.indexOf(special1) - roles.indexOf(special2));
+				return -(specials.indexOf(special1) - specials.indexOf(special2));
 			}).map((special) => {
 				let specials = {
 					support: {
@@ -297,7 +297,6 @@ class MemberList extends Component {
 		return (
 			<React.Fragment>
 				{this.props.members.sort((member1, member2) => {
-				 console.log(member1.specials);
 					let roles = ["tmod", "jmod", "mod", "headwebdev", "headbotdev", "headdev", "admin", "manager", "owner", "founder"];
 					return -(roles.indexOf(member1.role) - roles.indexOf(member2.role));
 				}).map((member) => {
