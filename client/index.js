@@ -90,13 +90,43 @@ class Home extends Component {
 									specials: [
 										"admin"
 									]
+								},
+								{
+									role: "owner",
+									name: "Lolinator02",
+									specials: [
+										"admin"
+									]
+								},
+								{
+									role: "manager",
+									name: "Cameron",
+									specials: [
+										"admin"
+									]
+								},
+								{
+									role: "manager",
+									name: "Thor",
+									specials: [
+										"admin"
+									]
+								},
+								{
+									role: "admin",
+									name: "DE fada",
+									specials: [
+										"admin"
+									]
+								},
+								{
+									role: "admin",
+									name: "Temporaily back (Echo_Stream)",
+									specials: [
+										"admin"
+									]
 								}
 							]}/>
-							<Tag type="owner"/> Lolinator02<br/>
-							<Tag type="manager"/> Cameron<br/>
-							<Tag type="manager"/> Thor<br/>
-							<Tag type="admin"/> DE fada<br/>
-							<Tag type="admin"/> Temporaily back (Echo_Stream)<br/>
 							<Tag type="headdev"/>  IronCladRelic <br/>
 							<Tag type="headbotdev"/> EEKIM10_YT <br/>
 							<Tag type="headwebdev"/> vincentdistoer (Broken Arm)<br/>
@@ -202,7 +232,7 @@ class MemberList extends Component {
 					}
 				};
 				return (
-					<span style={{cursor: "pointer"}} title={specials[special].description}>{specials[special].emoji}</span>
+					<span style={{cursor: "help"}} title={specials[special].description}>{specials[special].emoji}</span>
 				);
 			});
 		}
