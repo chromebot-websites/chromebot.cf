@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const webpackconfig = require('./webpack.config.js');
+const fs = require('fs');
 
 let compiler = webpack(webpackconfig);
 
