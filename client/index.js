@@ -333,10 +333,10 @@ class Tag extends Component {
 			"jmod":{"title":"Junior-Moderator", "background-color":"#A84300", "color":"#ffffff"},
 			"tmod":{"title":"Trial-Moderator", "background-color":"#00EEFF", "color":"#ffffff"}
 		}
-		if (props.color && props.title) {
+		if (props.color && props.title && props["background-color"]) {
 			this.state = {color: props.color, title: props.title};
 		} else if (props.type && props.type in tagTypes) {
-			this.state = {color: tagTypes[props.type].color, title: tagTypes[props.type].title};
+			this.state = {color: tagTypes[props.type].color, title: tagTypes[props.type].title, "background-color": tagTypes[props.type]["background-color"]};
 		} else {
 			this.state = {"background-color": "#ffffff", title: "DEFAULT", "color":"#000000"};
 		}
