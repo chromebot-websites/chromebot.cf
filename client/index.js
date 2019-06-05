@@ -331,7 +331,7 @@ class Tag extends Component {
 			"headwebdev":{"title":"Head of Website Development", "background-color":"#9B59B6", "color":"#000000"},
 			"mod":{"title":"Moderator", "background-color":"#A84300", "color":"#ffffff"},
 			"jmod":{"title":"Junior-Moderator", "background-color":"#A84300", "color":"#ffffff"},
-			"tmod":{"title":"Trial-Moderator", "background-color":"#00EEFF", "color":"#ffffff"}
+			"tmod":{"title":"Trial-Moderator", "background-color":"#00EEFF", "color":"#000000"}
 		}
 		if (props.color && props.title && props["background-color"]) {
 			this.state = {color: props.color, title: props.title};
@@ -343,7 +343,7 @@ class Tag extends Component {
 	}
 	render() {
 		return (
-			<b style={{color: this.state.color, backgroundColor: this.state["background-color"], borderRadius: "10px", display: "inline-block"}}>{this.state.title}</b>
+			<b style={{color: this.state.color, backgroundColor: this.state["background-color"], borderRadius: "5px", display: "inline-block", padding: "0.3vw"}}>{this.state.title}</b>
 		);
 	}
 }
