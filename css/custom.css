@@ -89,7 +89,7 @@ div#root {
 	margin: auto;
 }
 .container.two {
-	min-width: 25vw;
+	width: 30vw;
 	background-color: #ffffff55;
 	margin: 0;
 	margin-bottom: 2vw;
