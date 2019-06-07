@@ -343,7 +343,7 @@ class Tag extends Component {
 	}
 	render() {
 		return (
-			<b style={{color: this.state.color, backgroundColor: this.state["background-color"], borderRadius: "5px", display: "inline-block", padding: "10px", margin:"5px"}}>{this.state.title}</b>
+			<b style={{color: this.state.color, backgroundColor: this.state["background-color"], borderRadius: "5px", display: "inline-block", padding: "5px", margin:"5px"}}>{this.state.title}</b>
 		);
 	}
 }
