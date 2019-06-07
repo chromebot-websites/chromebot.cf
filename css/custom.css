@@ -98,7 +98,7 @@ div#root {
 	text-align: left;
 	color: #333333;
 }
-@media only screen and (max-width: 1500px) {
+@media only screen and (min-width: 1500px) {
 	.container.two {
 		width: 450px;
 		background-color: #ffffff55;
