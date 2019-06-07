@@ -20,13 +20,10 @@ div#root {
 	height: 100%;
 }
 ul {
-  display: block;
-  list-style-type: disc;
-  margin-top: 1em;
-  margin-bottom: 1 em;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 40px;
+	display: block;
+	list-style-type: disc;
+	margin: 1em 0 1em 0;
+	padding-left: 40px;
 }
 
 /*Define pages*/
