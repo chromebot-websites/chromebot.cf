@@ -89,14 +89,26 @@ div#root {
 	margin: auto;
 }
 .container.two {
-	width: 30vw;
+	width: 90%;
 	background-color: #ffffff55;
 	margin: 0;
-	margin-bottom: 2vw;
-	border-radius: 5vw 0.5vw;
+	margin-bottom: 10px;
+	border-radius: 20px 5px;
 	padding: 2vw;
 	text-align: left;
 	color: #333333;
+}
+@media only screen and (max-width: 1500px) {
+	.container.two {
+		width: 450px;
+		background-color: #ffffff55;
+		margin: 0;
+		margin-bottom: 10px;
+		border-radius: 20px 5px;
+		padding: 10px;
+		text-align: left;
+		color: #333333;
+	}
 }
 .container.two h2 {
 	text-align: center;
