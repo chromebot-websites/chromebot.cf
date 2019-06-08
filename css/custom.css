@@ -43,8 +43,8 @@ ul {
 	background-image: linear-gradient(to bottom, #0085FF 0%, #0085FF 90%, #5970C1 100%);
 }
 .page.two:not(.variant2) {
-	background-color: #aaffaa;
-	background-image: linear-gradient(to bottom, #A84300 0%, #A84300 90%, #5970C1 100%);
+	background-color: #55aa55;
+	background-image: linear-gradient(to bottom, #55aa55 0%, #55aa55 90%, #5970C1 100%);
 }
 .page.two.variant2 {
 	background-color: #aaaaff;
