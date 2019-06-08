@@ -35,12 +35,12 @@ ul {
 	display: inline-block;
 }
 .page.one:not(.variant2) {
-	background-color: #5555aa;
-	background-image: linear-gradient(to bottom, #5555aa 0%, #5555aa 90%, #A84300 100%);
+	background-color: #005;
+	background-image: linear-gradient(to bottom, #005 0%, #335 90%, #A84300 100%);
 }
 .page.one.variant2 {
-	background-color: #5555aa;
-	background-image: linear-gradient(to bottom, #5555aa 0%, #5555aa 90%, #5970C1 100%);
+	background-color: #005;
+	background-image: linear-gradient(to bottom, #005 0%, #335 90%, #5970C1 100%);
 }
 .page.two:not(.variant2) {
 	background-color: #A84300;
