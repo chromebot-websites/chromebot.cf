@@ -392,5 +392,18 @@ class Button extends Component {
 		}
 	}
 }
+class BOBOLOB extends Component {
+	render() {
+		return (
+			<React.Fragment>
+				<h1>This is html</h1>
+				<p>YAY!</p>
+				Text<br/>Another line of text
+				<Tag type="owner"/>
+				<Error404/>
+				<Button type="destructive" onClick={()=>{window.location.href="/"}}>Go back home</Button>
+			</React.Fragment>
+		);
+	}
 
 ReactDOM.render(<App />, document.getElementById('root'));
