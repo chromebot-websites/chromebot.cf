@@ -107,11 +107,10 @@ class Home extends Component {
 									]
 								},
 								{
-									role: "admin",
-									name: "DE fada",
+									role: "webman",
+									name: "bobolob54321",
 									specials: [
-										"admin",
-										"support"
+										"webowner"
 									]
 								},
 								{
@@ -336,6 +335,8 @@ class Tag extends Component {
 			"headdev":{"title":"Head of Development", "background-color":"#FF9600", "color":"#000000"},
 			"headbotdev":{"title":"Head of Bot Development", "background-color":"#FF0000", "color":"#000000"},
 			"headwebdev":{"title":"Head of Website Development", "background-color":"#9B59B6", "color":"#000000"},
+			"webman":{"title":"Website Manager", "background-color":"#1ABC9C", "color":"#000000"},
+			"webdev":{"title":"Website Developer", "background-color":"#1ABC9C", "color":"#000000"},
 			"mod":{"title":"Moderator", "background-color":"#A84300", "color":"#ffffff"},
 			"jmod":{"title":"Junior-Moderator", "background-color":"#A84300", "color":"#ffffff"},
 			"tmod":{"title":"Trial-Moderator", "background-color":"#00EEFF", "color":"#000000"}
