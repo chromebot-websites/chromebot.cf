@@ -60,7 +60,7 @@ class Home extends Component {
 		return (
 			<React.Fragment>
 				<div className="page one">
-					<img image="images/favicon512.png" fallbackcolor="#010019" className="logo" />
+					<img src="images/favicon512.png" className="logo" />
 					<Button important onClick={(button) => window.location.href = "/join"}>Join</Button>
 					<Button disabled>Help and information</Button>
 				</div>
@@ -223,7 +223,7 @@ class Error404 extends Component {
 					<div className="textblock">Website made by <a href="https://github.com/minion3665">@Minion3665</a> on github</div>
 					<div className="textblock">Discord server made by <a href="https://github.com/chromebook777">@Chromebook777</a> on github</div>
 					<div className="textblock">vincentdistoer (Broken Arm)#0001 on discord had the initial idea of creating a website</div>
-				<div>
+				</div>
 			</React.Fragment>
 		);
 	}
