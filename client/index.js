@@ -303,7 +303,7 @@ class MemberList extends Component {
 		return (
 			<React.Fragment>
 				{this.props.members.sort((member1, member2) => {
-					let roles = ["tmod", "jmod", "mod", "headwebdev", "headbotdev", "headdev", "admin", "manager", "owner", "founder"];
+					let roles = ["tmod", "jmod", "mod", "webdev", "webman", "headwebdev", "headbotdev", "headdev", "admin", "manager", "owner", "founder"];
 					 if (roles.indexOf(member1.role) - roles.indexOf(member2.role) === 0) {
 						if ([member1.name.toLowerCase(), member2.name.toLowerCase()].sort()[0] === member1.name.toLowerCase()) {
 							return -1;
