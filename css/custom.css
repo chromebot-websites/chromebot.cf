@@ -155,7 +155,7 @@ ul {
 	border-radius: 3vw;
 	width: 20vw;
 	height: 20vw;
-	background-image: linear-gradient(to top right, #8E4FF0 0%, #E991DB 100%);
+	background-color: 010019;
 }
 .button, .textblock {
   display: block;
