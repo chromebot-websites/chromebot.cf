@@ -107,10 +107,11 @@ class Home extends Component {
 									]
 								},
 								{
-									role: "webdev",
-									name: "bobolob54321",
+									role: "admin",
+									name: "DE fada",
 									specials: [
-										"webowner"
+										"admin",
+										"support"
 									]
 								},
 								{
@@ -389,6 +390,20 @@ class Button extends Component {
 				<button className={"button pressed " + this.state.type}>{this.props.children}</button>
 			);
 		}
+	}
+}
+class BOBOLOB extends Component {
+	render() {
+		return (
+			<React.Fragment>
+				<h1>This is html</h1>
+				<p>YAY!</p>
+				Text<br/>Another line of text
+				<Tag type="owner"/>
+				<Error404/>
+				<Button type="destructive" onClick={()=>{window.location.href="/"}}>Go back home</Button>
+			</React.Fragment>
+		);
 	}
 }
 
