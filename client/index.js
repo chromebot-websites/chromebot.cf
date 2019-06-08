@@ -60,7 +60,7 @@ class Home extends Component {
 		return (
 			<React.Fragment>
 				<div className="page one">
-					<img src="images/favicon512.png" className="logo" />
+					<img image="images/favicon512.png" fallbackcolor="#010019" className="logo" />
 					<Button important onClick={(button) => window.location.href = "/join"}>Join</Button>
 					<Button disabled>Help and information</Button>
 				</div>
