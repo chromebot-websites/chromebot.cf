@@ -155,7 +155,10 @@ ul {
 	border-radius: 3vw;
 	width: 20vw;
 	height: 20vw;
-	background-color: 010019;
+}
+.img[image][fallbackcolor] {
+	background-image: attr(image);
+	background-color: attr(fallbackcolor);
 }
 .button, .textblock {
   display: block;
