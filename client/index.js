@@ -107,10 +107,11 @@ class Home extends Component {
 									]
 								},
 								{
-									role: "webdev",
-									name: "bobolob54321",
+									role: "admin",
+									name: "DE fada",
 									specials: [
-										"webowner"
+										"admin",
+										"support"
 									]
 								},
 								{
@@ -404,5 +405,6 @@ class BOBOLOB extends Component {
 			</React.Fragment>
 		);
 	}
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
