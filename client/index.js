@@ -111,7 +111,7 @@ class Home extends Component {
 									name: "bobolob54321",
 									specials: [
 										"webowner",
-										"unofficial",
+										"unnoficial",
 										"excluded"
 									]
 								},
@@ -229,6 +229,7 @@ class Error404 extends Component {
 		);
 	}
 }
+
 class OnlineOffline extends Component {
 	constructor(props) {
 		super(props);
@@ -401,20 +402,6 @@ class Button extends Component {
 				<button className={"button pressed " + this.state.type}>{this.props.children}</button>
 			);
 		}
-	}
-}
-class BOBOLOB extends Component {
-	render() {
-		return (
-			<React.Fragment>
-				<h1>This is html</h1>
-				<p>YAY!</p>
-				Text<br/>Another line of text
-				<Tag type="owner"/>
-				<Error404/>
-				<Button type="destructive" onClick={()=>{window.location.href="/"}}>Go back home</Button>
-			</React.Fragment>
-		);
 	}
 }
 
