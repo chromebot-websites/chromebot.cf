@@ -116,8 +116,8 @@ class Home extends Component {
 									]
 								},
 								{
-									role: "admin",
-									name: "Temporaily back (Echo_Stream)",
+									role: "manager",
+									name: "Echo_Stream",
 									specials: [
 										"admin"
 									]
@@ -156,14 +156,14 @@ class Home extends Component {
 								},
 								{
 									role: "mod",
+									name: "Dolphin Song"
+								},
+								{
+									role: "mod",
 									name: "Minion3665",
 									specials: [
 										"webowner"
 									]
-								},
-								{
-									role: "mod",
-									name: "The Rising Sea"
 								},
 								{
 									role: "tmod",
@@ -174,7 +174,7 @@ class Home extends Component {
 									name: "Mexican country ball"
 								},
 								{
-									role: "tmod",
+									role: "jmod",
 									name: "Neptune05"
 								},
 								{
@@ -187,7 +187,7 @@ class Home extends Component {
 								},
 								{
 									role: "mod",
-									name: "Mr_Cowboy"
+									name: "Believe"
 								}
 							]}/>
 						</div>
