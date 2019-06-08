@@ -110,12 +110,14 @@ class Home extends Component {
 									role: "webman",
 									name: "bobolob54321",
 									specials: [
-										"webowner"
+										"webowner",
+										"unofficial",
+										"excluded"
 									]
 								},
 								{
-									role: "admin",
-									name: "Temporaily back (Echo_Stream)",
+									role: "manager",
+									name: "Echo_Stream",
 									specials: [
 										"admin"
 									]
@@ -154,14 +156,14 @@ class Home extends Component {
 								},
 								{
 									role: "mod",
+									name: "Dolphin Song"
+								},
+								{
+									role: "mod",
 									name: "Minion3665",
 									specials: [
 										"webowner"
 									]
-								},
-								{
-									role: "mod",
-									name: "The Rising Sea"
 								},
 								{
 									role: "tmod",
@@ -172,7 +174,7 @@ class Home extends Component {
 									name: "Mexican country ball"
 								},
 								{
-									role: "tmod",
+									role: "jmod",
 									name: "Neptune05"
 								},
 								{
@@ -185,7 +187,7 @@ class Home extends Component {
 								},
 								{
 									role: "mod",
-									name: "Mr_Cowboy"
+									name: "Believe"
 								}
 							]}/>
 						</div>
@@ -272,7 +274,7 @@ class MemberList extends Component {
 	renderSpecials(member) {
 		if (member.specials) {
 			return member.specials.sort((special1, special2) => {
-				let specials = ["support", "media", "admin"];
+				let specials = ["excluded", "support", "media", "admin", "unnoficial"];
 				return -(specials.indexOf(special1) - specials.indexOf(special2));
 			}).map((special) => {
 				let specials = {
@@ -291,6 +293,14 @@ class MemberList extends Component {
 					webowner: {
 						description: "This user owns this website",
 						emoji: "🌐"
+					},
+					excluded: {
+						description: "This user is not in the chromebook777 productions discord server",
+						emoji: "🚫"
+					},
+					unnoficial: {
+						description: "This role has been gifted to this user by Minion3665 without any prior permission. This role is subject to change at any time and ONLY displays on the website, however this user may still have permissions to act with the gifted role's power",
+						emoji: "🎁"
 					}
 				};
 				return (
