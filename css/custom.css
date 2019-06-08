@@ -32,6 +32,7 @@ ul {
 	height: auto;
   min-height: 100% !important;
 	background-size: 100% 100%;
+	display: inline-block;
 }
 .page.one:not(.variant2) {
 	background-color: #ffaaaa;
