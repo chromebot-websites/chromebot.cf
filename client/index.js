@@ -107,11 +107,10 @@ class Home extends Component {
 									]
 								},
 								{
-									role: "admin",
-									name: "DE fada",
+									role: "webdev",
+									name: "bobolob54321",
 									specials: [
-										"admin",
-										"support"
+										"webowner"
 									]
 								},
 								{
