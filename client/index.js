@@ -13,11 +13,11 @@ class App extends Component {
 			<SuperErrorBoundary>
 				<ErrorBoundary>
 					<Router>
-						<Swich>
+						<Switch>
 							<Route exact path="/" component={Home} />
 							<Route path="/join" render={() => {
 								window.location.href = "https://discordapp.com/invite/QZaHasb";
-								return (
+								retun (
 									<React.Fragment>
 										<div className="textblock">We're redirecting you now...</div>
 										<Button important onClick={(button) => window.location.href = "https://discordapp.com/invite/QZaHasb"}>Not Being Redirected?</Button>
@@ -26,7 +26,7 @@ class App extends Component {
 							}} />
 							<Route path="/vince" component={OnlineOffline} />
 							<Route component={Error404} />
-						</Swich>
+						</Switch>
 					</Router>
 				</ErrorBoundary>
 			</SuperErrorBoundary>
@@ -61,19 +61,19 @@ class ErrorBoundary extends Component {
 	}
 	render() {
 		if (this.state.error) {
-			return (
-				<React.Frgment>
+			retun (
+				<React.Fragment>
 					<div className="page one variant2">
 						<div className="textblock">Hey, that's an Error.<br />While trying to fetch this resource on chromebot.cf there was a bug</div>
 						<Button important onClick={(button) => window.location.href = "/"}>Back To Home</Button>
-						<Button destructive onClick={(button) => window.location.href = "https://github.com/chromebook777-productions/chromebot.cf/issues"}>Report a bug</Button>
+						<Button destructive onClick={(button) => window.location.href = "https://github.com/chromebook777-productions/chromebot.cf/issues"}>Report bug</Button>
 					</div>
 					<div className="page two variant2">
 						<div className="textblock">Website made by <a href="https://github.com/minion3665">@Minion3665</a> on github</div>
 						<div className="textblock">Discord server made by <a href="https://github.com/chromebook777">@Chromebook777</a> on github</div>
 						<div className="textblock">vincentdistoer (Broken Arm)#0001 on discord had the initial idea of creating a website</div>
 					</div>
-				</React.Frgment>
+				</React.Fragment>
 			);
 		} else {
 			return this.props.children;
@@ -245,7 +245,7 @@ class Error404 extends Component {
 				<div className="page one variant2">
 					<div className="textblock">Hey, that's a 404.<br />That resource was not found on chromebot.cf.</div>
 					<Button important onClick={(button) => window.location.href = "/"}>Back To Home</Button>
-					<Button destructive onClick={(button) => window.location.href = "https://github.com/chromebook777-productions/chromebot.cf/issues"}>Report a bug</Button>
+					<Button destructive onClick={(button) => window.location.href = "https://github.com/chromebook777-productions/chromebot.cf/issues"}>Report a bug if you believe this is in issue</Button>
 				</div>
 				<div className="page two variant2">
 					<div className="textblock">Website made by <a href="https://github.com/minion3665">@Minion3665</a> on github</div>
