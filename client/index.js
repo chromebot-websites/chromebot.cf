@@ -274,6 +274,7 @@ class OnlineOffline extends Component {
 						vinceOn = true;
 					}
 				});
+				console.log(thisComponent);
 				thisComponent.setState({vinceOn: vinceOn});
 			}
 		};
