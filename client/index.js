@@ -275,7 +275,7 @@ class OnlineOffline extends Component {
 				this.setState({vinceOn: vinceOn});
 			}
 		};
-		discordWidget.open("GET", "https://discordapp.com/api/guilds/480959345601937410/widget.json", true);
+		discordWidget.open("GET", "https://discordapp.com/api/guilds/480959345601937410/widget.json?timestamp=" + new Date().getTime(), true); //we append the current timestamp to bypass caching, it's hacky but it works. Please don't remove it unless you have a better solution.
 		discordWidget.send();
 	}
 	render() {
