@@ -276,8 +276,8 @@ class OnlineOffline extends Component {
 					this.setState({vinceOn: vinceOn});
 				}
 		};
-		xhttp.open("GET", "https://discordapp.com/api/guilds/480959345601937410/widget.json", true);
-		xhttp.send();
+		discordWidget.open("GET", "https://discordapp.com/api/guilds/480959345601937410/widget.json", true);
+		discordWidget.send();
 	}
 	render() {
 		if (this.state.vinceOn === "checking") {
