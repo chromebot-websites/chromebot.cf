@@ -17,7 +17,7 @@ class App extends Component {
 							<Route exact path="/" component={Home} />
 							<Route path="/join" render={() => {
 								window.location.href = "https://discordapp.com/invite/QZaHasb";
-								retun (
+								return (
 									<React.Fragment>
 										<div className="textblock">We're redirecting you now...</div>
 										<Button important onClick={(button) => window.location.href = "https://discordapp.com/invite/QZaHasb"}>Not Being Redirected?</Button>
@@ -276,8 +276,8 @@ class OnlineOffline extends Component {
 					this.setState({vinceOn: vinceOn});
 				}
 		};
-		xhttp.open("GET", "https://discordapp.com/api/guilds/480959345601937410/widget.json", true);
-		xhttp.send();
+		discordWidget.open("GET", "https://discordapp.com/api/guilds/480959345601937410/widget.json", true);
+		discordWidget.send();
 	}
 	render() {
 		if (this.state.vinceOn === "checking") {
