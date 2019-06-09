@@ -264,20 +264,21 @@ class OnlineOffline extends Component {
 	}
 	componentDidMount() {
     var discordWidget = new XMLHttpRequest();
-		discordWidget.onreadystatechange = (this) => {
-				if (this.readyState == 4 && this.status == 200) {
-					 // Typical action to be performed when the document is ready:
-					let vinceOn = false;
-					JSON.parse(discordWidget.responseText).members.forEach((member) => {
-						 if (member.id == 333577541069832203) {
-								 vinceOn = true;
-							}
-					});
-					this.setState({vinceOn: vinceOn});
-				}
-		};
+		discordWidget.onreadystatechange = this.recievedData;
 		discordWidget.open("GET", "https://discordapp.com/api/guilds/480959345601937410/widget.json", true);
 		discordWidget.send();
+	}
+	recievedData() {
+		if (this.readyState == 4 && this.status == 200) {
+			// Typical action to be performed when the document is ready:
+			let vinceOn = false;
+			JSON.parse(discordWidget.responseText).members.forEach((member) => {
+				if (member.id == 333577541069832203) {
+					vinceOn = true;
+				}
+			});
+			this.setState({vinceOn: vinceOn});
+		}
 	}
 	render() {
 		if (this.state.vinceOn === "checking") {
