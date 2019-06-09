@@ -17,7 +17,7 @@ class App extends Component {
 							<Route exact path="/" component={Home} />
 							<Route path="/join" render={() => {
 								window.location.href = "https://discordapp.com/invite/QZaHasb";
-								retun (
+								return (
 									<React.Fragment>
 										<div className="textblock">We're redirecting you now...</div>
 										<Button important onClick={(button) => window.location.href = "https://discordapp.com/invite/QZaHasb"}>Not Being Redirected?</Button>
