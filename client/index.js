@@ -263,8 +263,9 @@ class OnlineOffline extends Component {
 		this.state = {vinceOn: "checking"};
 	}
 	componentDidMount() {
-    var discordWidget = new XMLHttpRequest();
-		discordWidget.onreadystatechange = function() {
+    let discordWidget = new XMLHttpRequest();
+		let thisComponent = this;
+		discordWidget.onreadystatechange = function(thisComponent) {
 			if (discordWidget.readyState == 4 && discordWidget.status == 200) {
 				// Typical action to be performed when the document is ready:
 				let vinceOn = false;
@@ -273,7 +274,7 @@ class OnlineOffline extends Component {
 						vinceOn = true;
 					}
 				});
-				this.setState({vinceOn: vinceOn});
+				thisComponent.setState({vinceOn: vinceOn});
 			}
 		};
 		discordWidget.open("GET", "https://discordapp.com/api/guilds/480959345601937410/widget.json", true);
