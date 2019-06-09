@@ -268,7 +268,7 @@ class OnlineOffline extends Component {
 				if (this.readyState == 4 && this.status == 200) {
 					 // Typical action to be performed when the document is ready:
 					let vinceOn = false;
-					discordWidget.responseText.members.forEach((member) => {
+					JSON.parse(discordWidget.responseText).members.forEach((member) => {
 						 if (member.id == 333577541069832203) {
 								 vinceOn = true;
 							}
