@@ -61,7 +61,7 @@ class ErrorBoundary extends Component {
 	}
 	render() {
 		if (this.state.error) {
-			retun (
+			return (
 				<React.Fragment>
 					<div className="page one variant2">
 						<div className="textblock">Hey, that's an Error.<br />While trying to fetch this resource on chromebot.cf there was a bug</div>
