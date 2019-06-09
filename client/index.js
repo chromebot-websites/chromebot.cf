@@ -268,7 +268,7 @@ class OnlineOffline extends Component {
 			if (discordWidget.readyState == 4 && discordWidget.status == 200) {
 				let vinceOn = false;
 				JSON.parse(discordWidget.responseText).members.forEach((member) => {
-					if (member.id == 333577541069832203) {
+					if (member.id == 317731855317336067) {
 						vinceOn = true;
 					}
 				});
@@ -285,11 +285,11 @@ class OnlineOffline extends Component {
 			);
 		} else if (this.state.vinceOn) {
 			return (
-				<h1>Vince is ONLINE 🎉</h1>
+				<h1>Minion is ONLINE 🎉</h1>
 			);
 		} else {
 			return (
-				<h1>Vince is OFFLINE ❌</h1>
+				<h1>Minion is OFFLINE ❌</h1>
 			);
 		}
 	}
