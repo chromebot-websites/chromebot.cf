@@ -64,8 +64,9 @@ class ErrorBoundary extends Component {
 			return (
 				<React.Frgment>
 					<div className="page one variant2">
-						<div className="textblock">Hey, that's a 404.<br />That resource was not found on chromebot.cf.</div>
+						<div className="textblock">Hey, that's an Error.<br />While trying to fetch this resource on chromebot.cf there was a bug</div>
 						<Button important onClick={(button) => window.location.href = "/"}>Back To Home</Button>
+						<Button destructive onClick={(button) => window.location.href = "https://github.com/chromebook777-productions/chromebot.cf/issues"}>Report a bug</Button>
 					</div>
 					<div className="page two variant2">
 						<div className="textblock">Website made by <a href="https://github.com/minion3665">@Minion3665</a> on github</div>
@@ -244,6 +245,7 @@ class Error404 extends Component {
 				<div className="page one variant2">
 					<div className="textblock">Hey, that's a 404.<br />That resource was not found on chromebot.cf.</div>
 					<Button important onClick={(button) => window.location.href = "/"}>Back To Home</Button>
+					<Button destructive onClick={(button) => window.location.href = "https://github.com/chromebook777-productions/chromebot.cf/issues"}>Report a bug</Button>
 				</div>
 				<div className="page two variant2">
 					<div className="textblock">Website made by <a href="https://github.com/minion3665">@Minion3665</a> on github</div>
