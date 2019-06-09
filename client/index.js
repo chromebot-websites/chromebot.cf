@@ -204,7 +204,7 @@ class Home extends Component {
 									name: "Neptune05"
 								},
 								{
-									role: "tmod",
+									role: "jmod",
 									name: "Daniel_D_Diamond"
 								},
 								{
