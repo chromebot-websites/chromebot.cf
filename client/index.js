@@ -193,7 +193,11 @@ class Home extends Component {
 								},
 								{
 									role: "tmod",
-									name: "Gamespere12"
+									name: "1k23"
+								},
+								{
+									role: "Tbomb",
+									name: "1k23"
 								},
 								{
 									role: "tmod",
