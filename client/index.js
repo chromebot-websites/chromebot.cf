@@ -133,11 +133,10 @@ class Home extends Component {
 									]
 								},
 								{
-									role: "webman",
+									role: "miniwebman",
 									name: "bobolob54321",
 									specials: [
 										"webowner",
-										"unnoficial",
 										"excluded"
 									]
 								},
@@ -169,7 +168,8 @@ class Home extends Component {
 									specials: [
 										"admin",
 										"support",
-										"media"
+										"media",
+										"weebly"
 									]
 								},
 								{
@@ -185,7 +185,7 @@ class Home extends Component {
 									name: "Dolphin Song"
 								},
 								{
-									role: "mod",
+									role: "miniheadwebdev",
 									name: "Minion3665",
 									specials: [
 										"webowner"
@@ -325,9 +325,13 @@ class MemberList extends Component {
 						description: "This user is not in the chromebook777 productions discord server",
 						emoji: "🚫"
 					},
-					unnoficial: {
+					unofficial: {
 						description: "This role has been gifted to this user by Minion3665 without any prior permission. This role is subject to change at any time and ONLY displays on the website, however this user may still have permissions to act with the gifted role's power",
 						emoji: "🎁"
+					},
+					weebly: {
+						description: "This user uses weebly to build their sites",
+						emoji: "🧱"
 					}
 				};
 				return (
@@ -340,7 +344,7 @@ class MemberList extends Component {
 		return (
 			<React.Fragment>
 				{this.props.members.sort((member1, member2) => {
-					let roles = ["tmod", "jmod", "mod", "webdev", "webman", "headwebdev", "headbotdev", "headdev", "admin", "manager", "owner", "founder"];
+					let roles = ["tmod", "jmod", "mod", "miniwebdev", "webdev", "miniwebman", "webman", "miniheadwebdev", "headwebdev", "headbotdev", "headdev", "admin", "manager", "owner", "founder"];
 					 if (roles.indexOf(member1.role) - roles.indexOf(member2.role) === 0) {
 						if ([member1.name.toLowerCase(), member2.name.toLowerCase()].sort()[0] === member1.name.toLowerCase()) {
 							return -1;
@@ -372,8 +376,11 @@ class Tag extends Component {
 			"headdev":{"title":"Head of Development", "background-color":"#FF9600", "color":"#000000"},
 			"headbotdev":{"title":"Head of Bot Development", "background-color":"#FF0000", "color":"#000000"},
 			"headwebdev":{"title":"Head of Website Development", "background-color":"#9B59B6", "color":"#000000"},
+			"miniheadwebdev":{"title":"Head of Minion3665's Website Development", "background-color":"#9B59B6", "color":"#000000"},
 			"webman":{"title":"Website Manager", "background-color":"#1ABC9C", "color":"#000000"},
+			"miniwebman":{"title":"Minion3665's Website Manager", "background-color":"#1ABC9C", "color":"#000000"},
 			"webdev":{"title":"Website Developer", "background-color":"#1ABC9C", "color":"#000000"},
+			"miniwebdev":{"title":"Minion3665's Website Developer", "background-color":"#1ABC9C", "color":"#000000"},
 			"mod":{"title":"Moderator", "background-color":"#A84300", "color":"#ffffff"},
 			"jmod":{"title":"Junior-Moderator", "background-color":"#A84300", "color":"#ffffff"},
 			"tmod":{"title":"Trial-Moderator", "background-color":"#00EEFF", "color":"#000000"}
