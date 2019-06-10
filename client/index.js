@@ -16,11 +16,11 @@ class App extends Component {
 						<Switch>
 							<Route exact path="/" component={Home} />
 							<Route path="/join" render={() => {
-								window.location.href = "https://discordapp.com/invite/QZaHasb";
+								window.location.href = "https://discordapp.com/invite/77NM8VQ";
 								return (
 									<React.Fragment>
 										<div className="textblock">We're redirecting you now...</div>
-										<Button important onClick={(button) => window.location.href = "https://discordapp.com/invite/QZaHasb"}>Not Being Redirected?</Button>
+										<Button important onClick={(button) => window.location.href = "https://discordapp.com/invite/77NM8VQ"}>Not Being Redirected?</Button>
 									</React.Fragment>
 								);
 							}} />
