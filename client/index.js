@@ -168,7 +168,8 @@ class Home extends Component {
 									specials: [
 										"admin",
 										"support",
-										"media"
+										"media",
+										"weebly"
 									]
 								},
 								{
@@ -327,6 +328,10 @@ class MemberList extends Component {
 					unofficial: {
 						description: "This role has been gifted to this user by Minion3665 without any prior permission. This role is subject to change at any time and ONLY displays on the website, however this user may still have permissions to act with the gifted role's power",
 						emoji: "🎁"
+					},
+					weebly: {
+						description: "This user uses weebly to build their sites",
+						emoji: "🧱"
 					}
 				};
 				return (
