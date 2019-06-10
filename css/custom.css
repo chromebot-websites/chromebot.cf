@@ -223,7 +223,7 @@ ul {
 	position: absolute;
 	visibility: hidden;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	opacity: 0;
 	-webkit-transition: 
 		opacity 0.2s ease-in-out,
@@ -250,7 +250,7 @@ ul {
 .tooltip:focus:after {
 	visibility: visible;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	opacity: 1;
 }
 .tooltip:before {
