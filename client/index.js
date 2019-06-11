@@ -213,7 +213,7 @@ class Home extends Component {
 								},
 								{
 									role: "tmod",
-									name: "Lo-Mein™"
+									name: "Elemental™"
 								},
 								{
 									role: "mod",
