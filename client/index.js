@@ -212,7 +212,7 @@ class Home extends Component {
 									name: "Daniel_D_Diamond"
 								},
 								{
-									role: "tmod",
+									role: "miniwebdev",
 									name: "Elemental™"
 								},
 								{
