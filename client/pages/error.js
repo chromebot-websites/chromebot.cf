@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 
 class Error extends Component {
-
+	constructor (props) {
+		super(props);
+		this.state = {errorType: props.code, errorMessage: props.description};
+	}
 	render() {
 		return (
 			<React.Fragment>
 				<div className="page one variant2">
-					<div className="textblock">Hey, that's an error .<br />That resource was not found on chromebot.cf.</div>
+					<div className="textblock">Hey, that's an error {this.state.errorType}.<br />{this.state.errorMessage}.</div>
 					<Button important onClick={(button) => window.location.href = "/"}>Back To Home</Button>
 					<Button destructive onClick={(button) => window.location.href = "https://github.com/chromebook777-productions/chromebot.cf/issues"}>Report a bug if you believe this is in issue</Button>
 				</div>
