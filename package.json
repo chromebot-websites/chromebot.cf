@@ -17,6 +17,6 @@
     "@babel/preset-react": "7.0.0",
     "@babel/preset-env": "7.4.5",
     "dotenv": "8.0.0",
-    "webpack": "5.0.0-alpha.15"
+    "webpack": "4.33.0"
   }
 }
