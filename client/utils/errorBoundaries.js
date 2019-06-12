@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import Button from './button.js';
+import Error from './../pages/error.js';
 
 class ErrorBoundary extends Component {
 	constructor(props) {
@@ -33,16 +34,7 @@ class WeakErrorBoundary extends Component {
 		if (this.state.error) {
 			return (
 				<React.Fragment>
-					<div className="page one variant2">
-						<div className="textblock">Hey, that's an Error.<br />While trying to fetch this resource on chromebot.cf there was a bug</div>
-						<Button important onClick={(button) => window.location.href = "/"}>Back To Home</Button>
-						<Button destructive onClick={(button) => window.location.href = "https://github.com/chromebook777-productions/chromebot.cf/issues"}>Report bug</Button>
-					</div>
-					<div className="page two variant2">
-						<div className="textblock">Website made by <a href="https://github.com/minion3665">@Minion3665</a> on github</div>
-						<div className="textblock">Discord server made by <a href="https://github.com/chromebook777">@Chromebook777</a> on github</div>
-						<div className="textblock">vincentdistoer (Broken Arm)#0001 on discord had the initial idea of creating a website</div>
-					</div>
+					<Error code="601" description="An unknown error occured. Who knows what this one means..."/>
 				</React.Fragment>
 			);
 		} else {
