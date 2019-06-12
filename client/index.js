@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Error from "pages/error.js";
-import ErrorBoundary from "utils/errorBoundaries.js";
+import Error from "./pages/error.js";
+import ErrorBoundary from "./utils/errorBoundaries.js";
 
 let buildNumber = 0.23;
 
