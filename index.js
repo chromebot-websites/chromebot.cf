@@ -17,7 +17,7 @@ let deleteFolderRecursive = (path) => {
 		fs.rmdirSync(path);
 	}
 };
-console.log(process.env["FATAL_BUG"])
+console.log("does it work: "+process.env["FATAL_BUG"])
 
 console.log("Beginning webpack build\n")
 compiler.run((err, stats) => {
