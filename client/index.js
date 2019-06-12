@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Error from "./pages/error.js";
 import ErrorBoundary from "./utils/errorBoundaries.js";
+import Button from "./utils/button.js";
 
 let buildNumber = 0.23;
 
@@ -356,44 +357,6 @@ class Tag extends Component {
 		return (
 			<b style={{color: this.state.color, backgroundColor: this.state["background-color"], borderRadius: "5px", display: "inline-block", padding: "5px", margin:"5px"}}>{this.state.title}</b>
 		);
-	}
-}
-class Button extends Component {
-	constructor(props) {
-		super(props);
-		let disabled = false;
-		let type = "";
-		let onClick = this.unpress;
-		if (props.disabled) {
-			disabled = true;
-		}
-		if (props.destructive) {
-			type = "destructive";
-		} else if (props.important) {
-			type = "important";
-		}
-		if (typeof props.onClick === "function") {
-			onClick = props.onClick;
-		}
-		this.state = { pressed: false, disabled: disabled, type: type, onClick: onClick };
-	}
-	unpress() {
-		this.setState({pressed: false});
-	}
-	render() {
-		if (this.state.disabled) {
-			return (
-				<button className="button disabled">{this.props.children}</button>
-			);
-		} else if (!this.state.pressed) {
-			return (
-				<button onClick={() => { this.setState({ pressed: true }); this.state.onClick(this); }} className={"button " + this.state.type}>{this.props.children}</button>
-			);
-		} else {
-			return (
-				<button className={"button pressed " + this.state.type}>{this.props.children}</button>
-			);
-		}
 	}
 }
 
