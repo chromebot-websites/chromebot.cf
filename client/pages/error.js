@@ -23,4 +23,4 @@ class Error extends Component {
 	}
 }
 
-module.exports = Error;
+export default Error;
