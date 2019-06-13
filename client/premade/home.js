@@ -170,4 +170,4 @@ class HomePage extends Component {
 	}
 }
 
-module.exports = HomePage;
+export default HomePage;
