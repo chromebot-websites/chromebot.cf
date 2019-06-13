@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from './../utils/button.js';
 
 class Error extends Component {
 	constructor (props) {
