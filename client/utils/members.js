@@ -113,5 +113,4 @@ class Tag extends Component {
 	}
 }
 
-export MemberList;
-export Tag;
+export { MemberList, Tag } ;
