@@ -193,6 +193,10 @@ ul {
 	color: #8659EF;
 	border: 1px solid #8659EF;
 }
+.textblock.variant2 {
+	color: #390ca1;
+	border: 1px solid #390ca1;
+}
 .button:hover:not(.disabled):not(.pressed) {
   background-position: right center;
 	transition: all 0.5s;
