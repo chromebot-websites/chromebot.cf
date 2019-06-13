@@ -190,8 +190,8 @@ ul {
 }
 .textblock {
 	background-image: none;
-	color: #390ca2;
-	border: 1px solid #390ca2;
+	color: #8659EF;
+	border: 1px solid #8659EF;
 }
 .button:hover:not(.disabled):not(.pressed) {
   background-position: right center;
