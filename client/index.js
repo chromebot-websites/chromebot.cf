@@ -47,7 +47,7 @@ class OnlineOffline extends Component {
 		this.state = {vinceOn: "checking"};
 	}
 	componentDidMount() {
-    let discordWidget = new XMLHttpRequest();
+		let discordWidget = new XMLHttpRequest();
 		discordWidget.onreadystatechange = () => {
 			if (discordWidget.readyState == 4 && discordWidget.status == 200) {
 				let vinceOn = false;
