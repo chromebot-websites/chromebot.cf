@@ -43,5 +43,5 @@ class WeakErrorBoundary extends Component {
 	}
 }
 
-export default ErrorBoundary;
+export ErrorBoundary;
 export WeakErrorBoundary;
