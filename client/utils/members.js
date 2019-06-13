@@ -7,7 +7,7 @@ class MemberList extends Component {
 	renderSpecials(member) {
 		if (member.specials) {
 			return member.specials.sort((special1, special2) => {
-				let specials = ["excluded", "support", "media", "admin", "unnoficial"];
+				let specials = ["webowner", "weebly", "nostaff", "excluded", "support", "media", "admin"];
 				return -(specials.indexOf(special1) - specials.indexOf(special2));
 			}).map((special) => {
 				let specials = {
