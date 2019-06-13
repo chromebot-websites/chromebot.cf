@@ -139,6 +139,13 @@ class HomePage extends Component {
 								{
 									role: "mod",
 									name: "Believe"
+								},
+								{
+									role: "miniwebdev",
+									name: "Vilagamer999",
+									specials: [
+										"excluded"
+									]
 								}
 							]}/>
 						</div>
