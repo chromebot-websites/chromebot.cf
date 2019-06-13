@@ -15,9 +15,9 @@ class Error extends Component {
 					<Button destructive onClick={(button) => window.location.href = "https://github.com/chromebook777-productions/chromebot.cf/issues"}>Report a bug if you believe this is in issue</Button>
 				</div>
 				<div className="page two variant2">
-					<div className="textblock">Website made by <a href="https://github.com/minion3665">@Minion3665</a> on github</div>
-					<div className="textblock">Discord server made by <a href="https://github.com/chromebook777">@Chromebook777</a> on github</div>
-					<div className="textblock">vincentdistoer (Broken Arm)#0001 on discord had the initial idea of creating a website</div>
+					<div className="textblock variant2">Website made by <a href="https://github.com/minion3665">@Minion3665</a> on github</div>
+					<div className="textblock variant2">Discord server made by <a href="https://github.com/chromebook777">@Chromebook777</a> on github</div>
+					<div className="textblock variant2">vincentdistoer (Broken Arm)#0001 on discord had the initial idea of creating a website</div>
 				</div>
 			</React.Fragment>
 		);
