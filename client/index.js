@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Error from "./pages/error.js";
+import HomePage from "./premade/home.js";
 import ErrorBoundary from "./utils/errorBoundaries.js";
 import Button from "./utils/button.js";
 import MemberList, { Tag } from "./utils/members.js";
@@ -18,7 +19,7 @@ class App extends Component {
 				<ErrorBoundary>
 					<Router>
 						<Switch>
-							<Route exact path="/" component={Home} />
+							<Route exact path="/" component={HomePage} />
 							<Route path="/join" render={() => {
 								window.location.href = "https://discordapp.com/invite/77NM8VQ";
 								return (
