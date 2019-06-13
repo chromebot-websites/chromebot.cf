@@ -5,7 +5,7 @@ var APP_DIR = path.resolve(__dirname, 'client');
 
 var config = {
 	entry: APP_DIR + '/index.js',
-	mode: 'development',
+	mode: 'production',
 	output: {
 		path: BUILD_DIR,
 		filename: 'bundle.js'
@@ -13,7 +13,7 @@ var config = {
 	plugins: [
 		new webpack.DefinePlugin({
 			'process.env': {
-				'NODE_ENV': JSON.stringify('development')
+				'NODE_ENV': JSON.stringify('production')
 			}
 		})
 	],
