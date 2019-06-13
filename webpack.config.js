@@ -1,12 +1,11 @@
 var webpack = require('webpack');
 var path = require('path');
-var ProgressBarPlugin = require('progress-bar-webpack-plugin');
 var BUILD_DIR = path.resolve(__dirname);
 var APP_DIR = path.resolve(__dirname, 'client');
 
 var config = {
 	entry: APP_DIR + '/index.js',
-	mode: 'production',
+	mode: 'development',
 	output: {
 		path: BUILD_DIR,
 		filename: 'bundle.js'
@@ -14,12 +13,8 @@ var config = {
 	plugins: [
 		new webpack.DefinePlugin({
 			'process.env': {
-				'NODE_ENV': JSON.stringify('production')
+				'NODE_ENV': JSON.stringify('development')
 			}
-		}),
-		new ProgressBarPlugin({
-  		format: '[:bar] :percent :msg',
-  		clear: false
 		})
 	],
 	module: {
