@@ -144,7 +144,7 @@ class HomePage extends Component {
 									role: "miniwebdev",
 									name: "Vilagamer999",
 									specials: [
-										"excluded"
+										"nostaff"
 									]
 								}
 							]}/>

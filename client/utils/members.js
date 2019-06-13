@@ -7,7 +7,7 @@ class MemberList extends Component {
 	renderSpecials(member) {
 		if (member.specials) {
 			return member.specials.sort((special1, special2) => {
-				let specials = ["excluded", "support", "media", "admin", "unnoficial"];
+				let specials = ["webowner", "weebly", "nostaff", "excluded", "support", "media", "admin"];
 				return -(specials.indexOf(special1) - specials.indexOf(special2));
 			}).map((special) => {
 				let specials = {
@@ -29,15 +29,21 @@ class MemberList extends Component {
 					},
 					excluded: {
 						description: "This user is not in the chromebook777 productions discord server",
-						emoji: "🚫"
-					},
-					unofficial: {
-						description: "This role has been gifted to this user by Minion3665 without any prior permission. This role is subject to change at any time and ONLY displays on the website, however this user may still have permissions to act with the gifted role's power",
-						emoji: "🎁"
+						emoji: "🚫",
+						overrides: [
+							"nostaff",
+							"admin",
+							"media",
+							"support"
+						]
 					},
 					weebly: {
 						description: "This user uses weebly to build their sites",
 						emoji: "🧱"
+					},
+					nostaff: {
+						description: "This user has no staff on the discord server",
+						emoji: "💼"
 					}
 				};
 				return (
