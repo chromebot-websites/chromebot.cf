@@ -28,7 +28,11 @@ class App extends Component {
 							);
 						}} />
 						<Route path="/vince" component={OnlineOffline} />
-						<Route render={() => {return(<Error code="404" description="The requested resource was not found on the chromebot support website"/>)}} />
+						<Route render={() => {
+							return(
+								<Error code="404" description="The requested resource was not found on the chromebot support website"/>
+							)
+						}} />
 					</Switch>
 				</Router>
 			</ErrorBoundary>
