@@ -1,0 +1,6 @@
+*.html @Minion3665
+CODEOWNERS @Minion3665
+.* @Minion3665
+package.json @Minion3665
+*.yml @Minion3665
+*.yaml @Minion3665
