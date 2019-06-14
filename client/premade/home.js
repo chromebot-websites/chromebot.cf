@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import Button from './../utils/button.js';
-import MemberList from './../utils/members.js';
+import { MemberList } from './../utils/members.js';
 
 class HomePage extends Component {
 	render() {
 		return (
 			<React.Fragment>
 				<div className="page one">
-					<img src="images/favicon512.png" className="logo" />
+					<img src="images/faviconRotate.png" className="logo" alt="the chromebot logo"/>
 					<Button important onClick={(button) => window.location.href = "/join"}>Join</Button>
 					<Button disabled>Help and information</Button>
 				</div>

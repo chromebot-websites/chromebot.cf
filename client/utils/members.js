@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 
 class MemberList extends Component {
-	constructor(props) {
-		super(props);
-	}
 	renderSpecials(member) {
 		if (member.specials) {
 			return member.specials.sort((special1, special2) => {
