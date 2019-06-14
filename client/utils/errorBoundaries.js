@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Button from './button.js';
 import Error from './../pages/error.js';
 
 class ErrorBoundary extends Component {
