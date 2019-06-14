@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import Button from './button.js';
 import Error from './../pages/error.js';
 
 class ErrorBoundary extends Component {
 	constructor(props) {
 		super(props);
-		this.state = { error: null, eventId: null };
+		this.state = { error: null };
 	}
 	componentDidCatch(error, errorInfo) {
 		this.setState({ error });
@@ -25,7 +24,7 @@ class ErrorBoundary extends Component {
 class WeakErrorBoundary extends Component {
 	constructor(props) {
 		super(props);
-		this.state = { error: null, eventId: null };
+		this.state = { error: null };
 	}
 	componentDidCatch(error, errorInfo) {
 		this.setState({ error });
