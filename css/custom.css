@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-
 *, *::before, *::after {
 	box-sizing: border-box;
 	padding: 0;
@@ -14,7 +12,7 @@ html {
 body {
 	width: 100%;
 	height: 100%;
-	font-family: Raleway;
+	font-family: Verdana;
 }
 div#root {
 	width: 100%;
@@ -69,7 +67,7 @@ ul {
 	width: 100%;
 }
 .title.three {
-	font-size: 20vw;
+	font-size: 15vw;
 }
 
 /*And the text*/
@@ -87,7 +85,7 @@ ul {
 .text.three {
 	font-size: 3vw;
 	color: #dedede;
-	margin-left: 5vw;
+	margin-left: 1vw;
 }
 
 /*We need something to contain all that*/
