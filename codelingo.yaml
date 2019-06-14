@@ -1,0 +1,5 @@
+tenets: 
+  - name: approve-all-pulls
+    flows:
+      codelingo/review:
+        approve: "✔️ Approved"
