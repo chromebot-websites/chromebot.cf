@@ -1,0 +1,11 @@
+pull_request_rules:
+  - name: merge when green
+    conditions:
+      - status-success=Travis CI - Pull Request
+      - status-success=task-list-completed
+      - "#approved-reviews-by>=1"
+      - base=master
+      - label=\⤴PR: Merge When Green
+    actions:
+      merge:
+        method: merge
