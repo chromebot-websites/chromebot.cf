@@ -12,6 +12,7 @@ If the build is passing that means that the latest and greatest is on https://ch
 - [@Vilagamer999](https://github.com/Vilagamer999)
 - [@ZestyPepper](https://github.com/ZestyPepper)
 - [@Bobolob54321](https://github.com/Bobolob54321)
+- [@vincentdistoer](https://github.com/vincentdistoer)
 
 ## And chromebook777 is awesome. Why? He's chromebook777 of course.
 - [@chromebook777](https://github.com/Chromebook777)
