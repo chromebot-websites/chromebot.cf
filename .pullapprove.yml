@@ -1,22 +1,12 @@
 version: 3
 
 pullapprove_conditions:
-- condition: "body and '- [ ]' not in body"
+- condition: "not body or '- [ ]' not in body"
   unmet_status: pending
   explanation: "Work in progress (From incomplete task list)"
 - condition: "'⤴️PR: Work In Progress' not in labels"
   unmet_status: pending
   explanation: "Work in progress (From label)"
-- "base.ref == 'master'"
-- condition: "'*restyled*' in statuses.successful"
-  unmet_status: pending
-  explanation: "Your style must fit before reviewing starts"
-- condition: "'*AnyLint*' in statuses.successful"
-  unmet_status: pending
-  explanation: "AnyLint must succeed before reviewing starts"
-- condition: "'*Travis CI - Pull Request*' in statuses.successful"
-  unmet_status: pending
-  explanation: "The Travis-CI Build must pass before reviewing starts"
 
 groups:
   protected:
