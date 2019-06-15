@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Button from './../utils/button.js';
+import StatusPage from './../utils/statusPage.js';
 import { MemberList } from './../utils/members.js';
 
 class HomePage extends Component {
@@ -165,6 +166,7 @@ class HomePage extends Component {
 						<span className="text three">Our members come from around the world, so anytime you want to chat someone will be online</span>
 					</div>
 				</div>
+				<StatusPage botname="Chromebot"/>
 			</React.Fragment>
 		);
 	}
