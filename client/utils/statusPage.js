@@ -42,7 +42,7 @@ class StatusPage extends Component {
     this.checkStatus();
   }
   checkStatus() {
-    discordWidget.open(
+    this.state.xmlhttp.open(
       "GET",
       "https://discordapp.com/api/guilds/" +
         this.props.serverId +
@@ -50,7 +50,7 @@ class StatusPage extends Component {
         new Date().getTime(),
       true
     ); //we append the current timestamp to bypass caching, it's hacky but it works. Please don't remove it unless you have a better solution.
-    discordWidget.send();
+    this.state.xmlhttp.send();
   }
   componentWillUnmount() {
     if (this.timeoutId) {
