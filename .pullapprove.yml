@@ -13,18 +13,18 @@ groups:
   protected:
     conditions:
     - >
-    # Block editing markdown, html, yaml, or json files
+      # Block editing markdown, html, yaml, or json files
       '*.md' in files or
       '*.html' in files or
       '*.yml' in files or
       '*.yaml' in files or
       '*.json' in files or
-    # Block editing core configuration files
+      # Block editing core configuration files
       'CNAME' in files or
       'config.js' in files or
       'index.js' in files or
       'webpack.config.js' in files or
-    # Block editing the logos
+      # Block editing the logos
       '*favicon*' in files
     reviewers:
       users:
