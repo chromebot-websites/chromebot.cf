@@ -12,6 +12,7 @@ pull_request_rules:
       - author=restyled-io
     actions:
       label:
-        "add: ⤴️PR: Style Update"
-        "add: ⤴️PR: Enhancement"
-        "add: ⤴️PR: Merge When Green"
+        add: 
+          - "⤴️PR: Style Update"
+          - "⤴️PR: Enhancement"
+          - "⤴️PR: Merge When Green"
