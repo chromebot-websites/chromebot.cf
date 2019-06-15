@@ -10,7 +10,7 @@ pullapprove_conditions:
 - condition: "'task-list-completed' in statuses.successful"
   unmet_status: pending
   explanation: "Work in progress"
-- condition: "'restyled' in statuses.successful" and"
+- condition: "'restyled' in statuses.successful"
   unmet_status: pending
   explanation: "Your style must fit before reviewing starts"
 - condition: "'AnyLint' in statuses.successful"
