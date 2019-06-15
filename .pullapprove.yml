@@ -1,13 +1,13 @@
 version: 3
 
 pullapprove_conditions:
-- "base.ref == 'master'"
+- condition: "body and '- [ ]' not in body"
+  unmet_status: pending
+  explanation: "Work in progress (From incomplete task list)"
 - condition: "'⤴️PR: Work In Progress' not in labels"
   unmet_status: pending
   explanation: "Work in progress (From label)"
-- condition: "'*task-list-completed*' in statuses.successful"
-  unmet_status: pending
-  explanation: "Work in progress (From incomplete task list)"
+- "base.ref == 'master'"
 - condition: "'*restyled*' in statuses.successful"
   unmet_status: pending
   explanation: "Your style must fit before reviewing starts"
