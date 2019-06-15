@@ -6,6 +6,7 @@ pull_request_rules:
       - "#approved-reviews-by>=1"
       - base=master
       - "label=⤴️PR: Merge When Green"
+      - "label!=⤴️PR: Work In Progress"
     actions:
       merge:
         method: merge
