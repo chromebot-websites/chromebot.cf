@@ -1,0 +1,31 @@
+version: 3
+
+pullapprove_conditions:
+- "base.ref == 'master'"
+- condition: "'*travis*' in statuses.successful"
+  unmet_status: "failure"
+  explanation: "Tests must pass before review starts"
+- condition: "'wip' in labels"
+  unmet_status: pending
+  explanation: "Work in progress"
+
+groups:
+  protected:
+    conditions:
+    - >
+      '*.md' in files or
+      '*.html' in files or
+      '*.yml' in files or
+      '*.yaml' in files or
+      '*.json' in files or
+      'CNAME' in files or
+      'config.js' in files or
+      'index.js' in files or
+      'webpack.config.js' in files or
+      '*favicon*' in files
+    reviewers:
+      users:
+      - Minion3665
+    reviews:
+      required: 1
+      request: 1
