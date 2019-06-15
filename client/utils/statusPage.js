@@ -5,7 +5,7 @@ class StatusPage extends Component {
     super(props);
     this.state = {
       color: "grey",
-      message: "getting the latest data"</span>"
+      message: "getting the latest data"
     };
   }
   render() {
