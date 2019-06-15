@@ -2,9 +2,10 @@ version: 3
 
 notifications:
 - when: pull_request.opened
-  if: true
-  comment: >
-    Hey @{{ author }}, here are the statuses {{ statuses }}
+  comment: |
+    Hey @{{ author }}, thanks for the PR! The review will start once
+    the tests and CI checks have passed. You'll also need to sign our
+    CLA if you haven't before. {{ statuses }}
 
 pullapprove_conditions:
 - condition: "base.ref == 'master'"
