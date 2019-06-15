@@ -79,7 +79,7 @@ class StatusPage extends Component {
         >
           <b className="title status">
             {this.props.botname} is currently{" "}
-            <span className="highlight">{this.state.message}</span>
+            <span className="highlight">{this.state.message}.</span>
           </b>
         </div>
       </React.Fragment>
