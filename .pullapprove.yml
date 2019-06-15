@@ -29,4 +29,3 @@ groups:
     reviews:
       required: 1
       request: 1
-      request_order: given
