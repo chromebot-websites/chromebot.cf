@@ -7,7 +7,7 @@ class HomePage extends Component {
 		return (
 			<React.Fragment>
 				<div className="page one">
-					<img src="images/faviconRotate.gif" className="logo" alt="the chromebot logo"/>
+					<img src="images/faviconRotate.GIF" className="logo" alt="the chromebot logo"/>
 					<Button important onClick={(button) => window.location.href = "/join"}>Join</Button>
 					<Button disabled>Help and information</Button>
 				</div>
