@@ -4,17 +4,21 @@ pullapprove_conditions:
 - "base.ref == 'master'"
   unmet_status: success
   explanation: "Minion3665 wishes you luck. This pr will not need reviews to pass 😊"
-- condition: "'⤴️PR: Work In Progress' in labels"
+- condition: "'⤴️PR: Work In Progress' not in labels"
   unmet_status: pending
   explanation: "Work in progress"
-- condition:
-  - >
-    "'Travis CI - Pull Request' in statuses.successful" and
-    "'AnyLint' in statuses.successful" and
-    "'restyled' in statuses.successful" and
-    "'task-list-completed' in statuses.successful" and
+- condition: "'task-list-completed' in statuses.successful"
   unmet_status: pending
-  explanation: "Tests must pass before review starts"
+  explanation: "Work in progress"
+- condition: "'restyled' in statuses.successful" and"
+  unmet_status: pending
+  explanation: "Your style must fit before reviewing starts"
+- condition: "'AnyLint' in statuses.successful"
+  unmet_status: pending
+  explanation: "AnyLint must succeed before reviewing starts"
+- condition: "'Travis CI - Pull Request' in statuses.successful"
+  unmet_status: pending
+  explanation: "The Travis-CI Build must pass before reviewing starts"
 
 groups:
   protected:
