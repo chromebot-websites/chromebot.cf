@@ -53,6 +53,9 @@ ul {
 	background-color: #aaaaff;
 	background-image: linear-gradient(to bottom, #5970C1 0%, #5970C1 90%, #5970C1 100%);
 }
+.page.statusPage {
+	color: white;
+}
 
 /*What about the titles*/
 .title {
@@ -86,6 +89,10 @@ ul {
 	font-size: 3vw;
 	color: #dedede;
 	margin-left: 1vw;
+}
+.highlight {
+	font-weight: bolder;
+	color: #E4D2BA;
 }
 
 /*We need something to contain all that*/
