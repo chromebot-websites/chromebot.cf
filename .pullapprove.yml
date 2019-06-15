@@ -6,10 +6,10 @@ pullapprove_conditions:
   explanation: "Minion3665 wishes you luck. This pr will not need reviews to pass 😊"
 - condition: "'⤴️PR: Work In Progress' not in labels"
   unmet_status: pending
-  explanation: "Work in progress"
+  explanation: "Work in progress (From '⤴️PR: Work In Progress' label)"
 - condition: "'task-list-completed' in statuses.successful"
   unmet_status: pending
-  explanation: "Work in progress"
+  explanation: "Work in progress (From incomplete task list)"
 - condition: "'restyled' in statuses.successful"
   unmet_status: pending
   explanation: "Your style must fit before reviewing starts"
