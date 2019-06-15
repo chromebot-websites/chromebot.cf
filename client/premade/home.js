@@ -165,6 +165,8 @@ class HomePage extends Component {
           botname="Chromebot"
           prevColor="#5970C1"
           nextColor="hotpink"
+          botid="499262934715727872"
+          serverid="480959345601937410"
         />
       </React.Fragment>
     );

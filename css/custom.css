@@ -90,6 +90,11 @@ ul {
 	color: #dedede;
 	margin-left: 1vw;
 }
+.title.status {
+	margin-top: 14vh;
+	margin-left: 4vw;
+	font-size: 5vw;
+}
 .highlight {
 	font-weight: bolder;
 	color: #E4D2BA;
