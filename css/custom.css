@@ -55,6 +55,7 @@ ul {
 }
 .page.statusPage {
 	color: white;
+	transition all 2.5s;
 }
 
 /*What about the titles*/
