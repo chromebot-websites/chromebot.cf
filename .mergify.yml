@@ -4,6 +4,11 @@ pull_request_rules:
       - "label=⤴️PR: Merge When Green"
       - "label!=⤴️PR: Work In Progress"
       - "label!=⤴️PR: Can't Be Automerged"
+      - status-success=restyled
+      - status-success=AnyLint
+      - status-success=Travis CI - Pull Request
+      - status-success=task-list-completed
+      - status-success=pullapprove
     actions:
       merge:
         method: merge
