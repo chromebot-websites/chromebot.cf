@@ -77,8 +77,8 @@ class StatusPage extends Component {
               " 100%)"
           }}
         >
-          <b className="title">
-            {this.props.botname} is currently
+          <b className="title status">
+            {this.props.botname} is currently{" "}
             <span className="highlight">{this.state.message}</span>
           </b>
         </div>
