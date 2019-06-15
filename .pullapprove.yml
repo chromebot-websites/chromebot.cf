@@ -1,29 +1,20 @@
 version: 3
 
-notifications:
-- when: pull_request.opened
-  comment: |
-    Hey @{{ author }}, thanks for the PR! The review will start once
-    the tests and CI checks have passed. You'll also need to sign our
-    CLA if you haven't before. {{ statuses }}
-
 pullapprove_conditions:
-- condition: "base.ref == 'master'"
-  unmet_status: success
-  explanation: "Minion3665 wishes you luck. This pr will not need reviews to pass 😊"
+- "base.ref == 'master'"
 - condition: "'⤴️PR: Work In Progress' not in labels"
   unmet_status: pending
   explanation: "Work in progress (From label)"
-- condition: "'Task list completed' in statuses.successful"
+- condition: "'*task-list-completed*' in statuses.successful"
   unmet_status: pending
   explanation: "Work in progress (From incomplete task list)"
-- condition: "'restyled' in statuses.successful"
+- condition: "'*restyled*' in statuses.successful"
   unmet_status: pending
   explanation: "Your style must fit before reviewing starts"
-- condition: "'AnyLint' in statuses.successful"
+- condition: "'*AnyLint*' in statuses.successful"
   unmet_status: pending
   explanation: "AnyLint must succeed before reviewing starts"
-- condition: "'Travis CI - Pull Request' in statuses.successful"
+- condition: "'*Travis CI - Pull Request*' in statuses.successful"
   unmet_status: pending
   explanation: "The Travis-CI Build must pass before reviewing starts"
 
@@ -44,6 +35,10 @@ groups:
     reviewers:
       users:
       - Minion3665
+      teams:
+      - beta-maintainers
     reviews:
-      required: 1
+      required: 2
       request: 1
+      request_order: random
+      author_value: 1
