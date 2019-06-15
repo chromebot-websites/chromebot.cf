@@ -2,6 +2,7 @@ version: 3
 
 notifications:
 - when: pull_request.opened
+  if: true
   comment: >
     Hey @{{ author }}, here are the statuses {{ statuses }}
 
