@@ -30,6 +30,6 @@ groups:
       users:
       - Minion3665
     reviews:
-			required: 1
+      required: 1
       request: 1
       request_order: given
