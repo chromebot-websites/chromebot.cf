@@ -162,11 +162,11 @@ class HomePage extends Component {
           </div>
         </div>
         <StatusPage
-          botname="Chromebot"
+          botName="Chromebot"
           prevColor="#5970C1"
           nextColor="#3776e8"
-          botid="499262934715727872"
-          serverid="480959345601937410"
+          botId="499262934715727872"
+          serverId="480959345601937410"
         />
       </React.Fragment>
     );

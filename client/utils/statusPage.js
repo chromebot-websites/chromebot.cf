@@ -18,7 +18,7 @@ class StatusPage extends Component {
       ) {
         let chromebotOn = false;
         JSON.parse(this.state.xmlhttp.responseText).members.forEach(member => {
-          if (member.id == this.props.botid) {
+          if (member.id == this.props.botId) {
             chromebotOn = true;
             if (member.status === "idle") {
               this.setState({ color: "#AF7E00" });
@@ -78,7 +78,7 @@ class StatusPage extends Component {
           }}
         >
           <b className="title status">
-            {this.props.botname} is currently{" "}
+            {this.props.botName} is currently{" "}
             <span className="highlight">{this.state.message}.</span>
           </b>
         </div>
