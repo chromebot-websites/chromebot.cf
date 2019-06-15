@@ -163,7 +163,7 @@ class HomePage extends Component {
         </div>
         <StatusPage
           botname="Chromebot"
-          prevColor="5970C1"
+          prevColor="#5970C1"
           nextColor="hotpink"
         />
       </React.Fragment>
