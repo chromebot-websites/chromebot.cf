@@ -91,8 +91,6 @@ ul {
 	margin-left: 1vw;
 }
 .title.status {
-	margin-top: 14vh;
-	margin-left: 4vw;
 	font-size: 5vw;
 }
 .highlight {
@@ -150,6 +148,11 @@ ul {
 	height: auto;
 	border-radius: 20px;
 	transition: all 2s;
+	margin-top: 3vw;
+	opacity: 0.9;
+	margin: auto;
+	text-align: center;
+	padding: 1vw;
 }
 
 /*Let's have some widget action*/
