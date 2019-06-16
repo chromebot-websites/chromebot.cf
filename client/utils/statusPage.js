@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 class StatusPage extends Component {
   constructor(props) {
@@ -69,12 +68,6 @@ class StatusPage extends Component {
   render() {
     return (
       <React.Fragment>
-        <TransitionGroup>
-          <CSSTransition
-            key={this.state.color}
-            classNames="fade"
-            timeout={10000}
-          >
             <div
               className="page statusPage"
               style={{
@@ -96,8 +89,6 @@ class StatusPage extends Component {
                 <span className="highlight">{this.state.message}</span>.
               </b>
             </div>
-          </CSSTransition>
-        </TransitionGroup>
       </React.Fragment>
     );
   }
