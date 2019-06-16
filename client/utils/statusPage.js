@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { TransitionGroup, CSSTransition } from 'react-transition-group'
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 class StatusPage extends Component {
   constructor(props) {
@@ -62,31 +62,31 @@ class StatusPage extends Component {
   render() {
     return (
       <React.Fragment>
-				<TransitionGroup>
-        	<CSSTransition key={this.state.color} classNames="fade" timeout={300}>
-						<div
-							className="page statusPage"
-							style={{
-								backgroundColor: this.state.color,
-								backgroundImage:
-									"linear-gradient(to bottom, " +
-									this.props.prevColor +
-									" 0%, " +
-									this.state.color +
-									" 10%, " +
-									this.state.color +
-									" 90%, " +
-									this.props.nextColor +
-									" 100%)"
-							}}
-						>
-							<b className="title status">
-								{this.props.botName} is currently{" "}
-								<span className="highlight">{this.state.message}</span>.
-							</b>
-						</div>
-					</CSSTransition>
-      	</TransitionGroup>
+        <TransitionGroup>
+          <CSSTransition key={this.state.color} classNames="fade" timeout={300}>
+            <div
+              className="page statusPage"
+              style={{
+                backgroundColor: this.state.color,
+                backgroundImage:
+                  "linear-gradient(to bottom, " +
+                  this.props.prevColor +
+                  " 0%, " +
+                  this.state.color +
+                  " 10%, " +
+                  this.state.color +
+                  " 90%, " +
+                  this.props.nextColor +
+                  " 100%)"
+              }}
+            >
+              <b className="title status">
+                {this.props.botName} is currently{" "}
+                <span className="highlight">{this.state.message}</span>.
+              </b>
+            </div>
+          </CSSTransition>
+        </TransitionGroup>
       </React.Fragment>
     );
   }
