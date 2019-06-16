@@ -70,7 +70,7 @@ class StatusPage extends Component {
     return (
       <React.Fragment>
         <TransitionGroup>
-          <CSSTransition key={this.state.color} classNames="fade" timeout={300}>
+          <CSSTransition key={this.state.color} classNames="fade" timeout={10000}>
             <div
               className="page statusPage"
               style={{
