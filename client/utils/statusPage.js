@@ -37,7 +37,7 @@ class StatusPage extends Component {
               this.setState({
                 color: "#6CB83A",
                 message: "Operational",
-                height: 14
+                height: 9
               });
             }
           }
