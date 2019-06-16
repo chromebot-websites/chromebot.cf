@@ -173,7 +173,7 @@ class HomePage extends Component {
           botName="Chromebot Canary"
           prevColor="#D9D900"
           color="#F2F200"
-          nextColor="#3776e8"
+          nextColor="#F2F200"
           botId="555361766947815424"
           serverId="480959345601937410"
         />
