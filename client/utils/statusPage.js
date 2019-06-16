@@ -6,6 +6,7 @@ class StatusPage extends Component {
     this.state = {
       color: "grey",
       message: "getting the latest data",
+      height: "16",
       xmlhttp: new XMLHttpRequest(),
       timeoutId: null
     };
@@ -21,20 +22,16 @@ class StatusPage extends Component {
           if (member.id == this.props.botId) {
             chromebotOn = true;
             if (member.status === "idle") {
-              this.setState({ color: "#AF7E00" });
-              this.setState({ message: "experiencing a Minor Outage" });
+              this.setState({ color: "#AF7E00", message: "experiencing a Minor Outage", height: 16 });
             } else if (member.status === "dnd") {
-              this.setState({ color: "#c65b29" });
-              this.setState({ message: "experiencing a Major Outage" });
+              this.setState({ color: "#c65b29", message: "experiencing a Major Outage", height: 16 });
             } else {
-              this.setState({ color: "#6CB83A" });
-              this.setState({ message: "Operational" });
+              this.setState({ color: "#6CB83A", message: "Operational", height: 16 });
             }
           }
         });
         if (!chromebotOn) {
-          this.setState({ color: "red" });
-          this.setState({ message: "Offline" });
+          this.setState({ color: "red", message: "Offline", height: 10 });
         }
         setTimeout(() => {
           this.state.xmlhttp.open(
@@ -86,7 +83,8 @@ class StatusPage extends Component {
           <div
             className="statusBox"
             style={{
-              backgroundColor: this.state.color
+              backgroundColor: this.state.color,
+              height: this.state.height+"vw"
             }}
           >
             <b className="title status">
