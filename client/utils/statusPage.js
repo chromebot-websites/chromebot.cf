@@ -68,7 +68,10 @@ class StatusPage extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="page statusPage" style={{backgroundImage:
+        <div
+          className="page statusPage"
+          style={{
+            backgroundImage:
               "linear-gradient(to bottom, " +
               this.props.prevColor +
               " 0%, " +
@@ -77,10 +80,15 @@ class StatusPage extends Component {
               this.props.color +
               " 90%, " +
               this.props.nextColor +
-              " 100%)"}}>
-          <div className="statusBox" style={{
-            backgroundColor: this.state.color
-          }}>
+              " 100%)"
+          }}
+        >
+          <div
+            className="statusBox"
+            style={{
+              backgroundColor: this.state.color
+            }}
+          >
             <b className="title status">
               {this.props.botName} is currently{" "}
               <span className="highlight">{this.state.message}</span>.
