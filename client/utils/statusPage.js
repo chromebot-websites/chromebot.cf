@@ -22,11 +22,23 @@ class StatusPage extends Component {
           if (member.id == this.props.botId) {
             chromebotOn = true;
             if (member.status === "idle") {
-              this.setState({ color: "#AF7E00", message: "experiencing a Minor Outage", height: 16 });
+              this.setState({
+                color: "#AF7E00",
+                message: "experiencing a Minor Outage",
+                height: 16
+              });
             } else if (member.status === "dnd") {
-              this.setState({ color: "#c65b29", message: "experiencing a Major Outage", height: 16 });
+              this.setState({
+                color: "#c65b29",
+                message: "experiencing a Major Outage",
+                height: 16
+              });
             } else {
-              this.setState({ color: "#6CB83A", message: "Operational", height: 16 });
+              this.setState({
+                color: "#6CB83A",
+                message: "Operational",
+                height: 16
+              });
             }
           }
         });
@@ -84,7 +96,7 @@ class StatusPage extends Component {
             className="statusBox"
             style={{
               backgroundColor: this.state.color,
-              height: this.state.height+"vw"
+              height: this.state.height + "vw"
             }}
           >
             <b className="title status">
