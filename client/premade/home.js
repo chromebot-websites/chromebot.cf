@@ -164,6 +164,7 @@ class HomePage extends Component {
         <StatusPage
           botName="Chromebot"
           prevColor="#5970C1"
+          color="#000080"
           nextColor="#3776e8"
           botId="317731855317336067"
           serverId="480959345601937410"
