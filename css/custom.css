@@ -91,6 +91,8 @@ ul {
 	margin-left: 1vw;
 }
 .title.status {
+	margin: 0;
+	padding: 0;
 	font-size: 5vw;
 }
 .highlight {
@@ -144,15 +146,15 @@ ul {
 	width: 35vw;
 }
 .statusBox {
-	width: 90%;
+	width: 95%;
 	height: auto;
 	border-radius: 20px;
 	transition: all 2s;
-	margin-top: 3vw;
-	opacity: 0.9;
+	opacity: 0.7;
 	margin: auto;
 	text-align: center;
-	padding: 1vw;
+	padding: 2vw;
+	margin-top: 3vw;
 }
 
 /*Let's have some widget action*/
