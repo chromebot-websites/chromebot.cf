@@ -55,7 +55,6 @@ ul {
 }
 .page.statusPage {
 	color: white;
-	transition all 1s;
 }
 
 /*What about the titles*/
@@ -309,4 +308,12 @@ ul {
 	-ms-transform: translateX(-12px);
 	-o-transform: translateX(-12px);
 	transform: translateX(-12px);
+}
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
 }
