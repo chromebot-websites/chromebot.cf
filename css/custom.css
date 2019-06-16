@@ -145,6 +145,12 @@ ul {
 .container.three {
 	width: 35vw;
 }
+.statusBox {
+	width: 90%;
+	height: auto;
+	border-radius: 20px;
+	transition: all 2s;
+}
 
 /*Let's have some widget action*/
 .discordWidget {
@@ -308,12 +314,4 @@ ul {
 	-ms-transform: translateX(-12px);
 	-o-transform: translateX(-12px);
 	transform: translateX(-12px);
-}
-.fade-enter {
-  opacity: 0;
-  z-index: 1;
-}
-.fade-enter.fade-enter-active {
-  opacity: 1;
-  transition: opacity 9000ms ease-in;
 }
