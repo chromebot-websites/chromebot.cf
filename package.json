@@ -17,7 +17,7 @@
     "babel-loader": "8.0.6",
     "@babel/core": "7.4.5",
     "@babel/preset-react": "7.0.0",
-    "@babel/preset-env": "7.4.5",
+    "@babel/preset-env": "7.5.0",
     "dotenv": "8.0.0",
     "webpack": "4.35.2"
   },
