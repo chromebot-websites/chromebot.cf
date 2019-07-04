@@ -4,9 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "build": "node index.js",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "build": "node index.js"
   },
   "author": "Minion3665",
   "dependencies": {
@@ -20,6 +18,5 @@
     "@babel/preset-env": "7.5.0",
     "dotenv": "8.0.0",
     "webpack": "4.35.2"
-  },
-  "snyk": true
+  }
 }
