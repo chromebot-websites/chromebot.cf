@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Button from "./../utils/button.js";
-import StatusPage from "./../utils/statusPage.js";
+import Status from "./../utils/status.js";
 import { MemberList } from "./../utils/members.js";
 
 class HomePage extends Component {
