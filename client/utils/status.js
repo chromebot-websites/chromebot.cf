@@ -78,32 +78,16 @@ class StatusPage extends Component {
     return (
       <React.Fragment>
         <div
-          className="page statusPage"
+          className="statusBox"
           style={{
-            backgroundImage:
-              "linear-gradient(to bottom, " +
-              this.props.prevColor +
-              " 0%, " +
-              this.props.color +
-              " 10%, " +
-              this.props.color +
-              " 90%, " +
-              this.props.nextColor +
-              " 100%)"
+            backgroundColor: this.state.color,
+            minHeight: this.state.height + "vw"
           }}
         >
-          <div
-            className="statusBox"
-            style={{
-              backgroundColor: this.state.color,
-              minHeight: this.state.height + "vw"
-            }}
-          >
-            <b className="title status">
-              {this.props.botName} is currently{" "}
-              <span className="highlight">{this.state.message}</span>.
-            </b>
-          </div>
+          <b className="title status">
+            {this.props.botName} is currently{" "}
+            <span className="highlight">{this.state.message}</span>.
+          </b>
         </div>
       </React.Fragment>
     );
