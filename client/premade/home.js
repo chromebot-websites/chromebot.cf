@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Button from "./../utils/button.js";
-import StatusPage from "./../utils/statusPage.js";
+import Status from "./../utils/status.js";
 import { MemberList } from "./../utils/members.js";
 
 class HomePage extends Component {
@@ -161,20 +161,28 @@ class HomePage extends Component {
             </span>
           </div>
         </div>
-        <StatusPage
+        <Status
           botName="Chromebot"
           prevColor="#5970C1"
           color="#000080"
           nextColor="#D9D900"
-          botId="317731855317336067"
+          botId="499262934715727872"
           serverId="480959345601937410"
         />
-        <StatusPage
+        <Status
           botName="Chromebot Canary"
           prevColor="#D9D900"
           color="#8C8C00"
           nextColor="#8C8C00"
           botId="555361766947815424"
+          serverId="480959345601937410"
+        />
+        <Status
+          botName="Chromebot ModMail"
+          prevColor="#D9D900"
+          color="#8C8C00"
+          nextColor="#8C8C00"
+          botId="587060114318688256"
           serverId="480959345601937410"
         />
       </React.Fragment>
