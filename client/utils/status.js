@@ -77,18 +77,18 @@ class StatusPage extends Component {
   render() {
     return (
       <React.Fragment>
-          <div
-            className="statusBox"
-            style={{
-              backgroundColor: this.state.color,
-              minHeight: this.state.height + "vw"
-            }}
-          >
-            <b className="title status">
-              {this.props.botName} is currently{" "}
-              <span className="highlight">{this.state.message}</span>.
-            </b>
-          </div>
+        <div
+          className="statusBox"
+          style={{
+            backgroundColor: this.state.color,
+            minHeight: this.state.height + "vw"
+          }}
+        >
+          <b className="title status">
+            {this.props.botName} is currently{" "}
+            <span className="highlight">{this.state.message}</span>.
+          </b>
+        </div>
       </React.Fragment>
     );
   }
