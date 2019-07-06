@@ -161,30 +161,32 @@ class HomePage extends Component {
             </span>
           </div>
         </div>
-        <Status
-          botName="Chromebot"
-          prevColor="#5970C1"
-          color="#000080"
-          nextColor="#D9D900"
-          botId="499262934715727872"
-          serverId="480959345601937410"
-        />
-        <Status
-          botName="Chromebot Canary"
-          prevColor="#D9D900"
-          color="#8C8C00"
-          nextColor="#8C8C00"
-          botId="555361766947815424"
-          serverId="480959345601937410"
-        />
-        <Status
-          botName="Chromebot ModMail"
-          prevColor="#D9D900"
-          color="#8C8C00"
-          nextColor="#8C8C00"
-          botId="587060114318688256"
-          serverId="480959345601937410"
-        />
+        <div className="container four">
+          <Status
+            botName="Chromebot"
+            prevColor="#5970C1"
+            color="#000080"
+            nextColor="#D9D900"
+            botId="499262934715727872"
+            serverId="480959345601937410"
+          />
+          <Status
+            botName="Chromebot Canary"
+            prevColor="#D9D900"
+            color="#8C8C00"
+            nextColor="#8C8C00"
+            botId="555361766947815424"
+            serverId="480959345601937410"
+          />
+          <Status
+            botName="Chromebot ModMail"
+            prevColor="#D9D900"
+            color="#8C8C00"
+            nextColor="#8C8C00"
+            botId="587060114318688256"
+            serverId="480959345601937410"
+          />
+        </div>
       </React.Fragment>
     );
   }
