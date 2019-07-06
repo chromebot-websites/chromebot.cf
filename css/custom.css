@@ -51,11 +51,11 @@ ul {
 }
 .page.three {
 	background-color: #5970C1;
-	background-image: linear-gradient(to bottom, #5970C1 0%, #5970C1 90%, #262626 100%);
+	background-image: linear-gradient(to bottom, #5970C1 0%, #5970C1 90%, #383838 100%);
 }
 .page.four {
-	background-color: #262626;
-	background-image: linear-gradient(to bottom, #262626 0%, #000000 90%, #000000 100%);
+	background-color: #383838;
+	background-image: linear-gradient(to bottom, #383838 0%, #000000 90%, #000000 100%);
 }
 .page.statusPage {
 	color: white;
