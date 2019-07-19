@@ -60,14 +60,14 @@ class HomePage extends Component {
                     specials: ["admin"]
                   },
                   {
+                    role: "manager",
+                    name: "2018 Chevrolet_Silverado_Z71",
+                    specials: ["admin"]
+                  },
+                  {
                     role: "miniwebman",
                     name: "bobolob54321",
                     specials: ["webowner", "excluded"]
-                  },
-                  {
-                    role: "manager",
-                    name: "Echo_Stream",
-                    specials: ["admin"]
                   },
                   {
                     role: "headdev",
@@ -102,16 +102,12 @@ class HomePage extends Component {
                     specials: ["webowner"]
                   },
                   {
-                    role: "tmod",
-                    name: "1k23"
+                    role: "jmod",
+                    name: "Daniel_D_Diamond"
                   },
                   {
-                    role: "tmod",
-                    name: "Tbomb"
-                  },
-                  {
-                    role: "tmod",
-                    name: "Mexican country ball"
+                    role: "jmod",
+                    name: "Elemental™"
                   },
                   {
                     role: "jmod",
@@ -119,20 +115,7 @@ class HomePage extends Component {
                   },
                   {
                     role: "jmod",
-                    name: "Daniel_D_Diamond"
-                  },
-                  {
-                    role: "miniwebdev",
-                    name: "Elemental™"
-                  },
-                  {
-                    role: "mod",
-                    name: "Believe"
-                  },
-                  {
-                    role: "miniwebdev",
-                    name: "Vilagamer999",
-                    specials: ["nostaff"]
+                    name: "therealtbomb"
                   }
                 ]}
               />
