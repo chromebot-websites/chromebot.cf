@@ -23,4 +23,4 @@ groups:
       required: 2
       request: 1
       request_order: random
-      author_value: 1
+      author_value: 2
