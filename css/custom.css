@@ -210,6 +210,7 @@ ul {
 	-o-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
+}
 .button.disabled {
 	background-image: linear-gradient(to right, #555555 0%, #aaaaaa 50%, #555555 100%);
 }
