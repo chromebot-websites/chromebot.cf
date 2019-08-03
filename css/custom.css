@@ -76,7 +76,12 @@ ul {
 .title.three {
 	font-size: 15vw;
 }
-
+.title.four {
+	font-size: 10vw;
+	margin: auto;
+	text-align: center;
+	width: 100%;
+}
 /*And the text*/
 .text {
 	margin: auto;
@@ -101,7 +106,7 @@ ul {
 }
 .highlight {
 	font-weight: bolder;
-	color: #1BFFDB;
+	color: wheat;
 }
 
 /*We need something to contain all that*/
