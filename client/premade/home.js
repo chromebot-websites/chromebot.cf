@@ -145,7 +145,7 @@ class HomePage extends Component {
           </div>
         </div>
         <div className="page four">
-          <h1 className="center">Chromebot</h1>
+          <h1 className="title four">Chromebot</h1>
           <Status
             botName="Chromebot"
             prevColor="#5970C1"
