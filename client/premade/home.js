@@ -156,22 +156,22 @@ class HomePage extends Component {
           />
           <p>Chromebot is a bot jam packed with utilities for your server</p>
         </div>
-          <Status
-            botName="Chromebot Canary"
-            prevColor="#D9D900"
-            color="#8C8C00"
-            nextColor="#8C8C00"
-            botId="555361766947815424"
-            serverId="480959345601937410"
-          />
-          <Status
-            botName="Chromebot ModMail"
-            prevColor="#D9D900"
-            color="#8C8C00"
-            nextColor="#8C8C00"
-            botId="587060114318688256"
-            serverId="480959345601937410"
-          />
+        <Status
+          botName="Chromebot Canary"
+          prevColor="#D9D900"
+          color="#8C8C00"
+          nextColor="#8C8C00"
+          botId="555361766947815424"
+          serverId="480959345601937410"
+        />
+        <Status
+          botName="Chromebot ModMail"
+          prevColor="#D9D900"
+          color="#8C8C00"
+          nextColor="#8C8C00"
+          botId="587060114318688256"
+          serverId="480959345601937410"
+        />
       </React.Fragment>
     );
   }
