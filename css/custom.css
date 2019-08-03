@@ -76,7 +76,12 @@ ul {
 .title.three {
 	font-size: 15vw;
 }
-
+.title.four {
+	font-size: 10vw;
+	margin: auto;
+	text-align: center;
+	width: 100%;
+}
 /*And the text*/
 .text {
 	margin: auto;
@@ -101,7 +106,7 @@ ul {
 }
 .highlight {
 	font-weight: bolder;
-	color: #1BFFDB;
+	color: wheat;
 }
 
 /*We need something to contain all that*/
@@ -205,7 +210,6 @@ ul {
 	-o-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
-}
 .button.disabled {
 	background-image: linear-gradient(to right, #555555 0%, #aaaaaa 50%, #555555 100%);
 }
