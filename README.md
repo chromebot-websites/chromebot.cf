@@ -3,6 +3,7 @@ Chromebook777 Productions is a discord server with a dedicated team of staff and
 
 # WEBSITE BUILD STATUS:
 [![Build Status](https://travis-ci.com/chromebot-websites/chromebot.cf.svg?branch=master)](https://travis-ci.com/chromebot-websites/chromebot.cf) [![codebeat badge](https://codebeat.co/badges/c57a7cbf-a004-4eb5-85e9-ff7d43a04b04)](https://codebeat.co/projects/github-com-chromebot-websites-chromebot-cf-master)
+
 If the build is passing that means that the latest and greatest is on https://beta.chromebot.cf, if not then maybe try fixing and create a pull request (or just commit directly to the master branch (pontentially unsafe) - don't worry, the site won't break; it just won't have the latest commits.
 
 # WHO MADE THIS
