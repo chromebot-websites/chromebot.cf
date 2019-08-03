@@ -172,7 +172,6 @@ class HomePage extends Component {
             botId="587060114318688256"
             serverId="480959345601937410"
           />
-        </div>
       </React.Fragment>
     );
   }
