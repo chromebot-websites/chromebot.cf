@@ -145,6 +145,7 @@ class HomePage extends Component {
           </div>
         </div>
         <div className="page four">
+          <h1 className="center">Chromebot</h1>
           <Status
             botName="Chromebot"
             prevColor="#5970C1"
@@ -153,6 +154,8 @@ class HomePage extends Component {
             botId="499262934715727872"
             serverId="480959345601937410"
           />
+          <p>Chromebot is a bot jam packed with utilities for your server</p>
+        </div>
           <Status
             botName="Chromebot Canary"
             prevColor="#D9D900"
