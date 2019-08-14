@@ -56,14 +56,14 @@ body {
 }
 .sticky.button {
   width: 30%;
-  margin-right: 2.5vw;
+  margin: 10vw;
   background-color: red;
 }
 .sticky.logo {
 	height: auto;
   border-radius: 1vw;
   float: left;
-  margin-left: 10vw;
+	margin: 10vw;
   border-radius: 1vw;
 	transform: unset;
 }
