@@ -7,7 +7,7 @@ class HomePage extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="page one">
+        <div className="">
           <img
             src="images/faviconRotate.GIF"
             className="logo"
