@@ -1,11 +1,20 @@
-document.addEventListener('touchmove', function (event) {
-  if (event.scale !== 1) { event.preventDefault(); }
-}, false);
-var lastTouchEnd = 0;
-document.addEventListener('touchend', function (event) {
-  var now = (new Date()).getTime();
-  if (now - lastTouchEnd <= 300) {
-    event.preventDefault();
+var logo = document.getElementById("logo");
+var sticky = logo.offsetTop;
+
+function stick() {
+  if (window.pageYOffset >= sticky) {
+    logo.parentElement.childNodes.forEach(child => {
+      child.classList.add("sticky");
+    });
+    logo.parentElement.classList.add("stickyContainer");
+  } else {
+    logo.parentElement.childNodes.forEach(child => {
+      child.classList.remove("sticky");
+    });
+    logo.parentElement.classList.remove("stickyContainer");
   }
-  lastTouchEnd = now;
-}, false);
+}
+
+window.onscroll = () => {
+  stick();
+};
