@@ -15,4 +15,6 @@ function stick() {
   }
 } 
 
-window.onscroll = () => (stick())};
+window.onscroll = () => {
+  stick();
+};
