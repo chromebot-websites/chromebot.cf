@@ -4,6 +4,25 @@ import Status from "./../utils/status.js";
 import { MemberList } from "./../utils/members.js";
 
 class HomePage extends Component {
+  function stick(logo) {
+    let sticky = logo.offsetTop;
+    if (window.pageYOffset >= sticky) {
+      logo.parentElement.childNodes.forEach(child => {
+        child.classList.add("sticky");
+      });
+      logo.parentElement.classList.add("stickyContainer");
+    } else {
+      logo.parentElement.childNodes.forEach(child => {
+        child.classList.remove("sticky");
+      });
+      logo.parentElement.classList.remove("stickyContainer");
+    }
+  }
+  componentDidMount() {
+    window.onscroll = (document.getElementById("logo")) => {
+      stick();
+    };
+  }
   render() {
     return (
       <React.Fragment>
