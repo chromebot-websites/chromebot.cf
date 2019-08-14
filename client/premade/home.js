@@ -11,6 +11,7 @@ class HomePage extends Component {
           <img
             src="images/faviconRotate.GIF"
             className="logo"
+            id="logo"
             alt="the chromebot logo"
           />
           <Button
