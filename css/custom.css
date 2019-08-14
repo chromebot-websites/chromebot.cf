@@ -58,12 +58,14 @@ body {
   width: 30%;
   margin: 10vw;
   background-color: red;
+	transform: unset;
+	left: unset;
 }
 .sticky.logo {
 	height: auto;
   border-radius: 1vw;
-  float: left;
 	margin: 10vw;
   border-radius: 1vw;
 	transform: unset;
+	left: unset;
 }
