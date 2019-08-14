@@ -14,7 +14,7 @@ console.log(
     "."
 );
 
-class OldApp extends Component {
+class App extends Component {
   render() {
     return (
       <ErrorBoundary>
@@ -43,53 +43,6 @@ class OldApp extends Component {
                 );
               }}
             />
-            <Route
-              render={() => {
-                return (
-                  <Error
-                    code="404"
-                    description="The requested resource was not found on the chromebot support website"
-                  />
-                );
-              }}
-            />
-          </Switch>
-        </Router>
-      </ErrorBoundary>
-    );
-  }
-}
-
-class OldApp extends Component {
-  render() {
-    return (
-      <ErrorBoundary>
-        <Router>
-          <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route
-              path="/join"
-              render={() => {
-                window.location.href = "https://discordapp.com/invite/77NM8VQ";
-                return (
-                  <React.Fragment>
-                    <div className="textblock">
-                      We're redirecting you now...
-                    </div>
-                    <Button
-                      important
-                      onClick={button =>
-                        (window.location.href =
-                          "https://discordapp.com/invite/77NM8VQ")
-                      }
-                    >
-                      Not Being Redirected?
-                    </Button>
-                  </React.Fragment>
-                );
-              }}
-            />
-            <Route path="/vince" component={OnlineOffline} />
             <Route
               render={() => {
                 return (
