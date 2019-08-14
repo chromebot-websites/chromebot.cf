@@ -3,13 +3,14 @@ var sticky = logo.offsetTop;
 
 function stick() {
   if (window.pageYOffset >= sticky) {
-    for child in logo.parentElement.childNodes:
+    logo.parentElement.childNodes.forEach (child) => {
       child.classList.add("sticky");
     logo.parentElement.classList.add("stickyContainer");
   } else {
-    for child in logo.parentElement.childNodes:
-      child.classList.add("sticky");
-    logo.parentElement.classList.add("stickyContainer");
+    logo.parentElement.childNodes.forEach((child) => {
+      child.classList.remove("sticky");
+    });
+    logo.parentElement.classList.remove("stickyContainer");
   }
 } 
 
