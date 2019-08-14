@@ -40,7 +40,6 @@ body {
 	transform: translate(-50%, 0);
 	border-radius: 3vw;
 	width: 20vw;
-	height: 20vw;
 	background-color: #010019;
   transition: all 0.5s;
 	-o-transition: all 0.5s;
@@ -53,6 +52,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+	flex-wrap: wrap;
 }
 .sticky.button {
   width: 30%;
@@ -60,9 +60,10 @@ body {
   background-color: red;
 }
 .sticky.logo {
-  width: 5%;
+	height: auto;
   border-radius: 1vw;
   float: left;
   margin-left: 10vw;
   border-radius: 1vw;
+	transform: unset;
 }
