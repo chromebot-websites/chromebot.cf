@@ -1,4 +1,4 @@
-var navbar = document.getElementById("logo");
+var logo = document.getElementById("logo");
 var sticky = logo.offsetTop;
 
 function stick() {
