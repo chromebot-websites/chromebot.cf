@@ -51,21 +51,29 @@ body {
 .stickyContainer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 	flex-wrap: wrap;
+  background-color: whitesmoke;
+  top: 0;
+  position: fixed;
+  width: 100%;
 }
 .sticky.button {
-  width: 30%;
-  margin: 10vw;
+  width: 35%;
+  margin: 1vw;
   background-color: red;
-	transform: unset;
-	left: unset;
+  margin-right: 3vw;
+  margin-left: 3vw;
 }
 .sticky.logo {
 	height: auto;
   border-radius: 1vw;
-	margin: 10vw;
+  float: left;
+	margin: 1vw;
   border-radius: 1vw;
 	transform: unset;
+	width: 5vw;
 	left: unset;
+	margin-left: 3vw;
+	margin-right: 3vw;
 }
