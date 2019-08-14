@@ -5,6 +5,7 @@ import { MemberList } from "./../utils/members.js";
 
 class HomePage extends Component {
   stick(logo) {
+    let logo = document.getElementById("logo");
     let sticky = logo.offsetTop;
     if (window.pageYOffset >= sticky) {
       logo.parentElement.childNodes.forEach(child => {
@@ -19,9 +20,7 @@ class HomePage extends Component {
     }
   }
   componentDidMount() {
-    window.onscroll = (hp = this, document.getElementById("logo")) => {
-      hp.stick();
-    };
+    window.onscroll = this.stick;
   }
   render() {
     return (
