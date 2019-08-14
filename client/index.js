@@ -10,8 +10,35 @@ let buildNumber = 0.23;
 
 console.log("Welcome to the chromebot website. This is client build B." + buildNumber + ".");
 
+class OldApp extends Component {
+	render() {
+		return (
+			<ErrorBoundary>
+				<Router>
+					<Switch>
+						<Route exact path="/" component={HomePage} />
+						<Route path="/join" render={() => {
+							window.location.href = "https://discordapp.com/invite/77NM8VQ";
+							return (
+								<React.Fragment>
+									<div className="textblock">We're redirecting you now...</div>
+									<Button important onClick={(button) => window.location.href = "https://discordapp.com/invite/77NM8VQ"}>Not Being Redirected?</Button>
+								</React.Fragment>
+							);
+						}} />
+						<Route render={() => {
+							return(
+								<Error code="404" description="The requested resource was not found on the chromebot support website"/>
+							)
+						}} />
+					</Switch>
+				</Router>
+			</ErrorBoundary>
+		);
+	}
+}
 
-class App extends Component {
+class OldApp extends Component {
 	render() {
 		return (
 			<ErrorBoundary>
