@@ -4,7 +4,7 @@ import Status from "./../utils/status.js";
 import { MemberList } from "./../utils/members.js";
 
 class HomePage extends Component {
-  function stick(logo) {
+  stick(logo) {
     let sticky = logo.offsetTop;
     if (window.pageYOffset >= sticky) {
       logo.parentElement.childNodes.forEach(child => {
@@ -19,8 +19,8 @@ class HomePage extends Component {
     }
   }
   componentDidMount() {
-    window.onscroll = (document.getElementById("logo")) => {
-      stick();
+    window.onscroll = (hp = this, document.getElementById("logo")) => {
+      hp.stick();
     };
   }
   render() {
