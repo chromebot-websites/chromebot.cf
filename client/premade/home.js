@@ -12,35 +12,39 @@ class HomePage extends Component {
       allowStick: false
     };
   }
-  stick(logo, sticky) {
+  stick() {
+    console.log("STICK executed");
+    console.log(this.state);
+    console.log(this.state.logo);
+    console.log(this.state.sticky);
+    console.log(this.state.allowStick);
     if (!this.state.allowStick) {
       return;
     }
-    if (window.pageYOffset >= sticky) {
-      logo.parentElement.childNodes.forEach(child => {
+    if (window.pageYOffset >= this.state.sticky) {
+      this.state.logo.parentElement.childNodes.forEach(child => {
         child.classList.add("sticky");
       });
-      logo.parentElement.classList.add("stickyContainer");
+      this.state.logo.parentElement.classList.add("stickyContainer");
     } else {
-      logo.parentElement.childNodes.forEach(child => {
+      this.state.logo.parentElement.childNodes.forEach(child => {
         child.classList.remove("sticky");
       });
-      logo.parentElement.classList.remove("stickyContainer");
+      this.state.logo.parentElement.classList.remove("stickyContainer");
     }
+  }
+  componentDidUpdate() {
+    this.stick();
   }
   componentDidMount() {
     window.onscroll = () => {
-      this.stick(
-        document.getElementById("logo"),
-        document.getElementById("logo").offsetTop
-      );
+      this.stick();
     };
   }
   render() {
-    this.stick();
     return (
       <React.Fragment>
-        <div className="">
+        <div>
           <img
             src="images/faviconRotate.GIF"
             className="logo"
