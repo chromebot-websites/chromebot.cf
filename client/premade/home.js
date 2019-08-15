@@ -4,25 +4,36 @@ import Status from "./../utils/status.js";
 import { MemberList } from "./../utils/members.js";
 
 class HomePage extends Component {
-  stick(logo) {
-    let logo = document.getElementById("logo");
-    let sticky = logo.offsetTop;
-    if (window.pageYOffset >= sticky) {
-      logo.parentElement.childNodes.forEach(child => {
+  constructor(props) {
+    super(props);
+    this.state = {
+      logo: null,
+      sticky: null,
+      allowStick: false
+    }
+  }
+  stick() {
+    if (!this.state.allowStick) {
+      return
+    }
+    if (window.pageYOffset >= this.state.sticky) {
+      this.state.logo.parentElement.childNodes.forEach(child => {
         child.classList.add("sticky");
       });
-      logo.parentElement.classList.add("stickyContainer");
+      this.state.logo.parentElement.classList.add("stickyContainer");
     } else {
-      logo.parentElement.childNodes.forEach(child => {
+      this.state.logo.parentElement.childNodes.forEach(child => {
         child.classList.remove("sticky");
       });
-      logo.parentElement.classList.remove("stickyContainer");
+      this.state.logo.parentElement.classList.remove("stickyContainer");
     }
   }
   componentDidMount() {
+    this.setState({logo = document.getElementById("logo"), sticky = document.getElementById("logo").offsetTop, allowStick: true});
     window.onscroll = this.stick;
   }
   render() {
+    this.stick();
     return (
       <React.Fragment>
         <div className="">
