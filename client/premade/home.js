@@ -21,12 +21,15 @@ class HomePage extends Component {
     if (!this.state.allowStick) {
       return;
     }
+    console.log(window.pageYOffset);
     if (window.pageYOffset >= this.state.sticky) {
+      console.log("Adding classes");
       this.state.logo.parentElement.childNodes.forEach(child => {
         child.classList.add("sticky");
       });
       this.state.logo.parentElement.classList.add("stickyContainer");
     } else {
+      console.log("Removing classes");
       this.state.logo.parentElement.childNodes.forEach(child => {
         child.classList.remove("sticky");
       });
