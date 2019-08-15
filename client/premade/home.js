@@ -13,7 +13,7 @@ class HomePage extends Component {
     };
   }
   stick() {
-    console.log("STICK executed")
+    console.log("STICK executed");
     console.log(this.state);
     console.log(this.state.logo);
     console.log(this.state.sticky);
