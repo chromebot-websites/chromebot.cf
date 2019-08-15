@@ -37,6 +37,7 @@ class HomePage extends Component {
     this.stick();
   }
   componentDidMount() {
+    this.setState({logo: document.getElementById("logo"), stick: document.getElementById("logo").offsetTop, allowStick: true})
     window.onscroll = () => {
       this.stick();
     };
