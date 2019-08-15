@@ -29,7 +29,12 @@ class HomePage extends Component {
     }
   }
   componentDidMount() {
-    window.onscroll = () => { this.stick(document.getElementById("logo"), document.getElementById("logo").offsetTop) };
+    window.onscroll = () => {
+      this.stick(
+        document.getElementById("logo"),
+        document.getElementById("logo").offsetTop
+      );
+    };
   }
   render() {
     this.stick();
