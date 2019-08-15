@@ -42,7 +42,7 @@ class HomePage extends Component {
   componentDidMount() {
     this.setState({
       logo: document.getElementById("logo"),
-      stick: document.getElementById("logo").offsetTop,
+      sticky: document.getElementById("logo").offsetTop,
       allowStick: true
     });
     window.onscroll = () => {
