@@ -6,10 +6,10 @@ import HomePage from "./premade/home.js";
 import ErrorBoundary from "./utils/errorBoundaries.js";
 import Button from "./utils/button.js";
 
-let buildNumber = 0.23;
+let buildNumber = 0.01;
 
 console.log(
-  "Welcome to the chromebot website. This is client build B." +
+  "Welcome to the chromebot website. This is client build BR." +
     buildNumber +
     "."
 );
