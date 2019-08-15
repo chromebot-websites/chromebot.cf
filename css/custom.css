@@ -6,11 +6,13 @@ body {
 	width: 100%;
 	height: 100%;
 	font-family: Verdana;
-  background-image: linear-gradient(white, wheat);
+	background-image: linear-gradient(white, wheat);
 }
 
 /* Clicky clicky */
 .button {
+	left: 50%;
+  transform: translate(-50%, 0);
   text-align: center;
   text-decoration: none;
   font-weight: 800;
@@ -28,7 +30,8 @@ body {
 	transition: all 0.5s;
 	-o-transition: all 0.5s;
 	-moz-transition: all 0.5s;
-	-webkit-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  position: relative;
 }
 
 /* We need a logo */
@@ -64,6 +67,8 @@ body {
   background-color: red;
   margin-right: 3vw;
   margin-left: 3vw;
+  transform: unset;
+  left: unset;
 }
 .sticky.logo {
 	height: auto;
