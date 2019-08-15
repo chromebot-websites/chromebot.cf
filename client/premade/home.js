@@ -12,29 +12,29 @@ class HomePage extends Component {
       allowStick: false
     };
   }
-  stick() {
+  stick(logo, sticky) {
     if (!this.state.allowStick) {
       return;
     }
-    if (window.pageYOffset >= this.state.sticky) {
-      this.state.logo.parentElement.childNodes.forEach(child => {
+    if (window.pageYOffset >= sticky) {
+      logo.parentElement.childNodes.forEach(child => {
         child.classList.add("sticky");
       });
-      this.state.logo.parentElement.classList.add("stickyContainer");
+      logo.parentElement.classList.add("stickyContainer");
     } else {
-      this.state.logo.parentElement.childNodes.forEach(child => {
+      logo.parentElement.childNodes.forEach(child => {
         child.classList.remove("sticky");
       });
-      this.state.logo.parentElement.classList.remove("stickyContainer");
+      logo.parentElement.classList.remove("stickyContainer");
     }
   }
   componentDidMount() {
-    this.setState({
-      logo: document.getElementById("logo"),
-      sticky: document.getElementById("logo").offsetTop,
-      allowStick: true
-    });
-    window.onscroll = this.stick;
+    window.onscroll = () => {
+      this.stick(
+        document.getElementById("logo"),
+        document.getElementById("logo").offsetTop
+      );
+    };
   }
   render() {
     this.stick();
