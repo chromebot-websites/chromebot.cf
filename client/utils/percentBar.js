@@ -74,9 +74,9 @@ class PercentBar extends Component {
   }
   render() {
     return (
-      <div id="percentbarOuter" style={backgroundColor: this.state.color} > 
+      <div id="percentbarOuter" style={{backgroundColor: this.state.color}} > 
         <div id="percentbarInnerText">{this.state.message}</div>
-        <div id="percentbarInner" style={width: this.state.percentage.toString() + "%", backgroundColor: this.state.barColor} />
+        <div id="percentbarInner" style={{width: this.state.percentage.toString() + "%", backgroundColor: this.state.barColor}} />
       </div>
     );
   }
