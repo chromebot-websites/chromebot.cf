@@ -19,7 +19,7 @@ class PercentBar extends Component {
         this.state.xmlhttp.status == 200
       ) {
         let onlineMembers = 0;
-        JSON.parse(pbDiscordWidget.responseText).members.forEach(member => {
+        JSON.parse(this.state.xmlhttp.responseText).members.forEach(member => {
           if (this.props.searchForMembers.indexOf(member.id) >= 0) {
             onlineMembers++;
           }
