@@ -11,7 +11,6 @@ body {
 
 /* Let's get a percentage bar in here- not a circular percent bar, just a normal one */
 #percentbarOuter {
-	width: 100%;
 	background-color: #c23b3b;
 	color: #c23b3b;
 	border-radius: 5px;
@@ -118,7 +117,6 @@ body {
 	border-radius: 1vw;
 	float: left;
 	margin: 1vw;
-	border-radius: 1vw;
 	transform: unset;
 	width: 5vw;
 	left: unset;
