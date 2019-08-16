@@ -7,35 +7,67 @@ body {
 	height: 100%;
 	font-family: Verdana;
 	background-image: linear-gradient(white, wheat);
-	transition: all 0.5s;
-	-o-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-  -webkit-transition: all 0.5s;
+}
+
+/* Let's get a percentage bar in here- not a circular percent bar, just a normal one */
+#percentbarOuter {
+	width: 100%;
+	background-color: #c23b3b;
+	color: #c23b3b;
+	border-radius: 5px;
+	font-weight: bold;
+	text-align: center;
+	box-sizing: border-box;
+	display: inline-block;
+	transition: all 1s;
+}
+#percentbarInner {
+	width: 100%;
+	background-color: grey;
+	color: white;
+	border-radius: 0 0 5px 5px;
+	padding-top: 5px;
+	font-weight: bold;
+	padding-bottom: 5px;
+	text-align: center;
+	box-sizing: border-box;
+	display: inline-block;
+	transition: all 1s;
+	left: 0;
+	float: left;
+	position: relative;
+}
+#percentbarInnerText {
+	padding: 5px;
+	color: white;
+	font-weight: bolder;
+	position: relative;
+	z-index: 5;
 }
 
 /* Clicky clicky */
 .button {
 	left: 50%;
 	transform: translate(-50%, 0);
-  text-align: center;
-  text-decoration: none;
-  font-weight: 800;
-  font-size: 1vw;
-  text-transform: uppercase;
-  border-radius: 6px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 800;
+	font-size: 1vw;
+	text-transform: uppercase;
+	border-radius: 6px;
 	border: none;
-  margin: 10px auto;
+	margin: 10px auto;
 	padding: 1em;
-  background-size: 200% auto;
-  color: white;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
-  background-image: linear-gradient(to right, #895cf2 0%, #ffabf4 50%, #895cf2 100%);
+	background-size: 200% auto;
+	color: white;
+	box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+	background-image: linear-gradient(to right, #895cf2 0%, #ffabf4 50%, #895cf2 100%);
 	width: 90%;
 	transition: all 0.5s;
 	-o-transition: all 0.5s;
 	-moz-transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  position: relative;
+	-webkit-transition: all 0.5s;
+	position: relative;
 }
 
 /* We need a logo */
@@ -48,7 +80,7 @@ body {
 	border-radius: 3vw;
 	width: 20vw;
 	background-color: #010019;
-  transition: all 0.5s;
+	transition: all 0.5s;
 	-o-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
@@ -69,20 +101,20 @@ body {
 	height: 7vw;
 }
 .sticky.button {
-  width: 35%;
-  margin: 1vw;
-  background-color: red;
-  margin-right: 3vw;
-  margin-left: 3vw;
-  transform: unset;
-  left: unset;
+	width: 35%;
+	margin: 1vw;
+	background-color: red;
+	margin-right: 3vw;
+	margin-left: 3vw;
+	transform: unset;
+	left: unset;
 }
 .sticky.logo {
 	height: auto;
-  border-radius: 1vw;
-  float: left;
+	border-radius: 1vw;
+	float: left;
 	margin: 1vw;
-  border-radius: 1vw;
+	border-radius: 1vw;
 	transform: unset;
 	width: 5vw;
 	left: unset;
