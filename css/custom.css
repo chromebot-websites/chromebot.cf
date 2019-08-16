@@ -20,6 +20,8 @@ body {
 	box-sizing: border-box;
 	display: inline-block;
 	transition: all 1s;
+	width: 90%;
+	margin: 10px auto;
 }
 #percentbarInner {
 	width: 100%;
@@ -31,7 +33,7 @@ body {
 	padding-bottom: 5px;
 	text-align: center;
 	box-sizing: border-box;
-	display: inline-block;
+	display: block;
 	transition: all 1s;
 	left: 0;
 	float: left;
@@ -40,9 +42,11 @@ body {
 #percentbarInnerText {
 	padding: 5px;
 	color: white;
-	font-weight: bolder;
 	position: relative;
 	z-index: 5;
+	font-weight: 800;
+	font-size: 1vw;
+	text-transform: uppercase;
 }
 
 /* Clicky clicky */
