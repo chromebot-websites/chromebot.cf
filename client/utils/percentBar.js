@@ -52,8 +52,7 @@ class PercentBar extends Component {
           ); //we append the current timestamp to bypass caching, it's hacky but it works. Please don't remove it unless you have a better solution.
           this.state.xmlhttp.send();
         }, 5000);
-      });
-    }
+      }
   }
   componentDidMount() {
         this.state.xmlhttp.onreadystatechange = this.parseData;
