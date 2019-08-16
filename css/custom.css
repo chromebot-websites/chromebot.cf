@@ -7,6 +7,10 @@ body {
 	height: 100%;
 	font-family: Verdana;
 	background-image: linear-gradient(white, wheat);
+	transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 
 /* Clicky clicky */
@@ -60,8 +64,9 @@ body {
 	top: 0;
 	position: fixed;
 	width: 100%;
-	box-shadow: 0 10px 10px whitesmoke;
+	box-shadow: 0 0.5vw 0.5vw whitesmoke;
 	left: 0;
+	height: 7vw;
 }
 .sticky.button {
   width: 35%;
@@ -83,4 +88,7 @@ body {
 	left: unset;
 	margin-left: 3vw;
 	margin-right: 3vw;
+}
+body.sticky {
+	padding-top: 10vw;
 }
