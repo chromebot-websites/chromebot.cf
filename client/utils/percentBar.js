@@ -51,7 +51,7 @@ class PercentBar extends Component {
             true
           ); //we append the current timestamp to bypass caching, it's hacky but it works. Please don't remove it unless you have a better solution.
           this.state.xmlhttp.send();
-        }, 5000));
+        }, 5000);
       }
     });
   }
@@ -75,9 +75,9 @@ class PercentBar extends Component {
   }
   render() {
     return (
-      <div id="percentbarOuter">
-        <div id="percentbarInnerText">Detecting the online bots...</div>
-        <div id="percentbarInner" />
+      <div id="percentbarOuter" style={backgroundColor: this.state.color} > 
+        <div id="percentbarInnerText">{this.state.message}</div>
+        <div id="percentbarInner" style={width: this.state.percentage.toString() + "%", backgroundColor: this.state.barColor} />
       </div>
     );
   }
