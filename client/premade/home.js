@@ -65,13 +65,13 @@ class HomePage extends Component {
           </Button>
           <Button disabled>Help and information</Button>
         </div>
-        <PercentBar serverId="582682665400926209" searchForMembers=[
+        <PercentBar serverId="582682665400926209" searchForMembers={[
 					"499262934715727872", // Chromebot
 					"555361766947815424", // Chromebot Canary
 					"587060114318688256", // Chromebot ModMail
 					"599743179608293398", // Chromebot manager
         	//"317731855317336067", // Minion3665 (for testing only)
-      	]/>
+      	]}/>
       </React.Fragment>
     );
   }
