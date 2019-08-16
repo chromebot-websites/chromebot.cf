@@ -27,12 +27,14 @@ class HomePage extends Component {
       this.state.logo.parentElement.childNodes.forEach(child => {
         child.classList.add("sticky");
       });
+      document.body.classList.add("sticky");
       this.state.logo.parentElement.classList.add("stickyContainer");
     } else {
       console.log("Removing classes");
       this.state.logo.parentElement.childNodes.forEach(child => {
         child.classList.remove("sticky");
       });
+      document.body.classList.remove("sticky");
       this.state.logo.parentElement.classList.remove("stickyContainer");
     }
   }
