@@ -12,8 +12,8 @@ class PercentBar extends Component {
       timeoutId: null
     };
   }
-  componentDidMount() {
-    this.state.xmlhttp.onreadystatechange = () => {
+  parseData() {
+      console.log("parsing response data...");
       if (
         this.state.xmlhttp.readyState == 4 &&
         this.state.xmlhttp.status == 200
@@ -41,7 +41,7 @@ class PercentBar extends Component {
             });
           }
         });
-        setTimeout(() => {
+        this.setTimeout(() => {
           this.state.xmlhttp.open(
             "GET",
             "https://discordapp.com/api/guilds/" +
@@ -51,9 +51,12 @@ class PercentBar extends Component {
             true
           ); //we append the current timestamp to bypass caching, it's hacky but it works. Please don't remove it unless you have a better solution.
           this.state.xmlhttp.send();
-        }, 5000);
+        }, 5000));
       }
-    };
+    });
+  }
+  componentDidMount() {
+        this.state.xmlhttp.onreadystatechange = this.parseData;
     this.state.xmlhttp.open(
       "GET",
       "https://discordapp.com/api/guilds/" +
