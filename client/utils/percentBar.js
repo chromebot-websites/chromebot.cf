@@ -13,49 +13,49 @@ class PercentBar extends Component {
     };
   }
   parseData() {
-      console.log("parsing response data...");
-      if (
-        this.state.xmlhttp.readyState == 4 &&
-        this.state.xmlhttp.status == 200
-      ) {
-        let onlineMembers = 0;
-        JSON.parse(this.state.xmlhttp.responseText).members.forEach(member => {
-          if (this.props.searchForMembers.indexOf(member.id) >= 0) {
-            onlineMembers++;
-          }
-          let percentage =
-            (onlineMembers / this.props.searchForMembers.length) * 100;
-          if (percentage == 100) {
-            this.setState({
-              percentage: percentage,
-              barColor: "#6cb83a",
-              color: "#6cb83a",
-              message: percentage.toString() + "% of the bot is online"
-            });
-          } else {
-            this.setState({
-              percentage: percentage,
-              barColor: "#6cb83a",
-              color: "#c23b3b",
-              message: percentage.toString() + "% of the bot is online"
-            });
-          }
-        });
-        this.setTimeout(() => {
-          this.state.xmlhttp.open(
-            "GET",
-            "https://discordapp.com/api/guilds/" +
-              this.props.serverId +
-              "/widget.json?timestamp=" +
-              new Date().getTime(),
-            true
-          ); //we append the current timestamp to bypass caching, it's hacky but it works. Please don't remove it unless you have a better solution.
-          this.state.xmlhttp.send();
-        }, 5000);
-      }
+    console.log("parsing response data...");
+    if (
+      this.state.xmlhttp.readyState == 4 &&
+      this.state.xmlhttp.status == 200
+    ) {
+      let onlineMembers = 0;
+      JSON.parse(this.state.xmlhttp.responseText).members.forEach(member => {
+        if (this.props.searchForMembers.indexOf(member.id) >= 0) {
+          onlineMembers++;
+        }
+        let percentage =
+          (onlineMembers / this.props.searchForMembers.length) * 100;
+        if (percentage == 100) {
+          this.setState({
+            percentage: percentage,
+            barColor: "#6cb83a",
+            color: "#6cb83a",
+            message: percentage.toString() + "% of the bot is online"
+          });
+        } else {
+          this.setState({
+            percentage: percentage,
+            barColor: "#6cb83a",
+            color: "#c23b3b",
+            message: percentage.toString() + "% of the bot is online"
+          });
+        }
+      });
+      this.setTimeout(() => {
+        this.state.xmlhttp.open(
+          "GET",
+          "https://discordapp.com/api/guilds/" +
+            this.props.serverId +
+            "/widget.json?timestamp=" +
+            new Date().getTime(),
+          true
+        ); //we append the current timestamp to bypass caching, it's hacky but it works. Please don't remove it unless you have a better solution.
+        this.state.xmlhttp.send();
+      }, 5000);
+    }
   }
   componentDidMount() {
-        this.state.xmlhttp.onreadystatechange = this.parseData;
+    this.state.xmlhttp.onreadystatechange = this.parseData;
     this.state.xmlhttp.open(
       "GET",
       "https://discordapp.com/api/guilds/" +
@@ -74,9 +74,15 @@ class PercentBar extends Component {
   }
   render() {
     return (
-      <div id="percentbarOuter" style={{backgroundColor: this.state.color}} > 
+      <div id="percentbarOuter" style={{ backgroundColor: this.state.color }}>
         <div id="percentbarInnerText">{this.state.message}</div>
-        <div id="percentbarInner" style={{width: this.state.percentage.toString() + "%", backgroundColor: this.state.barColor}} />
+        <div
+          id="percentbarInner"
+          style={{
+            width: this.state.percentage.toString() + "%",
+            backgroundColor: this.state.barColor
+          }}
+        />
       </div>
     );
   }
