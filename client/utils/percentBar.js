@@ -53,7 +53,7 @@ class PercentBar extends Component {
           this.state.xmlhttp.send();
         }, 5000);
       }
-    });
+    };
   }
   componentDidMount() {
         this.state.xmlhttp.onreadystatechange = this.parseData;
