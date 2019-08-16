@@ -23,7 +23,8 @@ class PercentBar extends Component {
           if (this.props.searchForMembers.indexOf(member.id) >= 0) {
             onlineMembers++;
           }
-          let percentage = (onlineMembers / searchForMembers.length) * 100;
+          let percentage =
+            (onlineMembers / this.props.searchForMembers.length) * 100;
           if (percentage == 100) {
             this.setState({
               percentage: percentage,
