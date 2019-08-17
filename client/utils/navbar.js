@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Button from ./button.js;
+import Button from "./button.js";
 
 class Navbar extends Component {
-	constructor(props) {
+  constuctor(props) {
     super(props);
     this.state = {
       logo: null,
