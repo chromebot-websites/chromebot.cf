@@ -7,6 +7,7 @@ body {
 	height: 100%;
 	font-family: Verdana;
 	background-image: linear-gradient(white, wheat);
+	margin-bottom: 10vw;
 }
 
 /* Let's get a percentage bar in here- not a circular percent bar, just a normal one */
@@ -31,9 +32,8 @@ body {
 	background-color: grey;
 	color: white;
 	border-radius: 0 0 5px 5px;
-	padding-top: 5px;
+	height: 1vw;
 	font-weight: bold;
-	padding-bottom: 5px;
 	text-align: center;
 	box-sizing: border-box;
 	display: block;
@@ -107,6 +107,7 @@ body {
 	box-shadow: 0 0.5vw 0.5vw whitesmoke;
 	left: 0;
 	height: 7vw;
+	z-index: 1000;
 }
 .sticky.button {
 	width: 35%;
@@ -129,5 +130,5 @@ body {
 	margin-right: 3vw;
 }
 body.sticky {
-	padding-top: 10vw;
+	padding-top: 7vw;
 }
