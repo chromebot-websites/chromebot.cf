@@ -1,5 +1,3 @@
-const SendXMLHTTP = (xmlhttp) => {
-	
-}
+const SendXMLHTTP = xmlhttp => {};
 
 export default SendXMLHTTP;
