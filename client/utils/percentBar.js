@@ -24,7 +24,8 @@ class StatusPage extends Component {
             onlineMembers++;
           }
         });
-        let percentage = (onlineMembers / this.props.searchForMembers.length) * 100;
+        let percentage =
+          (onlineMembers / this.props.searchForMembers.length) * 100;
         if (percentage == 100) {
           this.setState({
             percentage: percentage,
