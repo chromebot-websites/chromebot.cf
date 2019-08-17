@@ -55,9 +55,9 @@ class Navbar extends Component {
           </Button>
           <Button disabled>Help and information</Button>
         </div>
-			</React.Fragment>
-		);
-	}
+      </React.Fragment>
+    );
+  }
 }
 
 export default Navbar;

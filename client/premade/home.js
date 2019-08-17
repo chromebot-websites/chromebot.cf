@@ -8,7 +8,7 @@ class HomePage extends Component {
   render() {
     return (
       <React.Fragment>
-        <Navbar/>
+        <Navbar />
         <PercentBar
           serverId="480959345601937410"
           searchForMembers={[
