@@ -19,12 +19,12 @@ class StatusPage extends Component {
         this.state.xmlhttp.status == 200
       ) {
         let onlineMembers = 0;
-        let percentage = 0;
         JSON.parse(this.state.xmlhttp.responseText).members.forEach(member => {
-        if (this.props.searchForMembers.indexOf(member.id) >= 0) {
-          onlineMembers++;
+          if (this.props.searchForMembers.indexOf(member.id) >= 0) {
+            onlineMembers++;
+          }
         });
-        percentage = (onlineMembers / this.props.searchForMembers.length) * 100;
+        let percentage = (onlineMembers / this.props.searchForMembers.length) * 100;
         if (percentage == 100) {
           this.setState({
             percentage: percentage,
