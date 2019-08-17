@@ -66,7 +66,7 @@ class HomePage extends Component {
           <Button disabled>Help and information</Button>
         </div>
         <PercentBar
-          serverId="582682665400926209"
+          serverId="480959345601937410"
           searchForMembers={[
             "499262934715727872", // Chromebot
             "555361766947815424", // Chromebot Canary
