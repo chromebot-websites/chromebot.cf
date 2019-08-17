@@ -24,24 +24,23 @@ class PercentBar extends Component {
         if (this.props.searchForMembers.indexOf(member.id) >= 0) {
           onlineMembers++;
         }
-        percentage =
-          (onlineMembers / this.props.searchForMembers.length) * 100;
+        percentage = (onlineMembers / this.props.searchForMembers.length) * 100;
       });
       if (percentage == 100) {
-          this.setState({
-            percentage: percentage,
-            barColor: "#6cb83a",
-            color: "#6cb83a",
-            message: percentage.toString() + "% of the bot is online"
-          });
-        } else {
-          this.setState({
-            percentage: percentage,
-            barColor: "#6cb83a",
-            color: "#c23b3b",
-            message: percentage.toString() + "% of the bot is online"
-          });
-        }
+        this.setState({
+          percentage: percentage,
+          barColor: "#6cb83a",
+          color: "#6cb83a",
+          message: percentage.toString() + "% of the bot is online"
+        });
+      } else {
+        this.setState({
+          percentage: percentage,
+          barColor: "#6cb83a",
+          color: "#c23b3b",
+          message: percentage.toString() + "% of the bot is online"
+        });
+      }
       this.setTimeout(() => {
         this.state.xmlhttp.open(
           "GET",
