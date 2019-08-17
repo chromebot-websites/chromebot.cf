@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Button from "./button.js";
 
 class Navbar extends Component {
-  constuctor(props) {
+  constructor(props) {
     super(props);
     this.state = {
       logo: null,
