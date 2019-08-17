@@ -19,13 +19,15 @@ class PercentBar extends Component {
       this.state.xmlhttp.status == 200
     ) {
       let onlineMembers = 0;
+      let percentage = 0;
       JSON.parse(this.state.xmlhttp.responseText).members.forEach(member => {
         if (this.props.searchForMembers.indexOf(member.id) >= 0) {
           onlineMembers++;
         }
-        let percentage =
+        percentage =
           (onlineMembers / this.props.searchForMembers.length) * 100;
-        if (percentage == 100) {
+      });
+      if (percentage == 100) {
           this.setState({
             percentage: percentage,
             barColor: "#6cb83a",
@@ -40,7 +42,6 @@ class PercentBar extends Component {
             message: percentage.toString() + "% of the bot is online"
           });
         }
-      });
       this.setTimeout(() => {
         this.state.xmlhttp.open(
           "GET",
