@@ -7,7 +7,7 @@ body {
 	height: 100%;
 	font-family: Verdana;
 	background-image: linear-gradient(white, wheat);
-	margin-bottom: 10vw;
+	margin: 0;
 }
 
 /* Other types of containers */
