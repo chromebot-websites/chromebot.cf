@@ -53,6 +53,22 @@ body {
 	margin: 1em;
 }
 
+/* st..st..statuses? */
+.statusBox {
+	width: 95%;
+	height: auto;
+	border-radius: 1vw;
+	opacity: 0.7;
+	margin: auto;
+	text-align: center;
+	padding: 2vw;
+	margin-top: 3vw;
+	transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+
 /* Clicky clicky */
 .button {
 	left: 50%;
@@ -76,6 +92,30 @@ body {
 	-moz-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	position: relative;
+}
+.button.disabled {
+	background-image: linear-gradient(to right, #555555 0%, #aaaaaa 50%, #555555 100%);
+}
+.button.important {
+	background-image: linear-gradient(to right, #390ca2 0%, #bf5bb4 50%, #390ca2 100%);
+}
+.button.destructive {
+	background-image: linear-gradient(to right, #ff0000 0%, #ff8888 50%, #ff0000 100%);
+}
+.button:hover:not(.disabled):not(.pressed) {
+  background-position: right center;
+	transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.button.pressed {
+	transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	opacity: 0.5;
+	background-position: center center;
 }
 
 /* We need a logo */
