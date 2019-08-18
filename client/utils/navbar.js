@@ -49,11 +49,15 @@ class Navbar extends Component {
           />
           <Button
             important
-            onClick={button => (window.location.href = "/join")}
+            onClick={button =>
+              (window.location.href = "https://discordapp.com/invite/77NM8VQ")
+            }
           >
             Join
           </Button>
-          <Button disabled>Help and information</Button>
+          <Button onClick={button => (window.location.href = "#bot-invite")}>
+            Help and information
+          </Button>
         </div>
       </React.Fragment>
     );
