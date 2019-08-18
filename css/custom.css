@@ -75,6 +75,10 @@ body {
 	-moz-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
+.highlight {
+	font-weight: bolder;
+	color: #E4D2BA;
+}
 
 /* Clicky clicky */
 .button {
