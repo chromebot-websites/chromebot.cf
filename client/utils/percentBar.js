@@ -38,7 +38,7 @@ class StatusPage extends Component {
             percentage: percentage,
             barColor: "#6cb83a",
             color: "#c23b3b",
-            message: percentage.toString() + "% of the bot is online"
+            message: percentage.toString() + "% of the bots are online"
           });
         }
         this.timeoutId = setTimeout(() => {
