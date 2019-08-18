@@ -5,7 +5,7 @@ class Status extends Component {
     super(props);
     this.state = {
       color: "grey",
-      message: "getting the latest data"
+      message: "getting the latest data",
       xmlhttp: new XMLHttpRequest(),
       timeoutId: null
     };
