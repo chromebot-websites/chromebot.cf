@@ -46,15 +46,21 @@ class Bots extends Component {
         <a id="bot-invite" />
         <b className="title">Invite the bots</b>
         <Button
-          onClick={button => (window.location.href = "https://discordapp.com/oauth2/authorize?client_id=499262934715727872&permissions=2146958847&scope=bot")}
+          onClick={button =>
+            (window.location.href =
+              "https://discordapp.com/oauth2/authorize?client_id=499262934715727872&permissions=2146958847&scope=bot")
+          }
         >
-        Invite Chromebot
+          Invite Chromebot
         </Button>
         <Button
           destructive
-          onClick={button => (window.location.href = "https://discordapp.com/oauth2/authorize?client_id=555361766947815424&permissions=2146958847&scope=bot")}
+          onClick={button =>
+            (window.location.href =
+              "https://discordapp.com/oauth2/authorize?client_id=555361766947815424&permissions=2146958847&scope=bot")
+          }
         >
-        Invite Chromebot Canary (Chromebot Canary may be unstable)
+          Invite Chromebot Canary (Chromebot Canary may be unstable)
         </Button>
       </React.Fragment>
     );
