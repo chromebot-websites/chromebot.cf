@@ -33,7 +33,7 @@ class Bots extends Component {
           botId="587060114318688256"
           serverId="480959345601937410"
         />
-				<Status
+        <Status
           botName="Chromebot Manager"
           botId="599743179608293398"
           serverId="480959345601937410"
