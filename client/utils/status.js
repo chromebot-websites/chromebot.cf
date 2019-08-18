@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 
-class StatusPage extends Component {
+class Status extends Component {
   constructor(props) {
     super(props);
     this.state = {
       color: "grey",
-      message: "getting the latest data",
-      height: "14",
+      message: "getting the latest data"
       xmlhttp: new XMLHttpRequest(),
       timeoutId: null
     };
@@ -24,20 +23,17 @@ class StatusPage extends Component {
             if (member.status === "idle") {
               this.setState({
                 color: "#AF7E00",
-                message: "experiencing a Minor Outage",
-                height: 14
+                message: "experiencing a Minor Outage"
               });
             } else if (member.status === "dnd") {
               this.setState({
                 color: "#c65b29",
-                message: "experiencing a Major Outage",
-                height: 14
+                message: "experiencing a Major Outage"
               });
             } else {
               this.setState({
                 color: "#6CB83A",
-                message: "Operational",
-                height: 9
+                message: "operational"
               });
             }
           }
@@ -80,8 +76,7 @@ class StatusPage extends Component {
         <div
           className="statusBox"
           style={{
-            backgroundColor: this.state.color,
-            minHeight: this.state.height + "vw"
+            backgroundColor: this.state.color
           }}
         >
           <b className="title status">
@@ -94,4 +89,4 @@ class StatusPage extends Component {
   }
 }
 
-export default StatusPage;
+export default Status;
