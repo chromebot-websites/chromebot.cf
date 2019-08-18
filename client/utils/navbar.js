@@ -54,7 +54,7 @@ class Navbar extends Component {
               button.unpress();
             }}
           >
-            Join
+            Join The Server
           </Button>
           <Button
             onClick={button => {
@@ -62,7 +62,7 @@ class Navbar extends Component {
               button.unpress();
             }}
           >
-            Help and information
+            Invite The Bots
           </Button>
         </div>
       </React.Fragment>
