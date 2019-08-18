@@ -94,6 +94,23 @@ body {
 	-webkit-transition: all 0.5s;
 }
 
+/* Title */
+.title {
+	element {
+	font-size: 10vw;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	margin-right: 0;
+	margin-left: 5vw;
+	float: left;
+}
+.title.right {
+	margin-right: 5vw;
+	margin-left: 0;
+	float: right;
+}
+
 /* Make it sticky */
 .stickyContainer {
 	display: flex;
