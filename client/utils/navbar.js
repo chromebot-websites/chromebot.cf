@@ -50,12 +50,16 @@ class Navbar extends Component {
           <Button
             important
             onClick={button =>
-              (window.location.href = "https://discordapp.com/invite/77NM8VQ")
-            }
-          >
+          (
+            window.location.href = "https://discordapp.com/invite/77NM8VQ";
+            button.unpress();
+          )}>
             Join
           </Button>
-          <Button onClick={button => (window.location.href = "#bot-invite")}>
+          <Button onClick={button => (
+            window.location.href = "#bot-invite";
+            button.unpress();
+          )}>
             Help and information
           </Button>
         </div>
