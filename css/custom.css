@@ -7,7 +7,14 @@ body {
 	height: 100%;
 	font-family: Verdana;
 	background-image: linear-gradient(white, wheat);
-	margin-bottom: 10vw;
+	margin: 0;
+}
+
+/* Other types of containers */
+.centerContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /* Let's get a percentage bar in here- not a circular percent bar, just a normal one */
@@ -55,8 +62,8 @@ body {
 
 /* st..st..statuses? */
 .statusBox {
-	width: 95%;
-	height: auto;
+	width: 40%;
+	height: 10vw;
 	border-radius: 1vw;
 	opacity: 0.7;
 	margin: auto;
@@ -148,6 +155,10 @@ body {
 	margin-right: 5vw;
 	margin-left: 0;
 	float: right;
+}
+.title.status {
+	font-size: 2vw;
+	margin: 0;
 }
 
 /* Make it sticky */
