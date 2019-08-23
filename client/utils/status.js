@@ -42,7 +42,9 @@ class Status extends Component {
           this.setState({ color: "red", message: "Offline", height: 9 });
         }
         this.timeoutId = SendXMLHTTP(
-          "https://discordapp.com/api/guilds/" + this.props.serverId + "/widget.json",
+          "https://discordapp.com/api/guilds/" +
+            this.props.serverId +
+            "/widget.json",
           this.state.xmlhttp,
           5000
         );
