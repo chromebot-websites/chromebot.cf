@@ -43,7 +43,9 @@ class StatusPage extends Component {
           });
         }
         this.timeoutId = SendXMLHTTP(
-          "https://discordapp.com/api/guilds/" + this.props.serverId + "/widget.json",
+          "https://discordapp.com/api/guilds/" +
+            this.props.serverId +
+            "/widget.json",
           this.state.xmlhttp,
           5000
         );
