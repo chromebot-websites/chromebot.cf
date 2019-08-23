@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Status from "./../utils/status.js";
+import Statuses from "./statuses.js";
 import Button from "./../utils/button.js";
 import PercentBar from "./../utils/percentBar.js";
 import { MemberList } from "./../utils/members.js";
