@@ -41,28 +41,13 @@ class Status extends Component {
         if (!chromebotOn) {
           this.setState({ color: "red", message: "Offline", height: 9 });
         }
-        setTimeout(() => {
-          this.state.xmlhttp.open(
-            "GET",
-            "https://discordapp.com/api/guilds/" +
-              this.props.serverId +
-              "/widget.json?timestamp=" +
-              new Date().getTime(),
-            true
-          ); //we appecnd the current timestamp to bypass caching, it's hacky but it works. Please don't remove it unless you have a better solution.
-          this.state.xmlhttp.send();
-        }, 5000);
+        this.timeoutId = SendXMLHTTP(
+          "https://discordapp.com/api/guilds/" + this.props.serverId + "/widget.json",
+          this.state.xmlhttp,
+          5000
+        );
       }
     };
-    this.state.xmlhttp.open(
-      "GET",
-      "https://discordapp.com/api/guilds/" +
-        this.props.serverId +
-        "/widget.json?timestamp=" +
-        new Date().getTime(),
-      true
-    ); //we append the current timestamp to bypass caching, it's hacky but it works. Please don't remove it unless you have a better solution.
-    this.state.xmlhttp.send();
   }
   componentWillUnmount() {
     if (this.timeoutId) {
