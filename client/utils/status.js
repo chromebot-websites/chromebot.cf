@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import SendXMLHTTP from "./../functions/sendXMLHTTP.js";
 
 class Status extends Component {
   constructor(props) {
