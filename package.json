@@ -14,7 +14,7 @@
     "progress-bar-webpack-plugin": "1.12.1",
     "babel-loader": "8.0.6",
     "@babel/core": "7.5.5",
-    "@babel/preset-react": "7.0.0",
+    "@babel/preset-react": "7.6.3",
     "@babel/preset-env": "7.5.5",
     "dotenv": "8.0.0",
     "webpack": "4.39.1"
