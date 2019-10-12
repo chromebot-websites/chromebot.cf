@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import Error from "./pages/error.js";
+import Bots from "./premade/bots.js";
 import HomePage from "./premade/home.js";
-import ErrorBoundary from "./utils/errorBoundaries.js";
 import Button from "./utils/button.js";
+import ErrorBoundary from "./utils/errorBoundaries.js";
 
 let buildNumber = 0.01;
 
@@ -22,6 +24,23 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route
+              exact
+              path="/status"
+              render={() => {
+                <React.Fragment>
+                  <Button
+                    destructive
+                    onClick={button =>
+                      (window.location.href = "https://chromebot.cf")
+                    }
+                  >
+                    & gt; Go Back Home&lt;
+                  </Button>
+                  <Bots />
+                </React.Fragment>;
+              }}
+            />
+            <Route
               path="/join"
               render={() => {
                 window.location.href = "https://discordapp.com/invite/77NM8VQ";
@@ -37,7 +56,8 @@ class App extends Component {
                           "https://discordapp.com/invite/77NM8VQ")
                       }
                     >
-                      Not Being Redirected?
+                      {" "}
+                      Not Being Redirected ?{" "}
                     </Button>
                   </React.Fragment>
                 );
@@ -83,7 +103,9 @@ class OnlineOffline extends Component {
       "https://discordapp.com/api/guilds/480959345601937410/widget.json?timestamp=" +
         new Date().getTime(),
       true
-    ); //we append the current timestamp to bypass caching, it's hacky but it works. Please don't remove it unless you have a better solution.
+    ); // we append the current timestamp to bypass caching, it's hacky
+    // but it works. Please don't remove it unless you have a better
+    // solution.
     discordWidget.send();
   }
   render() {
