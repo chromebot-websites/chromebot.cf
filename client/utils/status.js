@@ -42,6 +42,7 @@ class Status extends Component {
         if (!chromebotOn) {
           this.setState({ color: "red", message: "Offline", height: 9 });
         }
+        console.log("sending...");
         this.timeoutId = SendXMLHTTP(
           "https://discordapp.com/api/guilds/" +
             this.props.serverId +
