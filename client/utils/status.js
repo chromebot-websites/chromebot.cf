@@ -32,10 +32,7 @@ class Status extends Component {
                 message: "experiencing a Major Outage"
               });
             } else {
-              this.setState({
-                color: "#6CB83A",
-                message: "operational"
-              });
+              this.setState({ color: "#6CB83A", message: "operational" });
             }
           }
         });
