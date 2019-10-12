@@ -26,17 +26,19 @@ class App extends Component {
             <Route
               path="/status"
               render={() => {
-                <React.Fragment>
-                  <Button
-                    destructive
-                    onClick={button =>
-                      (window.location.href = "https://chromebot.cf")
-                    }
-                  >
-                    Go Back Home
-                  </Button>
-                  <Bots />
-                </React.Fragment>;
+                return (
+                  <React.Fragment>
+                    <Button
+                      destructive
+                      onClick={button =>
+                        (window.location.href = "https://chromebot.cf")
+                      }
+                    >
+                      Go Back Home
+                    </Button>
+                    <Bots />
+                  </React.Fragment>
+                );
               }}
             />
             <Route
