@@ -34,7 +34,7 @@ class App extends Component {
                       (window.location.href = "https://chromebot.cf")
                     }
                   >
-                    &gt; Go Back Home&lt;
+                    & gt; Go Back Home&lt;
                   </Button>
                   <Bots />
                 </React.Fragment>;
