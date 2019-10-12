@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Error from "./pages/error.js";
 import HomePage from "./premade/home.js";
+import Bots from "./premade/bots.js";
 import ErrorBoundary from "./utils/errorBoundaries.js";
 import Button from "./utils/button.js";
 
@@ -21,6 +22,15 @@ class App extends Component {
         <Router>
           <Switch>
             <Route exact path="/" component={HomePage} />
+            <Route exact 
+              path="/status"
+              render={() = {
+                <React.Fragment>
+                  <Button destructive onClick={(button) => window.location.href = "https://chromebot.cf"}>&lt; Go Back Home &gt;</Button>
+                  <Bots />
+                </React.Fragment>
+              }
+            } />
             <Route
               path="/join"
               render={() => {
