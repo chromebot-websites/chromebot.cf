@@ -24,7 +24,6 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route
-              exact
               path="/status"
               render={() => {
                 <React.Fragment>
@@ -34,7 +33,7 @@ class App extends Component {
                       (window.location.href = "https://chromebot.cf")
                     }
                   >
-                    & gt; Go Back Home&lt;
+                    Go Back Home
                   </Button>
                   <Bots />
                 </React.Fragment>;
