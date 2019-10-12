@@ -24,9 +24,9 @@ class App extends Component {
             <Route exact path="/" component={HomePage} />
             <Route exact 
               path="/status"
-              render={() = {
+              render={() => {
                 <React.Fragment>
-                  <Button destructive onClick={(button) => window.location.href = "https://chromebot.cf"}>&lt; Go Back Home &gt;</Button>
+                  <Button destructive onClick={(button) => window.location.href = "https://chromebot.cf"}>&gt; Go Back Home &lt;</Button>
                   <Bots />
                 </React.Fragment>
               }
