@@ -3,6 +3,7 @@ const send = (url, xmlhttp) => {
 };
 
 const SendXMLHTTP = (url, xmlhttp, ms) => {
+  console.log(url, xmlhttp, ms);
   send(url, xmlhttp);
   return setTimeout(() => {
     send(url, xmlhttp);
