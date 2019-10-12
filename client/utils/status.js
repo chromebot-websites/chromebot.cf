@@ -32,16 +32,14 @@ class Status extends Component {
                 message: "experiencing a Major Outage"
               });
             } else {
-              this.setState({
-                color: "#6CB83A",
-                message: "operational"
-              });
+              this.setState({ color: "#6CB83A", message: "operational" });
             }
           }
         });
         if (!chromebotOn) {
           this.setState({ color: "red", message: "Offline", height: 9 });
         }
+        console.log("sending...");
         this.timeoutId = SendXMLHTTP(
           "https://discordapp.com/api/guilds/" +
             this.props.serverId +
