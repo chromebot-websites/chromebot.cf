@@ -5,7 +5,7 @@ class Features extends Component {
     return (
       <React.Fragment>
         <b className="title right">Features</b>
-        Moderation and stuff I guess
+        <div>Moderation and stuff I guess</div>
       </React.Fragment>
     );
   }
