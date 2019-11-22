@@ -11,6 +11,8 @@ body {
 #root {
 	background-image: linear-gradient(white, wheat);
 	min-height: 100vh;
+	height: auto;
+	width: 100%;
 }
 
 /* Other types of containers */
