@@ -6,7 +6,7 @@ class Badge extends Component {
       <div
         style={{
           width: "25%",
-          backgroundImage: "linear-gradient(white, #ffffff33)",
+          backgroundImage: "linear-gradient(white, #ffffff55)",
           fontWeight: "bolder",
           fontSize: "3vw",
           margin: "2vw",

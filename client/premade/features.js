@@ -23,6 +23,18 @@ class Features extends Component {
             description="Need more information? We have a dedicated bot to help you use chromebot. Join the support server and run ?support"
           />
         </div>
+         <div className="centerContainer" style={{ width: "100%" }}>
+          <Badge
+            icon="📈"
+            title="Uptime"
+            description="ChromeBot is almost always online to help your server. All issues are quickly reported to help you stay online even when we're down"
+          />
+          <Badge
+            icon="🧰"
+            title="In Development"
+            description="New features are always being added and issues are being fixed quickly. This ensures that you have a useful, working, bot in your server"
+          />
+        </div>
       </React.Fragment>
     );
   }
