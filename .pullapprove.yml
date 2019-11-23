@@ -14,7 +14,7 @@ groups:
       'index.js' in files or
       'webpack.config.js' in files or
       '*favicon*' in files
-    - author.type != "bot"
+    - author.id != 27856297
     reviewers:
       users:
       - Minion3665
@@ -25,7 +25,3 @@ groups:
       request: 1
       request_order: random
       author_value: 2
-
-notifications:
-- when: pull_request.opened
-  comment: PR OPENED. Thanks @{{ author }}, we'll take it from here. (TYPE @{{ author.type }}, login TYPE @{{ author.login }}, ID @{{ author.id }})
