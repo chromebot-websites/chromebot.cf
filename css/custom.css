@@ -62,7 +62,7 @@ body {
 	position: relative;
 	z-index: 5;
 	font-weight: 800;
-	font-size: 1vw;
+	font-size: 20px;
 	text-transform: uppercase;
 	margin: 1em;
 }
@@ -94,7 +94,7 @@ body {
 	text-align: center;
 	text-decoration: none;
 	font-weight: 800;
-	font-size: 1vw;
+	font-size: 20px;
 	text-transform: uppercase;
 	border-radius: 6px;
 	border: none;
@@ -154,7 +154,7 @@ body {
 
 /* Title */
 .title {
-	font-size: 10vw;
+	font-size: 100px;
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
@@ -166,7 +166,7 @@ body {
 	float: right;
 }
 .title.status {
-	font-size: 2vw;
+	font-size: 20px;
 	margin: 0;
 }
 
