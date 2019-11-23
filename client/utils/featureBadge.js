@@ -8,7 +8,7 @@ class Badge extends Component {
           width: "25%",
           backgroundImage: "linear-gradient(white, #ffffff55)",
           fontWeight: "bolder",
-          fontSize: "3vw",
+          fontSize: "35px",
           margin: "2vw",
           textAlign: "center",
           borderRadius: "1vw",
@@ -16,9 +16,9 @@ class Badge extends Component {
           padding: "1vw"
         }}
       >
-        <div style={{ fontSize: "10vw" }}>{this.props.icon}</div>
+        <div style={{ fontSize: "50px" }}>{this.props.icon}</div>
         {this.props.title}
-        <div style={{ fontSize: "1vw" }}>{this.props.description}</div>
+        <div style={{ fontSize: "20px" }}>{this.props.description}</div>
       </div>
     );
   }
