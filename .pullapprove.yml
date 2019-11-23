@@ -28,4 +28,4 @@ groups:
 
 notifications:
 - when: pull_request.opened
-  comment: PR OPENED. Thanks @{{ author }}, we'll take it from here. (TYPE @{{ author.type }}, login TYPE @{{ author.login }}, ID @{{ author.id }})
+  comment: PR OPENED. Thanks @{{ author }}, we'll take it from here. (TYPE {{ author.type }}, login {{ author.login }}, ID {{ author.id }})
