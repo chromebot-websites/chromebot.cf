@@ -9,10 +9,9 @@ class Badge extends Component {
           backgroundImage: "linear-gradient(white, #ffffff33)",
           fontWeight: "bolder",
           fontSize: "3vw",
-          marginLeft: "2vw",
-          marginRight: "2vw",
+          margin: "2vw",
           textAlign: "center",
-          borderRadius: "1vw"
+          borderRadius: "1vw",
         }}
       >
         <div style={{ fontSize: "10vw" }}>{this.props.icon}</div>
