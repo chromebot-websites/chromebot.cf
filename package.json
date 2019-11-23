@@ -9,12 +9,12 @@
   "author": "Minion3665",
   "dependencies": {
     "react-router-dom": "5.0.1",
-    "react": "16.8.6",
     "react-dom": "16.12.0",
+    "react": "16.12.0",
     "progress-bar-webpack-plugin": "1.12.1",
     "babel-loader": "8.0.6",
+    "@babel/preset-react": "7.7.4",
     "@babel/core": "7.7.4",
-    "@babel/preset-react": "7.0.0",
     "@babel/preset-env": "7.5.5",
     "dotenv": "8.2.0",
     "webpack": "4.39.1"
