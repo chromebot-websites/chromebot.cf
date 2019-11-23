@@ -4,7 +4,6 @@ pull_request_rules:
       - "label=⤴️PR: Merge When Green"
       - "label!=⤴️PR: Work In Progress"
       - "label!=⤴️PR: Can't Be Automerged"
-      - status-success=restyled
       - status-success=AccessLint
       - status-success=CodeFactor
       - status-success=Travis CI - Pull Request
