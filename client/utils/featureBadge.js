@@ -11,7 +11,7 @@ class Badge extends Component {
           fontSize: "3vw",
           margin: "2vw",
           textAlign: "center",
-          borderRadius: "1vw",
+          borderRadius: "1vw"
         }}
       >
         <div style={{ fontSize: "10vw" }}>{this.props.icon}</div>
