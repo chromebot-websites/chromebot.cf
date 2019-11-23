@@ -13,7 +13,7 @@ class Badge extends Component {
           textAlign: "center",
           borderRadius: "1vw",
           minHeight: "30vw",
-          padding: "1vw",
+          padding: "1vw"
         }}
       >
         <div style={{ fontSize: "10vw" }}>{this.props.icon}</div>
