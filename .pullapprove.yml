@@ -19,6 +19,8 @@ groups:
       - Minion3665
       teams:
       - beta-maintainers
+      users:
+      - dependabot-preview
     reviews:
       required: 2
       request: 1
