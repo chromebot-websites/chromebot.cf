@@ -1,0 +1,210 @@
+html {
+	width: 100%;
+	height: auto;
+}
+body {
+	width: 100%;
+	height: auto;
+	font-family: Verdana;
+	margin: 0;
+}
+#root {
+	background-image: linear-gradient(white, wheat);
+	min-height: 100vh;
+	height: auto;
+	width: 100%;
+	overflow: auto;
+	padding-bottom: 10vw;
+}
+
+/* Other types of containers */
+.centerContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Let's get a percentage bar in here- not a circular percent bar, just a normal one */
+#percentbarOuter {
+	background-color: #c23b3b;
+	color: #c23b3b;
+	border-radius: 5px;
+	font-weight: bold;
+	text-align: center;
+	box-sizing: border-box;
+	display: inline-block;
+	transition: all 1s;
+	width: 90%;
+	margin: 10px auto;
+	padding: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	position: relative;
+}
+#percentbarInner {
+	width: 100%;
+	background-color: grey;
+	color: white;
+	border-radius: 0 0 5px 5px;
+	height: 1vw;
+	font-weight: bold;
+	text-align: center;
+	box-sizing: border-box;
+	display: block;
+	transition: all 1s;
+	left: 0;
+	float: left;
+	position: relative;
+}
+#percentbarInnerText {
+	padding: 5px;
+	color: white;
+	position: relative;
+	z-index: 5;
+	font-weight: 800;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin: 1em;
+}
+
+/* st..st..statuses? */
+.statusBox {
+	width: 40%;
+	height: 10vw;
+	border-radius: 1vw;
+	opacity: 0.7;
+	margin: auto;
+	text-align: center;
+	padding: 2vw;
+	margin-top: 3vw;
+	transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.highlight {
+	font-weight: bolder;
+	color: #00005a;
+}
+
+/* Clicky clicky */
+.button {
+	left: 50%;
+	transform: translate(-50%, 0);
+	text-align: center;
+	text-decoration: none;
+	font-weight: 800;
+	font-size: 20px;
+	text-transform: uppercase;
+	border-radius: 6px;
+	border: none;
+	margin: 10px auto;
+	padding: 1em;
+	background-size: 200% auto;
+	color: white;
+	box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+	background-image: linear-gradient(to right, #895cf2 0%, #ffabf4 50%, #895cf2 100%);
+	width: 90%;
+	transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	position: relative;
+}
+.button.disabled {
+	background-image: linear-gradient(to right, #555555 0%, #aaaaaa 50%, #555555 100%);
+}
+.button.important {
+	background-image: linear-gradient(to right, #390ca2 0%, #bf5bb4 50%, #390ca2 100%);
+}
+.button.destructive {
+	background-image: linear-gradient(to right, #ff0000 0%, #ff8888 50%, #ff0000 100%);
+}
+.button:hover:not(.disabled):not(.pressed) {
+  background-position: right center;
+	transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.button.pressed {
+	transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	opacity: 0.5;
+	background-position: center center;
+}
+
+/* We need a logo */
+.logo {
+	margin: 1vw;
+	margin-left: 0;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	border-radius: 3vw;
+	width: 20vw;
+	background-color: #010019;
+	transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+
+/* Title */
+.title {
+	font-size: 100px;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	float: left;
+}
+.title.right {
+	float: right;
+}
+.title.status {
+	font-size: 20px;
+	margin: 0;
+}
+
+/* Make it sticky */
+.stickyContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: whitesmoke;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0 0.5vw 0.5vw whitesmoke;
+	left: 0;
+	height: 7vw;
+	z-index: 1000;
+}
+.sticky.button {
+	width: 35%;
+	margin: 1vw;
+	background-color: red;
+	margin-right: 3vw;
+	margin-left: 3vw;
+	transform: unset;
+	left: unset;
+}
+.sticky.logo {
+	height: auto;
+	border-radius: 1vw;
+	float: left;
+	margin: 1vw;
+	transform: unset;
+	width: 5vw;
+	left: unset;
+	margin-left: 3vw;
+	margin-right: 3vw;
+}
+body.sticky {
+	padding-top: 7vw;
+}

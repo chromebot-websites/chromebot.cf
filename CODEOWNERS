@@ -1,0 +1,14 @@
+*.html @Minion3665
+CODEOWNERS @Minion3665
+.* @Minion3665
+*.md @Minion3665
+package.json @Minion3665
+*.yml @Minion3665
+*.yaml @Minion366
+CNAME	@Minion3665
+CODEOWNERS @Minion3665
+config.js @Minion3665
+favicon* @Minion3665
+index.js @Minion3665
+*.json @Minion3665
+webpack.config.js @Minion3665
