@@ -1,6 +1,0 @@
-user-agent: *
-allow: /css/*
-allow: /js/*
-allow: /index.html
-allow: /404.html
-allow: /bundle.js
