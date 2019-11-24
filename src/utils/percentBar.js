@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class StatusPage extends Component {
   constructor(props) {
     super(props);
-    this.setState({color: "#c23b3b", barColor: "grey", percentage: 100, message: "Detecting the online bots..."});
+    this.state = {color: "#c23b3b", barColor: "grey", percentage: 100, message: "Detecting the online bots..."};
     this.xmlhttp = new XMLHttpRequest();
     this.timeoutId = null;
   }
