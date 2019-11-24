@@ -23,6 +23,7 @@ jobs:
     - name: npm install and build
       run: |
         npm ci
+        git push origin gh-pages --force
         npm run deploy
       env:
         CI: true
