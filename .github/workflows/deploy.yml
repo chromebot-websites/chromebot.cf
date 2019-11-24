@@ -20,6 +20,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - name: checkout
+      run: |
+        git checkout -b build
     - name: build
       run: |
         npm ci
@@ -29,4 +32,4 @@ jobs:
         CI: true
     - name: deploy
       run: |
-        git push origin:gh-pages HEAD --force
+        git push origin build:gh-pages --force
