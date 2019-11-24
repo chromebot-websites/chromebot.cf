@@ -26,9 +26,8 @@ jobs:
     - name: deploy and build
       run: |
         npm ci
-        npm install
         npm run build
         rm -rf /node_modules
-        gh-pages -d build
+        npm run push
       env:
         CI: true
