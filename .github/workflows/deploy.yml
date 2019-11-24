@@ -20,9 +20,13 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install and build
+    - name: build
       run: |
         npm ci
-        npm run deploy
+        npm run build
+        rm -rf /node_modules
       env:
         CI: true
+    - name: deploy
+      run: |
+        git push origin gh-pages --force
