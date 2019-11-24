@@ -6,7 +6,7 @@ pull_request_rules:
       - "label!=⤴️PR: Can't Be Automerged"
       - status-success=AccessLint
       - status-success=CodeFactor
-      - status-success=Test react app for deployability / build (12.x) (push)
+      - status-success=build (12.x)
       - status-success=task-list-completed
       - status-success=pullapprove
     actions:
