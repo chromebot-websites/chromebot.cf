@@ -15,8 +15,8 @@ class StatusPage extends Component {
   componentDidMount() {
     this.state.xmlhttp.onreadystatechange = () => {
       if (
-        this.state.xmlhttp.readyState == 4 &&
-        this.state.xmlhttp.status == 200
+        this.state.xmlhttp.readyState === 4 &&
+        this.state.xmlhttp.status === 200
       ) {
         let onlineMembers = 0;
         JSON.parse(this.state.xmlhttp.responseText).members.forEach(member => {
@@ -26,7 +26,7 @@ class StatusPage extends Component {
         });
         let percentage =
           (onlineMembers / this.props.searchForMembers.length) * 100;
-        if (percentage == 100) {
+        if (percentage === 100) {
           this.setState({
             percentage: percentage,
             barColor: "#10690d",
@@ -49,7 +49,7 @@ class StatusPage extends Component {
               "/widget.json?timestamp=" +
               new Date().getTime(),
             true
-          ); //we appecnd the current timestamp to bypass caching, it's hacky but it works. Please don't remove it unless you have a better solution.
+          ); //we append the current timestamp to bypass caching, it's hacky but it works. Please don't remove it unless you have a better solution.
           this.state.xmlhttp.send();
         }, 5000);
       }

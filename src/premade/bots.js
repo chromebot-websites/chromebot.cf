@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Status from "./../utils/status.js";
 import Button from "./../utils/button.js";
 import PercentBar from "./../utils/percentBar.js";
-import { MemberList } from "./../utils/members.js";
 
 class Bots extends Component {
   render() {
@@ -41,18 +40,20 @@ class Bots extends Component {
           <a id="bot-invite" className="link">Invite</a>
         <b className="title">Invite the bots</b>
           <Button
-              onClick={button =>
-                  (window.location.href =
-                      "https://discordapp.com/oauth2/authorize?client_id=499262934715727872&permissions=2146958847&scope=bot")
+              onClick={(button) => {
+                  window.location.href = "https://discordapp.com/oauth2/authorize?client_id=499262934715727872&permissions=2146958847&scope=bot";
+                  button.unpress();
+              }
               }
           >
               Invite Chromebot
           </Button>
           <Button
               destructive
-              onClick={button =>
-                  (window.location.href =
-                      "https://discordapp.com/oauth2/authorize?client_id=555361766947815424&permissions=2146958847&scope=bot")
+              onClick={(button) => {
+                  window.location.href = "https://discordapp.com/oauth2/authorize?client_id=555361766947815424&permissions=2146958847&scope=bot";
+                  button.unpress();
+              }
               }
           >
               Invite Chromebot Canary (Chromebot Canary may be unstable)
