@@ -23,13 +23,12 @@ jobs:
     - name: checkout
       run: |
         git checkout -b build
-    - name: build
+    - name: deploy and build
       run: |
         npm ci
+        npm install
         npm run build
         rm -rf /node_modules
+        gh-pages -d build
       env:
         CI: true
-    - name: deploy
-      run: |
-        gh-pages -d build
