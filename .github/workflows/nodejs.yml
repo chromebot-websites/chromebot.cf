@@ -19,8 +19,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: npm install and build
       run: |
-        npm install
-        react-scripts start
+        npm ci
+        npm run build
         npm test
       env:
         CI: true
