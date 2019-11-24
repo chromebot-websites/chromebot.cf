@@ -2,7 +2,7 @@ name: Deploy react app to github
 
 on:
   push:
-    branches-ignore: 
+    branches: 
       - master
 
 jobs:
