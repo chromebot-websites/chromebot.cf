@@ -1,0 +1,197 @@
+/* Buttons */
+/* Barter-style buttons to make pressing stuff good */
+.button {
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    border: none;
+    padding: 1em;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+    background-image: linear-gradient(to right, #895cf2 0%, #ffabf4 50%, #895cf2 100%);
+    width: 90%;
+    transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    position: relative;
+    display: block;
+    margin: 10px 0 10px 0;
+}
+.button.disabled {
+    background-image: linear-gradient(to right, #555555 0%, #aaaaaa 50%, #555555 100%);
+}
+.button.important {
+    background-image: linear-gradient(to right, #390ca2 0%, #bf5bb4 50%, #390ca2 100%);
+}
+.button.destructive {
+    background-image: linear-gradient(to right, #ff0000 0%, #ff8888 50%, #ff0000 100%);
+}
+.button:hover:not(.disabled):not(.pressed) {
+    background-position: right center;
+    transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.button.pressed {
+    transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    opacity: 0.5;
+    background-position: center center;
+}
+
+/* Logo */
+/* The logo we see at the top of the page and in the header on a desktop-size browser*/
+.logo {
+    margin: 1vw 1vw 1vw 0;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 70px;
+    width: 400px;
+    background-color: #010019;
+    transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+/* Percentage bar */
+/* This is the percentage bar to show how many bots are online */
+#percentbarOuter {
+    background-color: #c23b3b;
+    color: #c23b3b;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    transition: all 1s;
+    width: 90%;
+    margin: 10px auto;
+    padding: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: relative;
+}
+#percentbarInner {
+    width: 100%;
+    background-color: grey;
+    color: white;
+    border-radius: 0 0 5px 5px;
+    height: 1vw;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    transition: all 1s;
+    left: 0;
+    float: left;
+    position: relative;
+}
+#percentbarInnerText {
+    padding: 5px;
+    color: white;
+    position: relative;
+    z-index: 5;
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 1em;
+}
+
+/* Titles */
+/* The titles describe what section we are in, for example the 'bots' section*/
+.title {
+    font-size: 80px;
+    padding: 0;
+    text-transform: uppercase;
+    margin: 0 5%;
+    float: left;
+    word-break: break-word;
+}
+.title.right {
+    float: right;
+}
+.title.status {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Statuses */
+/* These status boxes tell us if individual bots are online or not*/
+.statusBox {
+    width: 90%;
+    box-sizing: border-box;
+    border-radius: 1vw;
+    opacity: 0.7;
+    text-align: center;
+    padding: 50px;
+    margin: 50px auto auto;
+    transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    overflow: auto;
+}
+.highlight {
+    font-weight: bolder;
+    color: #00005a;
+}
+
+/* Feature boxes */
+/* These tell us about different features of the bot */
+.feature {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 90%;
+    display: block;
+    background-image: linear-gradient(white, #ffffff55);
+    font-weight: bolder;
+    font-size: 35px;
+    margin: 30px 0 30px 0;
+    text-align: center;
+    border-radius: 1vw;
+    padding: 1vw;
+    float: left;
+    word-break: break-word;
+}
+.feature .emote {
+    font-size: 50px;
+}
+.feature .content {
+    font-size: 20px;
+}
+
+/* Link to */
+.link {
+    position: relative;
+    visibility: hidden;
+    top: -500px;
+}
+.link.sticky {
+    top: -200px;
+}
+
+/* Media queries */
+/* Adapt based on browser support */
+/* Hyphens */
+@supports (hyphens: auto) {
+    .title {
+        hyphens: auto;
+    }
+    .feature {
+        hyphens: auto;
+    }
+}

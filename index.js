@@ -5,6 +5,7 @@ const fs = require('fs');
 let compiler = webpack(webpackconfig);
 
 let deleteFolderRecursive = (path) => {
+}/*
 	if (fs.existsSync(path)) {
 		fs.readdirSync(path).forEach(function(file){
 			var curPath = path + "/" + file;
@@ -16,7 +17,7 @@ let deleteFolderRecursive = (path) => {
 		});
 		fs.rmdirSync(path);
 	}
-};
+};*/
 
 console.log("Beginning webpack build\n")
 compiler.run((err, stats) => {

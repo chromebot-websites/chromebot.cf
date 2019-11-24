@@ -1,0 +1,49 @@
+/* Define the root elements, these are all the top-level elements */
+html {
+	width: 100%;
+	height: auto;
+}
+body {
+	width: 100%;
+	height: auto;
+	font-family: Verdana, sans-serif;
+	margin: 0;
+}
+#root {
+	background-image: linear-gradient(white, wheat);
+	min-height: 100vh;
+	height: auto;
+	width: 100%;
+	overflow: auto;
+	padding-bottom: 10vw;
+}
+
+/* Make it sticky */
+.stickyContainer {
+	display: flex;
+	overflow: scroll;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: whitesmoke;
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0 0.5vw 0.5vw whitesmoke;
+	height: 200px;
+	z-index: 1000;
+}
+.sticky.button {
+	width: 90%;
+	height: auto;
+	margin: 1vw 3vw;
+	transform: unset;
+	left: unset;
+}
+.sticky.logo {
+	display: none;
+}
+body.sticky {
+	padding-top: 300px;
+}
