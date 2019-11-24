@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Status extends Component {
   constructor(props) {
     super(props);
-    this.state = {color: "grey", message: "getting the latest data", xmlhttp: new XMLHttpRequest(), timeoutId: null};
+    this.setState({color: "grey", message: "getting the latest data", xmlhttp: new XMLHttpRequest(), timeoutId: null});
   }
   componentDidMount() {
     this.state.xmlhttp.onreadystatechange = () => {
