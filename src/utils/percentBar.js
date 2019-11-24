@@ -3,17 +3,18 @@ import React, { Component } from "react";
 class StatusPage extends Component {
   constructor(props) {
     super(props);
-    this.setState({color: "#c23b3b", barColor: "grey", percentage: 100, message: "Detecting the online bots...", xmlhttp: new XMLHttpRequest()});
+    this.setState({color: "#c23b3b", barColor: "grey", percentage: 100, message: "Detecting the online bots..."});
+    this.xmlhttp = new XMLHttpRequest();
     this.timeoutId = null;
   }
   componentDidMount() {
-    this.state.xmlhttp.onreadystatechange = () => {
+    this.xmlhttp.onreadystatechange = () => {
       if (
-        this.state.xmlhttp.readyState === 4 &&
-        this.state.xmlhttp.status === 200
+          this.xmlhttp.readyState === 4 &&
+          this.xmlhttp.status === 200
       ) {
         let onlineMembers = 0;
-        JSON.parse(this.state.xmlhttp.responseText).members.forEach(member => {
+        JSON.parse(this.xmlhttp.responseText).members.forEach(member => {
           if (this.props.searchForMembers.indexOf(member.id) >= 0) {
             onlineMembers++;
           }
@@ -36,7 +37,7 @@ class StatusPage extends Component {
           });
         }
         this.timeoutId = setTimeout(() => {
-          this.state.xmlhttp.open(
+          this.xmlhttp.open(
             "GET",
             "https://discordapp.com/api/guilds/" +
               this.props.serverId +
@@ -44,11 +45,11 @@ class StatusPage extends Component {
               new Date().getTime(),
             true
           ); //we append the current timestamp to bypass caching, it's hacky but it works. Please don't remove it unless you have a better solution.
-          this.state.xmlhttp.send();
+          this.xmlhttp.send();
         }, 5000);
       }
     };
-    this.state.xmlhttp.open(
+    this.xmlhttp.open(
       "GET",
       "https://discordapp.com/api/guilds/" +
         this.props.serverId +
@@ -56,13 +57,13 @@ class StatusPage extends Component {
         new Date().getTime(),
       true
     ); //we append the current timestamp to bypass caching, it's hacky but it works. Please don't remove it unless you have a better solution.
-    this.state.xmlhttp.send();
+    this.xmlhttp.send();
   }
   componentWillUnmount() {
     if (this.timeoutId) {
       clearTimeout(this.timeoutId);
     }
-    this.state.xmlhttp.abort();
+    this.xmlhttp.abort();
   }
   render() {
     return (

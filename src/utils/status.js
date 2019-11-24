@@ -3,16 +3,17 @@ import React, { Component } from "react";
 class Status extends Component {
   constructor(props) {
     super(props);
-    this.setState({color: "grey", message: "getting the latest data", xmlhttp: new XMLHttpRequest(), timeoutId: null});
+    this.state = {color: "grey", message: "getting the latest data", timeoutId: null};
+    this.xmlhttp = new XMLHttpRequest();
   }
   componentDidMount() {
-    this.state.xmlhttp.onreadystatechange = () => {
+    this.xmlhttp.onreadystatechange = () => {
       if (
-        this.state.xmlhttp.readyState === 4 &&
-        this.state.xmlhttp.status === 200
+        this.xmlhttp.readyState === 4 &&
+        this.xmlhttp.status === 200
       ) {
         let chromebotOn = false;
-        JSON.parse(this.state.xmlhttp.responseText).members.forEach(member => {
+        JSON.parse(this.xmlhttp.responseText).members.forEach(member => {
           if (member.id === this.props.botId) {
             chromebotOn = true;
             if (member.status === "idle") {
@@ -34,22 +35,22 @@ class Status extends Component {
           }
         });
         if (!chromebotOn) {
-          this.setState({ color: "red", message: "Offline", height: 9 });
+          this.setState({color: "red", message: "Offline", height: 9});
         }
         setTimeout(() => {
-          this.state.xmlhttp.open(
-            "GET",
-            "https://discordapp.com/api/guilds/" +
+          this.xmlhttp.open(
+              "GET",
+              "https://discordapp.com/api/guilds/" +
               this.props.serverId +
               "/widget.json?timestamp=" +
               new Date().getTime(),
-            true
-          ); //we appecnd the current timestamp to bypass caching, it's hacky but it works. Please don't remove it unless you have a better solution.
-          this.state.xmlhttp.send();
+              true
+          ); //we append the current timestamp to bypass caching, it's hacky but it works. Please don't remove it unless you have a better solution.
+          this.xmlhttp.send();
         }, 5000);
       }
     };
-    this.state.xmlhttp.open(
+    this.xmlhttp.open(
       "GET",
       "https://discordapp.com/api/guilds/" +
         this.props.serverId +
@@ -57,7 +58,7 @@ class Status extends Component {
         new Date().getTime(),
       true
     ); //we append the current timestamp to bypass caching, it's hacky but it works. Please don't remove it unless you have a better solution.
-    this.state.xmlhttp.send();
+    this.xmlhttp.send();
   }
   componentWillUnmount() {
     if (this.timeoutId) {
