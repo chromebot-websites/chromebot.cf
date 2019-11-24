@@ -1,6 +1,9 @@
-name: Deploy react app to github-pages
+name: Test react app for deployability
 
-on: [push]
+on:
+  push:
+    branches-ignore: 
+      - master
 
 jobs:
   build:
