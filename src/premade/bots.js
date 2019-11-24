@@ -37,7 +37,7 @@ class Bots extends Component {
             serverId="480959345601937410"
           />
         </div>
-          <a id="bot-invite" className="link">Invite</a>
+          <div id="bot-invite" className="link"/>
         <b className="title">Invite the bots</b>
           <Button
               onClick={(button) => {
