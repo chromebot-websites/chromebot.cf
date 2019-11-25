@@ -62,8 +62,8 @@ class Navbar extends Component {
                  loop
                  muted
                  playsInline>
-            <source src="videos/icon-rotate.webm" type="video/webm"/>
-            <source src="videos/icon-rotate.mp4" type="video/mp4"/>
+            <source src="videos/icon-rotate.webm.unreal" type="video/webm"/>
+            <source src="videos/icon-rotate.mp4.unreal" type="video/mp4"/>
           </video>
           <Button
             important
