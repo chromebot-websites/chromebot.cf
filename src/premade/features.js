@@ -7,7 +7,7 @@ class Features extends Component {
       <React.Fragment>
           <b className="title right">Features</b>
           <Badge
-              icon="🧠"
+              icon="💭"
               title="Knowledge"
               description="Want to find out about a user? Just run the userinfo command and check out the information"
           />
@@ -27,7 +27,7 @@ class Features extends Component {
             description="ChromeBot is almost always online to help your server. All issues are quickly reported to help you stay online even when we're down"
           />
           <Badge
-            icon="🧰"
+            icon="⚙️"
             title="In Development"
             description="New features are always being added and issues are being fixed quickly. This ensures that you have a useful, working, bot in your server"
           />
