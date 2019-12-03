@@ -45,7 +45,6 @@ don't worry, the site won't break; it just won't have the latest commits.
 ![BOBOLOB](https://img.shields.io/badge/Bobolob-Passing-yellowgreen)<br/>
 ![MINION](https://img.shields.io/badge/Minion-Passing-yellowgreen)<br/>
 
-
 ![Discord](https://img.shields.io/discord/480959345601937410?color=yellow&label=Discord&logo=discord&logoColor=white)<br/>
 ![GitHub issues](https://img.shields.io/github/issues/chromebot-websites/chromebot.cf?logo=github)<br/>
 ![GitHub PRs](https://img.shields.io/github/issues-pr/chromebot-websites/chromebot.cf?logo=github)<br/>
