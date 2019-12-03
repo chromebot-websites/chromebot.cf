@@ -29,9 +29,7 @@ don't worry, the site won't break; it just won't have the latest commits.
 
 ## Just look at all of our badges
 
-![Rating](https://badgen.net/badge/User%20Rating:/★★★★☆)<br/>
-![Commit](https://badgen.net/github/last-commit/micromatch/micromatch)<br/>
-
+![Commit](https://badgen.net/github/last-commit/chromebot-websites/chromebot.cf)<br/>
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/chromebot-websites/chromebot.cf?logo=react&logoColor=white)<br/>
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/chromebot-websites/chromebot.cf?label=and&logo=react&logoColor=white)<br/>
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/chromebot-websites/chromebot.cf?label=which%20is&logo=react&logoColor=white)<br/>
