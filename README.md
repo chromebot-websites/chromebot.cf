@@ -32,6 +32,10 @@ If the build is passing that means that the latest and greatest is on https://be
 ![GitHub PRs](https://img.shields.io/github/issues-pr/chromebot-websites/chromebot.cf?logo=github)<br/>
 ![Website](https://img.shields.io/website?down_color=lightgrey&down_message=offline&logo=react&logoColor=white&up_color=blue&up_message=online&url=https%3A%2F%2Fchromebot.cf)<br/>
 
+![gh-badges]: https://www.npmjs.com/package/gh-badges
+![badge-spec]: https://github.com/badges/shields/tree/master/spec
+![gh-badges-docs]: https://github.com/badges/shields/tree/master/gh-badges/README.md
+![gh-badges-changelog]: https://github.com/badges/shields/tree/master/gh-badges/CHANGELOG.md
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/chromebot-websites/chromebot.cf/Deploy%20react%20app%20to%20github?logo=github)<br/>
 ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/chromebot-websites/chromebot.cf?logo=codefactor&logoColor=white)<br/>
 
