@@ -48,7 +48,6 @@ the site won't break; it just won't have the latest commits.
 ![Discord](https://img.shields.io/discord/480959345601937410?color=yellow&label=Discord&logo=discord&logoColor=white)<br/>
 ![GitHub issues](https://img.shields.io/github/issues/chromebot-websites/chromebot.cf?logo=github)<br/>
 ![GitHub PRs](https://img.shields.io/github/issues-pr/chromebot-websites/chromebot.cf?logo=github)<br/>
-![Website](https://img.shields.io/website?down_color=lightgrey&down_message=offline&logo=react&logoColor=white&up_color=blue&up_message=online&url=https%3A%2F%2Fchromebot.cf)<br/>
 
 ## Like what you see? Share this repository with your (coder) friends!<br/>
 
