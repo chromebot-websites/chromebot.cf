@@ -54,5 +54,5 @@ don't worry, the site won't break; it just won't have the latest commits.
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/chromebot-websites/chromebot.cf/Deploy%20react%20app%20to%20github?logo=github)<br/>
 ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/chromebot-websites/chromebot.cf?logo=codefactor&logoColor=white)<br/>
 
-##Like what you see? Share this repository with your (coder) friends!<br/>
+## Like what you see? Share this repository with your (coder) friends!<br/>
 ![Twitter](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fchromebot-websites%2Fchromebot.cf)<br/>
