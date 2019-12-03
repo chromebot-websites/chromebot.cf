@@ -52,4 +52,4 @@ don't worry, the site won't break; it just won't have the latest commits.
 
 ## Like what you see? Share this repository with your (coder) friends!<br/>
 
-![Twitter](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fchromebot-websites%2Fchromebot.cf)<br/>
+![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fchromebot-websites%2Fchromebot.cf)<br/>
