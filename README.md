@@ -10,9 +10,9 @@ website
 ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/chromebot-websites/chromebot.cf?logo=codefactor&logoColor=white)<br/>
 
 If the build is passing that means that the latest and greatest is on
-https://chromebot.cf, if not then maybe try fixing and create a pull
-request (or just commit directly to the master branch (pontentially unsafe) -
-don't worry, the site won't break; it just won't have the latest commits.
+https://chromebot.cf, if not then maybe try fixing and create a pull request (or
+just commit directly to the master branch (pontentially unsafe) - don't worry,
+the site won't break; it just won't have the latest commits.
 
 # WHO MADE THIS
 
@@ -53,4 +53,4 @@ don't worry, the site won't break; it just won't have the latest commits.
 ## Like what you see? Share this repository with your (coder) friends!<br/>
 
 ![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fchromebot-websites%2Fchromebot.cf)
-![Twitter2](https://img.shields.io/twitter/follow/Chromebook777?style=social)<br/>
+<a href="https://twitter.com/intent/follow?screen_name=Chromebook777">![Twitter2](https://img.shields.io/twitter/follow/Chromebook777?style=social)<br/></a>
