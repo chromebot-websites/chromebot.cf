@@ -39,6 +39,7 @@ don't worry, the site won't break; it just won't have the latest commits.
 ![Using heroku](https://img.shields.io/badge/Backend%20from-heroku-430098?logo=heroku)<br/>
 ![Using github pages](https://img.shields.io/badge/Hosting%20from-github%20pages-black?logo=github)<br/>
 
+![VILA](https://img.shields.io/badge/Vila-Approved-brightgreen)<br/>
 ![Discord](https://img.shields.io/discord/480959345601937410?color=yellow&label=Discord&logo=discord&logoColor=white)<br/>
 ![GitHub issues](https://img.shields.io/github/issues/chromebot-websites/chromebot.cf?logo=github)<br/>
 ![GitHub PRs](https://img.shields.io/github/issues-pr/chromebot-websites/chromebot.cf?logo=github)<br/>
