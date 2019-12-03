@@ -6,11 +6,11 @@ website
 
 # WEBSITE BUILD STATUS:
 
-[![Build Status](https://travis-ci.com/chromebot-websites/chromebot.cf.svg?branch=master)](https://travis-ci.com/chromebot-websites/chromebot.cf)
-[![CodeFactor](https://www.codefactor.io/repository/github/chromebot-websites/chromebot.cf/badge/master)](https://www.codefactor.io/repository/github/chromebot-websites/chromebot.cf/overview/master)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/chromebot-websites/chromebot.cf/Deploy%20react%20app%20to%20github?logo=github)<br/>
+![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/chromebot-websites/chromebot.cf?logo=codefactor&logoColor=white)<br/>
 
 If the build is passing that means that the latest and greatest is on
-https://beta.chromebot.cf, if not then maybe try fixing and create a pull
+https://chromebot.cf, if not then maybe try fixing and create a pull
 request (or just commit directly to the master branch (pontentially unsafe) -
 don't worry, the site won't break; it just won't have the latest commits.
 
@@ -29,7 +29,6 @@ don't worry, the site won't break; it just won't have the latest commits.
 
 ## Just look at all of our badges
 
-![Commit](https://badgen.net/github/last-commit/chromebot-websites/chromebot.cf)<br/>
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/chromebot-websites/chromebot.cf?logo=react&logoColor=white)<br/>
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/chromebot-websites/chromebot.cf?label=and&logo=react&logoColor=white)<br/>
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/chromebot-websites/chromebot.cf?label=which%20is&logo=react&logoColor=white)<br/>
@@ -50,9 +49,6 @@ don't worry, the site won't break; it just won't have the latest commits.
 ![GitHub issues](https://img.shields.io/github/issues/chromebot-websites/chromebot.cf?logo=github)<br/>
 ![GitHub PRs](https://img.shields.io/github/issues-pr/chromebot-websites/chromebot.cf?logo=github)<br/>
 ![Website](https://img.shields.io/website?down_color=lightgrey&down_message=offline&logo=react&logoColor=white&up_color=blue&up_message=online&url=https%3A%2F%2Fchromebot.cf)<br/>
-
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/chromebot-websites/chromebot.cf/Deploy%20react%20app%20to%20github?logo=github)<br/>
-![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/chromebot-websites/chromebot.cf?logo=codefactor&logoColor=white)<br/>
 
 ## Like what you see? Share this repository with your (coder) friends!<br/>
 
