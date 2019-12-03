@@ -52,6 +52,6 @@ the site won't break; it just won't have the latest commits.
 
 ## Like what you see? Share this repository with your (coder) friends!<br/>
 
-<a href="https://twitter.com/intent/tweettext=Check%20out%20this%20cool%20Repository:&url=https%3A%2F%2Fgithub.com%2Fchromebot-websites%2Fchromebot.cf">![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fchromebot-websites%2Fchromebot.cf)</a>
+<a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20cool%20Repository:&url=https%3A%2F%2Fgithub.com%2Fchromebot-websites%2Fchromebot.cf">![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fchromebot-websites%2Fchromebot.cf)</a>
 <a href="https://twitter.com/intent/follow?screen_name=Chromebook777">![Twitter2](https://img.shields.io/twitter/follow/Chromebook777?style=social)<br/></a>
 <a href="https://www.reddit.com/r/Chromebot">![Reddit](https://img.shields.io/reddit/subreddit-subscribers/Chromebot?style=social)</a><br/>
