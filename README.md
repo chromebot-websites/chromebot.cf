@@ -41,6 +41,7 @@ don't worry, the site won't break; it just won't have the latest commits.
 
 ![VILA](https://img.shields.io/badge/Vila-Approved-brightgreen)<br/>
 ![MINION](https://img.shields.io/badge/Minion-Passing-yellowgreen)<br/>
+![CHROMEBOOK](https://img.shields.io/badge/ChromeBook%20Grade-A%2B-brightgreen)<br/>
 
 ![Discord](https://img.shields.io/discord/480959345601937410?color=yellow&label=Discord&logo=discord&logoColor=white)<br/>
 ![GitHub issues](https://img.shields.io/github/issues/chromebot-websites/chromebot.cf?logo=github)<br/>
