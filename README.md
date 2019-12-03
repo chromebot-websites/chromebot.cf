@@ -22,7 +22,7 @@ If the build is passing that means that the latest and greatest is on https://be
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/chromebot-websites/chromebot.cf?label=which%20is&logo=react&logoColor=white)<br/>
 
 ![Using github actions](https://img.shields.io/badge/Build%20with-github%20actions-red?logo=github)<br/>
-![Community on discord](https://img.shields.io/badge/Build%20with-github%20actions-orange?logo=discord&logoColor=white)<br/>
+![Community on discord](https://img.shields.io/badge/Community%20on-discord-orange?logo=discord&logoColor=white)<br/>
 ![Using webstorm](https://img.shields.io/badge/Using%20jetbrains-webstorm-1ABEE4?logo=webstorm)<br/>
 ![Using heroku](https://img.shields.io/badge/Backend%20from-heroku-430098?logo=heroku)<br/>
 ![Using github pages](https://img.shields.io/badge/Hosting%20from-github%20pages-black?logo=github)<br/>
