@@ -29,7 +29,7 @@
     "node-sass": "latest",
     "typescript": "latest",
     "core-js": "latest",
-    "fsevents": "latest",
+    "fsevents": "latest"
   },
   "browserslist": {
     "production": [
