@@ -37,7 +37,7 @@ class Features extends Component {
           icon="🔌"
           title="Any Website Errors?"
           description="Found any errors in this website? Click the button below to report them:"
-        />
+        />{" "}
         <Button
           destructive
           onClick={button =>
