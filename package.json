@@ -1,5 +1,5 @@
 {
-  "name": "ChromeBot-Website",
+  "name": "chromebot-website",
   "version": "0.1.0",
   "description": "",
   "private": true,
@@ -8,7 +8,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "push": "gh-pages -d build",
-    "deploy": "npm run build && npm run push"
+    "deploy": "npm run build && npm run push",
+    "webpack": "webpack"
   },
   "author": "Minion3665",
   "dependencies": {
@@ -28,8 +29,7 @@
     "sass": "latest",
     "node-sass": "latest",
     "typescript": "latest",
-    "core-js": "latest",
-    "fsevents": "latest"
+    "core-js": "latest"
   },
   "browserslist": {
     "production": [
