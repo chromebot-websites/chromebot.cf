@@ -11,6 +11,7 @@ class ErrorBoundary extends Component {
 	}
 	render() {
 		if (this.state.error) {
+			return ("AHHH PANIC!!!")
 			return ("Hi. I'm Minion3665. If you can see this then the website is dead. Properly dead. Please create a new issue at https://github.com/chromebook777-productions/chromebot.cf/issues with the title 'I got a supererror'. I am not going to link anywhere for fear of breaking stuff further, as if this error boundary breaks then I have nothing left. If you want to go back to the main page then go to https://chromebot.cf.Thanks, Minion3665/");
 		} else {
 			return (
