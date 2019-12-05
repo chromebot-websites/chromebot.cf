@@ -35,7 +35,7 @@ class MemberList extends Component {
 						]
 					},
 					weebly: {
-						description: "This user uses weebly to build their sites",
+						description: "This user uses monirise to build their sites",
 						emoji: "🧱"
 					},
 					nostaff: {
