@@ -11,8 +11,8 @@ class Error extends Component {
 			<React.Fragment>
 				<div className="page one variant2">
 					<div className="textblock">Hey, that's an error {this.state.errorType}<br />{this.state.errorMessage}</div>
-					<Button important onClick={(button) => {window.location.href = "/"}}>Back To Home</Button>
-					<Button destructive onClick={(button) => {window.location.href = "https://github.com/chromebot-websites/chromebot.cf/issues"}}>Report a bug if you believe this is in issue</Button>
+					<Button important onClick={(button) => {window.location.href = "/";}}>Back To Home</Button>
+					<Button destructive onClick={(button) => {window.location.href = "https://github.com/chromebot-websites/chromebot.cf/issues";}}>Report a bug if you believe this is in issue</Button>
 				</div>
 				<div className="page two variant2">
 					<div className="textblock variant2">Website made by <a href="https://github.com/minion3665">@Minion3665</a> on github</div>
