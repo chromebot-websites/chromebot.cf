@@ -1,3 +1,4 @@
+import Button from "./../utils/button.js";
 import React, { Component } from "react";
 import Badge from "./../utils/featureBadge.js";
 
@@ -31,6 +32,12 @@ class Features extends Component {
             title="In Development"
             description="New features are always being added and issues are being fixed quickly. This ensures that you have a useful, working, bot in your server"
           />
+          <Badge
+            icon="🔌"
+            title="Any Website Errors?"
+            description="Found any errors in this website? Click the button below to report them:"
+          />
+          <Button destructive onClick={(button) => window.location.href = "https://github.com/chromebot-websites/chromebot.cf/issues"}>Click me to report a website error!</Button>
       </React.Fragment>
     );
   }
