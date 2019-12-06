@@ -1,9 +1,9 @@
+import "./css/base.css";
+import "./css/custom.css";
+
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
-import "./css/base.css";
-import "./css/custom.css";
 
 import Error from "./pages/error.js";
 import Bots from "./premade/bots.js";
@@ -102,6 +102,5 @@ class App extends Component {
     );
   }
 }
-
 
 ReactDOM.render(<App />, document.getElementById("root"));
