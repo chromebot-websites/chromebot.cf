@@ -14,6 +14,9 @@ https://chromebot.cf, if not then maybe try fixing and create a pull request (or
 just commit directly to the master branch (pontentially unsafe) - don't worry,
 the site won't break; it just won't have the latest commits.
 
+## Coding languages used:
+![Img](https://raw.githubusercontent.com/chromebot-websites/chromebot.cf/master/public/images/C06D5AE8-D12A-4426-A589-908644989BE2.jpeg)
+
 # WHO MADE THIS
 
 ## The following awesome people helped make the https://beta.chromebot.cf website a reality
