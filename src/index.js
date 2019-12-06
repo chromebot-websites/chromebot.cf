@@ -27,6 +27,25 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route
+              path="/egg"
+              render={() => {
+                return (
+                  <React.Fragment>
+                    <Button
+                      destructive
+                      onClick={button =>
+                        (window.location.href = "https://google.com")
+                      }
+                    >
+                      Go Back Home
+                    </Button>
+                    <Bots />
+                  </React.Fragment>
+                );
+              }}
+            />
+
+            <Route
               path="/status"
               render={() => {
                 return (
