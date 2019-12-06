@@ -52,3 +52,4 @@ the site won't break; it just won't have the latest commits.
 ## Like what you see? Share this repository with your (coder) friends!<br/>
 
 <a href="https://www.reddit.com/r/Chromebot">![Reddit](https://img.shields.io/reddit/subreddit-subscribers/Chromebot?style=social)</a><br/>
+<a href="https://">![Join us on discord](https://img.shields.io/badge/Join%20us%20on-discord-red?logo=discord&style=social)</a><br/>
