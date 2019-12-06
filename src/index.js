@@ -1,9 +1,9 @@
+import "./css/base.css";
+import "./css/custom.css";
+
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
-import "./css/base.css";
-import "./css/custom.css";
 
 import Error from "./pages/error.js";
 import Bots from "./premade/bots.js";
@@ -26,6 +26,25 @@ class App extends Component {
         <Router>
           <Switch>
             <Route exact path="/" component={HomePage} />
+            <Route
+              path="/egg"
+              render={() => {
+                return (
+                  <React.Fragment>
+                    <Button
+                      destructive
+                      onClick={button =>
+                        (window.location.href = "https://google.com")
+                      }
+                    >
+                      Go Back Home
+                    </Button>
+                    <Bots />
+                  </React.Fragment>
+                );
+              }}
+            />
+
             <Route
               path="/status"
               render={() => {
@@ -83,6 +102,5 @@ class App extends Component {
     );
   }
 }
-
 
 ReactDOM.render(<App />, document.getElementById("root"));
