@@ -9,6 +9,7 @@ pull_request_rules:
       - status-success=build (12.x)
       - status-success=task-list-completed
       - status-success=pullapprove
+      - -conflict
     actions:
       merge:
         method: merge
