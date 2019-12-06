@@ -3,16 +3,18 @@ import React, { Component } from "react";
 class StatusPage extends Component {
   constructor(props) {
     super(props);
-    this.state = {color: "#c23b3b", barColor: "grey", percentage: 100, message: "Detecting the online bots..."};
+    this.state = {
+      color: "#c23b3b",
+      barColor: "grey",
+      percentage: 100,
+      message: "Detecting the bots that are online..."
+    };
     this.xmlhttp = new XMLHttpRequest();
     this.timeoutId = null;
   }
   componentDidMount() {
     this.xmlhttp.onreadystatechange = () => {
-      if (
-          this.xmlhttp.readyState === 4 &&
-          this.xmlhttp.status === 200
-      ) {
+      if (this.xmlhttp.readyState === 4 && this.xmlhttp.status === 200) {
         let onlineMembers = 0;
         JSON.parse(this.xmlhttp.responseText).members.forEach(member => {
           if (this.props.searchForMembers.indexOf(member.id) >= 0) {
@@ -44,7 +46,9 @@ class StatusPage extends Component {
               "/widget.json?timestamp=" +
               new Date().getTime(),
             true
-          ); //we append the current timestamp to bypass caching, it's hacky but it works. Please don't remove it unless you have a better solution.
+          ); // we append the current timestamp to bypass caching, it's
+          // hacky but it works. Please don't remove it unless you
+          // have a better solution.
           this.xmlhttp.send();
         }, 5000);
       }
@@ -56,7 +60,9 @@ class StatusPage extends Component {
         "/widget.json?timestamp=" +
         new Date().getTime(),
       true
-    ); //we append the current timestamp to bypass caching, it's hacky but it works. Please don't remove it unless you have a better solution.
+    ); // we append the current timestamp to bypass
+    // caching, it's hacky but it works. Please don't
+    // remove it unless you have a better solution.
     this.xmlhttp.send();
   }
   componentWillUnmount() {
