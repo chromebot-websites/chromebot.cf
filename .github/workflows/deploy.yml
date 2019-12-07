@@ -25,6 +25,7 @@ jobs:
         git checkout -b build
     - name: build
       run: |
+        npm install
         npm ci
         npm run build
         rm -rf /node_modules
