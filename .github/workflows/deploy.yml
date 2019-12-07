@@ -33,7 +33,7 @@ jobs:
         CI: true
     - name: copy
       run: |
-        cp /build/index.html /build/404.html
+        cp build/index.html build/404.html
       env:
         CI: true
     - name: deploy
