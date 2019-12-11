@@ -57,5 +57,12 @@ the site won't break; it just won't have the latest commits.
 
 <a href="https://www.reddit.com/r/Chromebot">![Reddit](https://img.shields.io/reddit/subreddit-subscribers/Chromebot?style=social)</a><br/>
 <a href="https://">![Join us on discord](https://img.shields.io/discord/480959345601937410?color=yellow&label=Join%20us%20on%20discord&logo=discord&style=social)</a>
-## 
+
+##
+
 [![licensebutton](https://licensebuttons.net/l/by-nd/3.0/88x31.png)](https://creativecommons.org/licenses/by-nd/4.0)
+
+<details>
+  <summary>CC license summary</summary>
+      Bbasically you can share this code arround as long as you credit the owner(s), any modifications to the code will then make it illegal to share said modified code, for more detailed info click the badge above /\
+</details>
