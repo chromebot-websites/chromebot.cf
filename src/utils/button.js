@@ -13,6 +13,8 @@ class Button extends Component {
 			type = "destructive";
 		} else if (props.important) {
 			type = "important";
+		} else if (props.special) {
+		    type = "special";
 		}
 		if (typeof props.onClick === "function") {
 			onClick = props.onClick;
