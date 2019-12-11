@@ -64,6 +64,5 @@ the site won't break; it just won't have the latest commits.
 
  <details>
   <summary>CC license summary</summary>
- ---
-      You can share this code arround as long as you credit the owner(s), any modifications to the code will then make it illegal to share said modified code, for more detailed info click the badge above. Otherwise don't forget to credit our hard work...
+ > You can share this code arround as long as you credit the owner(s), any modifications to the code will then make it illegal to share said modified code, for more detailed info click the badge above. Otherwise don't forget to credit our hard work...
 </details>
