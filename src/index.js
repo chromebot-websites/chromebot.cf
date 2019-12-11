@@ -33,13 +33,16 @@ class App extends Component {
                   <React.Fragment>
                     <Button
                       destructive
-                      onClick={button =>
-                        (window.location.href = "https://google.com")
-                      }
+                      onClick={button => (window.location.href = "")}
                     >
-                      Go Back Home
+                      Yay you found an easter egg...
                     </Button>
-                    <Bots />
+                    <Button
+                      destructive
+                      onClick={button => (window.location.href = "")}
+                    >
+                      Not mutch to se here tho...
+                    </Button>
                   </React.Fragment>
                 );
               }}
