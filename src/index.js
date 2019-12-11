@@ -43,6 +43,12 @@ class App extends Component {
                     >
                       Not mutch to se here tho...
                     </Button>
+                    <Button
+                      special
+                      onClick={button => (window.location.href = "")}
+                    >
+                      Sounding like vincentdistoer was intentional by the way.
+                    </Button>
                   </React.Fragment>
                 );
               }}

@@ -30,6 +30,9 @@
 .button.important {
     background-image: linear-gradient(to right, #390ca2 0%, #bf5bb4 50%, #390ca2 100%);
 }
+.button.special {
+    background-image: linear-gradient(to right, #3269a8 0%, #9bbfe8 50%, #3269a8 100%);
+}
 .button.destructive {
     background-image: linear-gradient(to right, #ff0000 0%, #ff8888 50%, #ff0000 100%);
 }
