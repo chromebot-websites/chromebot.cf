@@ -63,7 +63,6 @@ the site won't break; it just won't have the latest commits.
 [![licensebutton](https://licensebuttons.net/l/by-nd/3.0/88x31.png)](https://creativecommons.org/licenses/by-nd/4.0)
 
  <details>
-  <summary>CC license summary</summary>
- ## 
+  <summary>CC license summary</summary></ah>
       You can share this code arround as long as you credit the owner(s), any modifications to the code will then make it illegal to share said modified code, for more detailed info click the badge above. Otherwise don't forget to credit our hard work...
 </details>
