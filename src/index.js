@@ -31,28 +31,16 @@ class App extends Component {
               render={() => {
                 return (
                   <React.Fragment>
-                    <Button
-                      destructive
-                    >
-                      Yay you found an easter egg...
-                    </Button>
-                    <Button
-                      destructive
-                    >
-                      Not much to see here though...
-                    </Button>
-                    <Button
-                      special
-                    >
-                      :)
-                    </Button>
+                    <Button destructive>Yay you found an easter egg...</Button>
+                    <Button destructive>Not much to see here though...</Button>
+                    <Button special>:)</Button>
                   </React.Fragment>
                 );
               }}
             />
 
             <Route
-              path="/status"
+              path="/status "
               render={() => {
                 return (
                   <React.Fragment>
