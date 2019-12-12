@@ -74,14 +74,14 @@ class Navbar extends Component {
           >
             Join The Server
           </Button>
-          <Button
-            onClick={button => {
-              window.location.href = "#bot-invite";
-              button.unpress();
-            }}
-          >
-            Invite The Bots
-          </Button>
+         // <Button
+         //   onClick={button => {
+         //     window.location.href = "#bot-invite";
+         //     button.unpress();
+         //   }}
+         // >
+         //   Invite The Bots
+         // </Button>
         </div>
       </React.Fragment>
     );
