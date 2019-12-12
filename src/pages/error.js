@@ -17,7 +17,7 @@ class Error extends Component {
 				<div className="page two variant2">
 					<div className="textblock variant2">Website made by <a href="https://github.com/minion3665">@Minion3665</a> on github</div>
 					<div className="textblock variant2">Discord server made by <a href="https://github.com/chromebook777">@Chromebook777</a> on github</div>
-					<div className="textblock variant2">Minon's slave <a href="https://github.com/vilagamer999">@Vilagamer9999</a> On github</div>
+					<div className="textblock variant2">Minon's slave <a href="https://github.com/vilagamer999">@Vilagamer9999</a> on github</div>
 				</div>
 			</React.Fragment>
 		);
