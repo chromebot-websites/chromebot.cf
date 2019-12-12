@@ -33,21 +33,18 @@ class App extends Component {
                   <React.Fragment>
                     <Button
                       destructive
-                      onClick={button => (window.location.href = "")}
                     >
                       Yay you found an easter egg...
                     </Button>
                     <Button
                       destructive
-                      onClick={button => (window.location.href = "")}
                     >
-                      Not mutch to se here tho...
+                      Not much to see here though...
                     </Button>
                     <Button
                       special
-                      onClick={button => (window.location.href = "")}
                     >
-                      Sounding like vincentdistoer was intentional by the way.
+                      :)
                     </Button>
                   </React.Fragment>
                 );
