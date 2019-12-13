@@ -25,7 +25,7 @@ the site won't break; it just won't have the latest commits.
 - [@Minion3665](https://github.com/Minion3665)
 - [@Vilagamer999](https://github.com/Vilagamer999)
 
-## And chromebook777 is awesome. Why? He's chromebook777 of course. 
+## And chromebook777 is awesome. Why? He's chromebook777 of course.
 
 - [@chromebook777](https://github.com/Chromebook777)
 
