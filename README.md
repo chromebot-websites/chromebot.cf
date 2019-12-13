@@ -24,12 +24,14 @@ the site won't break; it just won't have the latest commits.
 
 - [@Minion3665](https://github.com/Minion3665)
 - [@Vilagamer999](https://github.com/Vilagamer999)
-- [@ZestyPepper](https://github.com/ZestyPepper)
-- [@Bobolob54321](https://github.com/Bobolob54321)
 
-## And chromebook777 is awesome. Why? He's chromebook777 of course.
+## And chromebook777 is awesome. Why? He's chromebook777 of course. 
 
 - [@chromebook777](https://github.com/Chromebook777)
+
+## Eek is also an awesome person!
+
+- [@Eek](https//github.com/Eek)
 
 ## Just look at all of our badges
 
