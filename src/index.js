@@ -34,6 +34,7 @@ class App extends Component {
                     <Button destructive>Yay you found an easter egg...</Button>
                     <Button destructive>Not much to see here though...</Button>
                     <Button special>:)</Button>
+                    <Button important> idk lol</Button>
                   </React.Fragment>
                 );
               }}
