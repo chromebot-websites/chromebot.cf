@@ -16,7 +16,7 @@ the site won't break; it just won't have the latest commits.
 
 ## Coding languages used:
 
-![Img](https://raw.githubusercontent.com/chromebot-websites/chromebot.cf/master/public/images/C06D5AE8-D12A-4426-A589-908644989BE2.jpeg)
+![Img](https://raw.githubusercontent.com/chromebot-websites/chromebot.cf/master/public/images/AE99DE4C-F8AB-426F-AF0F-4CB32E6A6F48.png)
 
 # WHO MADE THIS
 
