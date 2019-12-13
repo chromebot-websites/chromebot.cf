@@ -31,7 +31,7 @@ the site won't break; it just won't have the latest commits.
 
 ## Eek is also an awesome person!
 
-- [@Eek](https//github.com/Eek)
+- [@Eek](https://github.com/dragdev)
 
 ## Just look at all of our badges
 
