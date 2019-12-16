@@ -46,8 +46,8 @@ the site won't break; it just won't have the latest commits.
 ![Using github pages](https://img.shields.io/badge/Hosting%20from-github%20pages-black?logo=github)<br/>
 
 ![VILA](https://img.shields.io/badge/Vila-Approved-brightgreen)<br/>
-![EEK](https://img.shields.io/badge/Eek-Approved-brightgreen)<br/>
 ![CHROMEBOOK](https://img.shields.io/badge/ChromeBook%20Grade-A%2B-brightgreen)<br/>
+![EEK](https://img.shields.io/badge/Eek-Approved-brightgreen)<br/>
 ![MINION](https://img.shields.io/badge/Minion-Passing-yellowgreen)<br/>
 
 ![Discord](https://img.shields.io/discord/480959345601937410?color=yellow&label=Discord&logo=discord&logoColor=white)<br/>
@@ -65,5 +65,6 @@ the site won't break; it just won't have the latest commits.
 
  <details>
  <summary>CC license summary</summary>
+ ==================
  You can share this code arround as long as you credit the owner(s), any modifications to the code will then make it illegal to share said modified code, for more detailed info click the badge above. Otherwise don't forget to credit our hard work...
 </details>
