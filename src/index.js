@@ -77,6 +77,7 @@ class App extends Component {
                     <Button destructive>Not much to see here though...</Button>
                     <Button special>:)</Button>
                     <Button important> idk lol</Button>
+                    <Button ugly> 10/10 best button</Button>
                   </React.Fragment>
                 );
               }}
