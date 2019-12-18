@@ -22,8 +22,8 @@
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-router-dom": "5.0.1",
-    "react-scripts": "^3.3.0",
-    "webpack": "4.41.3"
+    "react-scripts": "latest",
+    "webpack": "latest"
   },
   "browserslist": {
     "production": [
