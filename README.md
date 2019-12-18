@@ -20,7 +20,7 @@ the site won't break; it just won't have the latest commits.
 
 # WHO MADE THIS
 
-## The following awesome people helped make the https://beta.chromebot.cf website a reality
+## The following awesome people helped make the https://chromebot.cf website a reality
 
 - [@Minion3665](https://github.com/Minion3665)
 - [@Vilagamer999](https://github.com/Vilagamer999)
