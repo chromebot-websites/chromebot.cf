@@ -26,19 +26,6 @@ class App extends Component {
         <Router>
           <Switch>
             <Route exact path="/" component={HomePage} />
-            <Route
-              path="/egg"
-              render={() => {
-                return (
-                  <React.Fragment>
-                    <Button destructive>Yay you found an easter egg...</Button>
-                    <Button destructive>Not much to see here though...</Button>
-                    <Button special>:)</Button>
-                    <Button important> idk lol</Button>
-                  </React.Fragment>
-                );
-              }}
-            />
 
             <Route
               path="/status "
@@ -77,6 +64,19 @@ class App extends Component {
                       {" "}
                       Not Being Redirected ?{" "}
                     </Button>
+                  </React.Fragment>
+                );
+              }}
+            />
+            <Route
+              path="/egg"
+              render={() => {
+                return (
+                  <React.Fragment>
+                    <Button destructive>Yay you found an easter egg...</Button>
+                    <Button destructive>Not much to see here though...</Button>
+                    <Button special>:)</Button>
+                    <Button important> idk lol</Button>
                   </React.Fragment>
                 );
               }}
