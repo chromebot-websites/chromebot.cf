@@ -15,6 +15,8 @@ class Button extends Component {
 			type = "important";
 		} else if (props.special) {
 		    type = "special";
+		} else if (props.ugly) {
+                    type = "ugly";
 		}
 		if (typeof props.onClick === "function") {
 			onClick = props.onClick;
