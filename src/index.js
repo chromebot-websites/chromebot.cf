@@ -68,7 +68,7 @@ class App extends Component {
                 );
               }}
             />
-           <Route
+            <Route
               path="/egg"
               render={() => {
                 return (
