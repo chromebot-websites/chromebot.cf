@@ -69,7 +69,7 @@ class App extends Component {
               }}
             />
             <Route
-              path="/egg"
+              path="/egg "
               render={() => {
                 return (
                   <React.Fragment>
@@ -77,7 +77,16 @@ class App extends Component {
                     <Button destructive>Not much to see here though...</Button>
                     <Button special>:)</Button>
                     <Button important> idk lol</Button>
-                    <Button ugly> 10/10 best button</Button>
+                    <Button
+                      ugly
+                      onClick={button =>
+                        (window.location.href =
+                          "https://raw.githubusercontent.com/chromebot-websites/chromebot.cf/master/public/images/2AA15818-B987-4253-AA6B-74BBE74173D6.jpeg")
+                      }
+                    >
+                      {" "}
+                      10/10 best button
+                    </Button>
                   </React.Fragment>
                 );
               }}
