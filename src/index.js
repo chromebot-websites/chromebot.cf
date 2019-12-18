@@ -1,9 +1,9 @@
 import "./css/base.css";
 import "./css/custom.css";
 
-import React, {Component} from "react";
+import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Error from "./pages/error.js";
 import Bots from "./premade/bots.js";
@@ -13,8 +13,11 @@ import ErrorBoundary from "./utils/errorBoundaries.js";
 
 let buildNumber = 0.01;
 
-console.log("Welcome to the chromebot website. This is client build BR." +
-            buildNumber + ".");
+console.log(
+  "Welcome to the chromebot website. This is client build BR." +
+    buildNumber +
+    "."
+);
 
 class App extends Component {
   render() {
@@ -22,12 +25,11 @@ class App extends Component {
       <ErrorBoundary>
         <Router>
           <Switch>
-            <Route exact path="/" component={
-      HomePage} />
+            <Route exact path="/" component={HomePage} />
 
             <Route
               path="/status "
-    render = {() => {
+              render={() => {
                 return (
                   <React.Fragment>
                     <Button
@@ -66,7 +68,7 @@ class App extends Component {
                 );
               }}
             />
-           <Route
+            <Route
               path="/egg"
               render={() => {
                 return (
