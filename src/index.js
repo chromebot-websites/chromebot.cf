@@ -28,7 +28,7 @@ class App extends Component {
             <Route exact path="/" component={HomePage} />
 
             <Route
-              path="/status "
+              path="/status"
               render={() => {
                 return (
                   <React.Fragment>
@@ -69,7 +69,7 @@ class App extends Component {
               }}
             />
             <Route
-              path="/egg "
+              path="/egg"
               render={() => {
                 return (
                   <React.Fragment>
