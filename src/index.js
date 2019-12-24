@@ -33,7 +33,7 @@ class App extends Component {
                 return (
                   <React.Fragment>
                     <Button important>Minion3665, Vilagamer999 and The ChromeBot Staff...</Button>
-                    <Button special>🎅 Would like to wish you a merry christmas! 🎅</Button></br>
+                    <Button special>🎅 Would like to wish you a merry christmas! 🎅</Button><br/>
                     <Button
                       destructive
                       onClick={button =>
