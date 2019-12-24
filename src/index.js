@@ -36,7 +36,7 @@ class App extends Component {
                       Minion3665, Vilagamer999 and The ChromeBot Staff...
                     </Button>
                     <Button special>
-                      🎅 Would like to wish you a merry christmas! 🎅
+                      Would like to wish you a merry christmas!
                     </Button>
                     <br />
                     <Button
