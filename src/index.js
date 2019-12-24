@@ -37,7 +37,8 @@ class App extends Component {
                     </Button>
                     <Button special>
                       <span role="img">🎅</span> Would like to wish you a merry
-                      christmas! <span role="img">🎅</span>
+                      christmas!
+                      <span role="img">🎅</span>
                     </Button>
                     <br />
                     <Button
