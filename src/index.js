@@ -28,32 +28,7 @@ class App extends Component {
             <Route exact path="/" component={HomePage} />
 
             <Route
-              path="/christmas"
-              render={() => {
-                return (
-                  <React.Fragment>
-                    <Button important>
-                      Minion3665, Vilagamer999 and The ChromeBot Staff...
-                    </Button>
-                    <Button special>
-                      Would like to wish you a merry christmas!
-                    </Button>
-                    <br />
-                    <Button
-                      destructive
-                      onClick={button =>
-                        (window.location.href = "https://chromebot.cf")
-                      }
-                    >
-                      Go Back Home
-                    </Button>
-                  </React.Fragment>
-                );
-              }}
-            />
-
-            <Route
-              path="/status "
+              path="/status"
               render={() => {
                 return (
                   <React.Fragment>
@@ -94,7 +69,7 @@ class App extends Component {
               }}
             />
             <Route
-              path="/egg "
+              path="/egg"
               render={() => {
                 return (
                   <React.Fragment>
