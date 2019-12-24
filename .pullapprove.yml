@@ -21,7 +21,7 @@ groups:
       teams:
       - beta-maintainers
     reviews:
-      required: 2
+      required: 1
       request: 1
       request_order: random
       author_value: 2
