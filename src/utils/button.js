@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 
 class Button extends Component {
   constructor(props) {
@@ -21,24 +21,39 @@ class Button extends Component {
     if (props.onClick) {
       onClick = props.onClick;
     }
-    this.state =
-        {pressed : false, disabled : disabled, type : type, onClick : onClick};
+    this.state = {
+      pressed: false,
+      disabled: disabled,
+      type: type,
+      onClick: onClick
+    };
   }
-  unpress() { this.setState({pressed : false}); }
+  unpress() {
+    this.setState({ pressed: false });
+  }
   render() {
     if (this.state.disabled) {
-      return (<button className = "button disabled">{this.props.children}<
-              /button>
-			);
-		} else if (!this.state.pressed) {
-			return (
-				<button onClick={() => { this.setState({ pressed: true }); this.state.onClick(this); }} className={"button " + this.state.type}>{this.props.children}</button>);
+      return <button className="button disabled">{this.props.children}</button>;
+    } else if (!this.state.pressed) {
+      return (
+        <button
+          onClick={() => {
+            this.setState({ pressed: true });
+            this.state.onClick(this);
+          }}
+          className={"button " + this.state.type}
+        >
+          {this.props.children}
+        </button>
+      );
     } else {
-                        return (
-				<button className={"button pressed " + this.state.type}>{this.props.children}</button>
-			);
-		}
-	}
+      return (
+        <button className={"button pressed " + this.state.type}>
+          {this.props.children}
+        </button>
+      );
+    }
+  }
 }
 
 export default Button;
