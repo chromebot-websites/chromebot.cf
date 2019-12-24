@@ -18,7 +18,7 @@ class Button extends Component {
 		} else if (props.ugly) {
                     type = "ugly";
 		}
-		if (typeof props.onClick === "function") {
+		if (props.onClick) {
 			onClick = props.onClick;
 		}
 		this.state = { pressed: false, disabled: disabled, type: type, onClick: onClick };
