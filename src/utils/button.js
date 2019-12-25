@@ -29,7 +29,7 @@ class Button extends Component {
     };
   }
   unpress() {
-    this.setState({ pressed: false });
+    setTimeout(this.setState({ pressed: false }), 0.1);
   }
   render() {
     if (this.state.disabled) {
