@@ -5,7 +5,7 @@ class Button extends Component {
     super(props);
     let disabled = false;
     let type = "";
-    let onClick = this.unpress;
+    let onClick = () => {this.unpress};
     if (props.disabled) {
       disabled = true;
     }
@@ -29,7 +29,7 @@ class Button extends Component {
     };
   }
   unpress() {
-    setTimeout(this.setState({ pressed: false }), 0.1);
+    this.setState({ pressed: false });
   }
   render() {
     if (this.state.disabled) {
