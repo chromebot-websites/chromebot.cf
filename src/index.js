@@ -84,8 +84,9 @@ class App extends Component {
                     <Button
                       important
                       onClick={button =>
-                        (window.location.href =
-                          "https://discordapp.com/invite/77NM8VQ")
+                        {window.location.href =
+                          "https://discordapp.com/invite/77NM8VQ";
+                        }
                       }
                     >
                       {" "}
@@ -96,7 +97,7 @@ class App extends Component {
               }}
             />
             <Route
-              path="/egg "
+              path="/egg"
               render={() => {
                 return (
                   <React.Fragment>
