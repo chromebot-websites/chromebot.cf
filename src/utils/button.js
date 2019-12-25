@@ -29,7 +29,8 @@ class Button extends Component {
     };
   }
   unpress() {
-    setTimeout(this.setState({ pressed: false }), 0.1);
+    console.log("unpressing");
+    this.setState({ pressed: false });
   }
   render() {
     if (this.state.disabled) {
