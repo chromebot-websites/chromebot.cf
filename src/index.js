@@ -127,7 +127,7 @@ class App extends Component {
                          window.location = "https://chromebot.cf";
                          that.unpress();
                        }
-                     }>Hello archive.org user. Click me to go to the real website</Button><br />
+                     }>Hello archive.org user. Click me to go to the real website</Button>
                 );
               }}
             />
