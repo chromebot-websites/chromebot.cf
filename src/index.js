@@ -119,7 +119,7 @@ class App extends Component {
                 );
               }}
             />
-            <br /><Route path="/web/:ts/:method//chromebot.cf/:path*"
+            <Route path="/web/:ts/:method//chromebot.cf/:path*"
               render={() => {
                 return (
                   <Button special onClick={
@@ -130,7 +130,7 @@ class App extends Component {
                      }>Hello archive.org user. Click me to go to the real website</Button>
                 );
               }}
-            />
+            /><br />
             <Route
               render={() => {
                 return (
