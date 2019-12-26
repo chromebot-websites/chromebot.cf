@@ -119,15 +119,15 @@ class App extends Component {
                 );
               }}
             />
-            <Route path="/web/:ts/:method//chromebot.cf/:path*"
+            <br /><Route path="/web/:ts/:method//chromebot.cf/:path*"
               render={() => {
                 return (
-                  <br /><Button special onClick={
+                  <Button special onClick={
                        that => {
                          window.location = "https://chromebot.cf";
                          that.unpress();
                        }
-                     }>Hello archive.org user. Click me to go to the real website</Button>
+                     }>Hello archive.org user. Click me to go to the real website</Button><br />
                 );
               }}
             />
