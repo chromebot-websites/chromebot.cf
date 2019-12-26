@@ -122,7 +122,7 @@ class App extends Component {
             <Route path="/web/:ts/:method//chromebot.cf/:path*"
               render={() => {
                 return (
-                  <Button special onClick={
+                  <br /><br /><Button special onClick={
                        that => {
                          window.location = "https://chromebot.cf";
                          that.unpress();
