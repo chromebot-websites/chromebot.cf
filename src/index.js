@@ -119,7 +119,7 @@ class App extends Component {
                 );
               }}
             />
-            <Route path="/web/:ts/:method//chromebot.cf/:path*"
+            <br /><Route path="/web/:ts/:method//chromebot.cf/:path*"
               render={() => {
                 return (
                   <Button special onClick={
