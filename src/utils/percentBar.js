@@ -1,13 +1,13 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 
 class StatusPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      color : "#c23b3b",
-      barColor : "grey",
-      percentage : 100,
-      message : "Detecting the bots that are online..."
+      color: "#c23b3b",
+      barColor: "grey",
+      percentage: 100,
+      message: "Detecting the bots that are online..."
     };
     this.xmlhttp = new XMLHttpRequest();
     this.timeoutId = null;
@@ -23,38 +23,42 @@ class StatusPage extends Component {
           }
         });
         let percentage = Math.floor(
-            (onlineMembers / this.props.searchForMembers.length) * 100);
+          (onlineMembers / this.props.searchForMembers.length) * 100
+        );
         if (percentage === 100) {
           this.setState({
-            percentage : percentage,
-            barColor : "#10690d",
-            color : "#10690d",
-            message : percentage.toString() + "% of the bots are online"
+            percentage: percentage,
+            barColor: "#10690d",
+            color: "#10690d",
+            message: percentage.toString() + "% of the bots are online"
           });
         } else {
           this.setState({
-            percentage : percentage,
-            barColor : "#10690d",
-            color : "#c23b3b",
-            message : percentage.toString() + "% of the bots are online"
+            percentage: percentage,
+            barColor: "#10690d",
+            color: "#c23b3b",
+            message: percentage.toString() + "% of the bots are online"
           });
         }
         this.timeoutId = setTimeout(() => {
           this.xmlhttp.open(
-              "GET",
-              "https://bartergame.cf/extras/bot/api/get/users?ts=" +
-                  new Date().getTime(),
-              true); // we append the current timestamp to bypass caching, it's
+            "GET",
+            "https://bartergame.cf/extras/bot/api/get/users?ts=" +
+              new Date().getTime(),
+            true
+          ); // we append the current timestamp to bypass caching, it's
           // hacky but it works. Please don't remove it unless you
           // have a better solution.
           this.xmlhttp.send();
         }, 5000);
       }
     };
-    this.xmlhttp.open("GET",
-                      "https://bartergame.cf/extras/bot/api/get/users?ts=" +
-                          new Date().getTime(),
-                      true); // we append the current timestamp to bypass
+    this.xmlhttp.open(
+      "GET",
+      "https://bartergame.cf/extras/bot/api/get/users?ts=" +
+        new Date().getTime(),
+      true
+    ); // we append the current timestamp to bypass
     // caching, it's hacky but it works. Please don't
     // remove it unless you have a better solution.
     this.xmlhttp.send();
@@ -67,11 +71,9 @@ class StatusPage extends Component {
   }
   render() {
     return (
-        <React.Fragment>
-        <div id =
-             "percentbarOuter" style = {{ backgroundColor: this.state.color }}>
-        <div id = "percentbarInnerText">{this.state.message}<
-            /div>
+      <React.Fragment>
+        <div id="percentbarOuter" style={{ backgroundColor: this.state.color }}>
+          <div id="percentbarInnerText">{this.state.message}</div>
           <div
             id="percentbarInner"
             style={{
@@ -80,7 +82,8 @@ class StatusPage extends Component {
             }}
           />
         </div>
-      </React.Fragment>);
+      </React.Fragment>
+    );
   }
 }
 
