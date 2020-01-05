@@ -16,19 +16,21 @@ class StatusPage extends Component {
     this.xmlhttp.onreadystatechange = () => {
       if (this.xmlhttp.readyState === 4 && this.xmlhttp.status === 200) {
         let onlineMembers = 0;
-        JSON.parse(this.xmlhttp.responseText).members.forEach(member => {
-          if (this.props.searchForMembers.indexOf(member.id) >= 0) {
+        let members = JSON.parse(this.xmlhttp.responseText);
+        this.props.searchForMembers.forEach(member => {
+          if (members[member] && members[member].status !== "offline") {
             onlineMembers++;
           }
         });
-        let percentage =
-          (onlineMembers / this.props.searchForMembers.length) * 100;
+        let percentage = Math.floor(
+          (onlineMembers / this.props.searchForMembers.length) * 100
+        );
         if (percentage === 100) {
           this.setState({
             percentage: percentage,
             barColor: "#10690d",
             color: "#10690d",
-            message: percentage.toString() + "% of the bot is online"
+            message: percentage.toString() + "% of the bots are online"
           });
         } else {
           this.setState({
@@ -41,9 +43,7 @@ class StatusPage extends Component {
         this.timeoutId = setTimeout(() => {
           this.xmlhttp.open(
             "GET",
-            "https://discordapp.com/api/guilds/" +
-              this.props.serverId +
-              "/widget.json?timestamp=" +
+            "https://bartergame.cf/extras/bot/api/get/users?ts=" +
               new Date().getTime(),
             true
           ); // we append the current timestamp to bypass caching, it's
@@ -55,9 +55,7 @@ class StatusPage extends Component {
     };
     this.xmlhttp.open(
       "GET",
-      "https://discordapp.com/api/guilds/" +
-        this.props.serverId +
-        "/widget.json?timestamp=" +
+      "https://bartergame.cf/extras/bot/api/get/users?ts=" +
         new Date().getTime(),
       true
     ); // we append the current timestamp to bypass
