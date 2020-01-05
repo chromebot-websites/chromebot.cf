@@ -22,8 +22,9 @@ class StatusPage extends Component {
             onlineMembers++;
           }
         });
-        let percentage =
-          Math.floor((onlineMembers / this.props.searchForMembers.length) * 100);
+        let percentage = Math.floor(
+          (onlineMembers / this.props.searchForMembers.length) * 100
+        );
         if (percentage === 100) {
           this.setState({
             percentage: percentage,
@@ -42,7 +43,7 @@ class StatusPage extends Component {
         this.timeoutId = setTimeout(() => {
           this.xmlhttp.open(
             "GET",
-              "https://bartergame.cf/extras/bot/api/get/users?ts=" +
+            "https://bartergame.cf/extras/bot/api/get/users?ts=" +
               new Date().getTime(),
             true
           ); // we append the current timestamp to bypass caching, it's
@@ -54,7 +55,7 @@ class StatusPage extends Component {
     };
     this.xmlhttp.open(
       "GET",
-        "https://bartergame.cf/extras/bot/api/get/users?ts=" +
+      "https://bartergame.cf/extras/bot/api/get/users?ts=" +
         new Date().getTime(),
       true
     ); // we append the current timestamp to bypass
