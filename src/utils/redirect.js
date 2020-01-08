@@ -5,7 +5,7 @@ class App extends Component {
     return (
       <script>
         const isIE = document.documentMode; if (isIE)
-        {window.alert("Your MESSAGE here.")}
+        {window.alert("You are using internet explorer")}
       </script>
     );
   }
