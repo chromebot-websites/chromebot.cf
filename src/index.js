@@ -55,6 +55,33 @@ class App extends Component {
             />
 
             <Route
+              path="/easter"
+              render={() => {
+                return (
+                  <React.Fragment>
+                    <Button important>
+                      Minion3665, Vilagamer999 and The ChromeBot Staff...
+                    </Button>
+                    <Button special>
+                      <span role="img" aria-label="egg"></span> Would like to wish you a happy
+                      easter!
+                      <span role="img" aria-label="egg"></span>
+                    </Button>
+                    <br />
+                    <Button
+                      destructive
+                      onClick={button =>
+                        (window.location.href = "https://chromebot.cf")
+                      }
+                    >
+                      Go Back Home
+                    </Button>
+                  </React.Fragment>
+                );
+              }}
+            />
+
+            <Route
               path="/status "
               render={() => {
                 return (
