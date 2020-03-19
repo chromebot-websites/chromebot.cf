@@ -19,7 +19,7 @@
     "dotenv": "8.2.0",
     "gh-pages": "^2.2.0",
     "progress-bar-webpack-plugin": "2.1.0",
-    "react": "16.13.0",
+    "react": "16.13.1",
     "react-dom": "16.13.0",
     "react-router-dom": "5.0.1",
     "react-scripts": "^3.4.0",
