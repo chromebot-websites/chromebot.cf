@@ -12,7 +12,7 @@
   },
   "author": "Minion3665",
   "dependencies": {
-    "@babel/core": "7.10.1",
+    "@babel/core": "7.10.2",
     "@babel/preset-env": "7.10.2",
     "@babel/preset-react": "7.10.1",
     "babel-loader": "8.0.6",
